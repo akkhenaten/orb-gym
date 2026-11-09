@@ -13,6 +13,8 @@ export const ORDER = [
   'derive-relationships', // docs/derived/relationships-inferred.json
   'derive-state-overlay', // docs/derived/state-overlay.json (charge/credit states + void transitions)
   'compile',              // schema.sql, transitions, enums, permissions, compile-report
+  'derive-creation-overlay', // docs/derived/creation-overlay.json + generated/creations.mjs (proposals only)
+  'compile-role-grants',  // generated/role-grants.mjs (baseline matrix; settled vs proposed)
   'compile-ui',           // screens, screen-commands, theme, cards, board-report
   'compile-notify',
   'compile-commercial',

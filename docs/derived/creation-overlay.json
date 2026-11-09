@@ -1,0 +1,281 @@
+{
+  "edition": "0.36-derived",
+  "authority": "PROPOSALS. Not approved product behaviour. Source spec files are not modified; each entry is justified by verbatim quotations checked at build time.",
+  "runtime_gate": "src/creation.mjs refuses a proposed entry with PROPOSAL_NOT_APPROVED unless ORB_ALLOW_PROPOSED=1 and NODE_ENV is not production.",
+  "creations": [
+    {
+      "creation_id": "DTR-003",
+      "command": "CreateWorkspaceWithOwner",
+      "workflow_id": "WF-SPACE-01",
+      "approval": {
+        "status": "proposed",
+        "owner_question": "Approve this creation command as product behaviour? Record your name and the date in approval to enable it outside development."
+      },
+      "authorization": {
+        "mode": "verified_identity",
+        "requires": [],
+        "rationale": "A new owner holds no workspace grant yet; the command requires a signed-in identity whose contact is verified instead."
+      },
+      "input": [
+        {
+          "field": "display_name",
+          "target": "workspace.display_name",
+          "required": true,
+          "max_length": 120
+        },
+        {
+          "field": "owner_display_name",
+          "target": "company_person.display_name",
+          "required": true,
+          "max_length": 120
+        }
+      ],
+      "inserts": [
+        {
+          "table": "identity",
+          "reuse_when": "provider_subject already mirrored",
+          "fields": [
+            "provider_subject",
+            "verified_contact_reference"
+          ]
+        },
+        {
+          "table": "workspace",
+          "initial_state": "ONBOARDING",
+          "fields": [
+            "display_name",
+            "owner_assignment_id",
+            "workspace_id"
+          ]
+        },
+        {
+          "table": "company_person",
+          "initial_state": "ACTIVE",
+          "fields": [
+            "workspace_id",
+            "identity_id_optional",
+            "display_name",
+            "contact_reference"
+          ]
+        },
+        {
+          "table": "role_assignment",
+          "initial_state": "ACTIVE",
+          "fields": [
+            "workspace_id",
+            "person_id",
+            "role_template_id",
+            "scope"
+          ],
+          "fixed": {
+            "role_template_id": "company-owner",
+            "scope": "workspace"
+          },
+          "state_rationale": "Inserted ACTIVE, not PENDING: the owner grant is created atomically with the workspace, and a pending owner grant would leave a workspace without a legitimate owner."
+        }
+      ],
+      "idempotency": "operation id; a replay returns the first result and inserts nothing",
+      "evidence": [
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-01",
+          "field": "ordered_checkpoints",
+          "quote": "workspace/owner grant atomically"
+        },
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-01",
+          "field": "authoritative_outcome_and_handoff",
+          "quote": "One workspace with at least one legitimate owner"
+        },
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-01",
+          "field": "exceptions_and_policy_branches",
+          "quote": "Retry cannot duplicate workspace"
+        },
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-01",
+          "field": "preconditions",
+          "quote": "Account verification and explicit owner journey"
+        },
+        {
+          "source": "docs/data/entity-catalogue.json",
+          "id": "ENT-Workspace",
+          "field": "invariant",
+          "quote": "Owner creation and workspace creation retry-safe together"
+        },
+        {
+          "source": "docs/data/entity-catalogue.json",
+          "id": "ENT-Identity",
+          "field": "invariant",
+          "quote": "Unique identity-provider subject"
+        },
+        {
+          "source": "docs/access/role-catalogue.json",
+          "id": "company-owner",
+          "field": "scope_kind",
+          "quote": "workspace"
+        }
+      ],
+      "gaps": [
+        "Company details after creation: no command edits workspace.display_name, so the name is captured here and is not editable yet.",
+        "role_template_id references the baseline role column in docs/access/role-permission-matrix.csv; no tenant role_template row is created."
+      ]
+    },
+    {
+      "creation_id": "DTR-004",
+      "command": "CreateGym",
+      "workflow_id": "WF-SPACE-02",
+      "approval": {
+        "status": "proposed",
+        "owner_question": "Approve this creation command as product behaviour? Record your name and the date in approval to enable it outside development."
+      },
+      "authorization": {
+        "mode": "permission_all_of",
+        "requires": [
+          "workspace.create_gym"
+        ]
+      },
+      "workspace_states": [
+        "ONBOARDING",
+        "ACTIVE"
+      ],
+      "workspace_states_rationale": "WF-SPACE-01 adds the first gym during onboarding; a suspended, closing or archived workspace is not expanding its portfolio.",
+      "input": [
+        {
+          "field": "display_name",
+          "target": "gym.display_name",
+          "required": true,
+          "max_length": 120
+        },
+        {
+          "field": "location",
+          "target": "gym.location",
+          "required": false,
+          "max_length": 200
+        },
+        {
+          "field": "timezone",
+          "target": "gym.timezone",
+          "required": false,
+          "max_length": 64,
+          "format": "IANA zone name"
+        }
+      ],
+      "inserts": [
+        {
+          "table": "gym",
+          "initial_state": "DRAFT",
+          "fields": [
+            "workspace_id",
+            "display_name",
+            "location",
+            "timezone",
+            "gym_id"
+          ]
+        }
+      ],
+      "idempotency": "operation id; a replay returns the first result and inserts nothing",
+      "evidence": [
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-02",
+          "field": "ordered_checkpoints",
+          "quote": "Create gym"
+        },
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-01",
+          "field": "ordered_checkpoints",
+          "quote": "add first gym"
+        },
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-02",
+          "field": "authoritative_outcome_and_handoff",
+          "quote": "public page begins as draft"
+        },
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-02",
+          "field": "exceptions_and_policy_branches",
+          "quote": "gym creation not a data silo/security bypass"
+        },
+        {
+          "source": "docs/data/entity-catalogue.json",
+          "id": "ENT-Gym",
+          "field": "invariant",
+          "quote": "Each gym belongs to exactly one workspace"
+        }
+      ],
+      "gaps": [
+        "No fixed product gym-count limit is applied; WF-SPACE-01 says none is assumed."
+      ]
+    },
+    {
+      "creation_id": "DTR-005",
+      "command": "UpdateGymDetails",
+      "workflow_id": "WF-SPACE-02",
+      "approval": {
+        "status": "proposed",
+        "owner_question": "Approve this creation command as product behaviour? Record your name and the date in approval to enable it outside development."
+      },
+      "authorization": {
+        "mode": "permission_all_of",
+        "requires": [
+          "workspace.edit_gym"
+        ]
+      },
+      "kind": "update",
+      "table": "gym",
+      "record_states": [
+        "DRAFT",
+        "ACTIVE"
+      ],
+      "record_states_rationale": "Details of a gym under closure review or archived stay as recorded for its obligation inventory.",
+      "input": [
+        {
+          "field": "display_name",
+          "target": "gym.display_name",
+          "required": true,
+          "max_length": 120
+        },
+        {
+          "field": "location",
+          "target": "gym.location",
+          "required": false,
+          "max_length": 200
+        },
+        {
+          "field": "timezone",
+          "target": "gym.timezone",
+          "required": false,
+          "max_length": 64,
+          "format": "IANA zone name"
+        }
+      ],
+      "inserts": [],
+      "idempotency": "operation id plus required expected version; a stale version is refused",
+      "evidence": [
+        {
+          "source": "docs/workflows/catalogue.json",
+          "id": "WF-SPACE-02",
+          "field": "preconditions",
+          "quote": "gym details"
+        },
+        {
+          "source": "docs/design/screen-inventory.json",
+          "id": "SCR-016",
+          "field": "name",
+          "quote": "Gym settings"
+        }
+      ],
+      "gaps": [
+        "billing_entity_id is not editable here: assigning a billing entity belongs to the finance setup cards."
+      ]
+    }
+  ],
+  "errors": []
+}

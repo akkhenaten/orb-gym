@@ -2,6 +2,33 @@
 
 Founder confirmed five selectable UI presets on 9 November 2026. The original five (basic-01, flat-02, editorial-03, glass-04, console-05) remain the selectable set. Neumorphic06 is retained with full token definitions but marked selectable:false and status:deferred, because no rendered application or visual reference exists for it. docs/design/style-options.json is authoritative; validate_ui_styles.py now asserts five selectable presets and the ten matching light/dark theme modes, and reports deferred presets separately. This resolves the five-versus-six conflict: the preserved 0.17 source text ("all five presets") now agrees with the current contract, so no provenance re-baseline is required. All other 0.35 content is unchanged.
 
+## Identity and workspace setup screens, cards 02–05 and 24–27 (same edition)
+
+SCR-006..017 are now real product screens (`app/src/screens/`). Every other screen still renders the spec preview, which these
+screens also keep in a collapsed "Spec" section for traceability. Shared form, table and state-panel components post to the
+existing command routes with an operation id kept across network retries and the record version the page was rendered with.
+
+Identity (HANDOVER decision 2): a provider-neutral adapter in `app/src/identity/`. By default it is unconfigured and every call
+is refused with `IDENTITY_PROVIDER_UNCONFIGURED`. Under `ORB_DEV=1`, and never in production, a dev adapter offers synthetic
+personas with `.invalid` contacts. It stores no passwords and refuses factors with `FACTOR_UNSUPPORTED`. A session cookie
+(HttpOnly, SameSite=Strict) resolves to an actor only from stored `company_person` and `role_assignment` rows; individual denies
+still win, and the dev header is ignored once a session exists.
+
+Creation (HANDOVER decision 1): `derive-creation-overlay.mjs` drafts DTR-003 CreateWorkspaceWithOwner (one atomic step creates the
+workspace, its owner person and the owner grant), DTR-004 CreateGym and DTR-005 UpdateGymDetails. Each carries verbatim WF-SPACE
+evidence and the owner question. All three are `proposed` and are refused with `PROPOSAL_NOT_APPROVED` unless
+`ORB_ALLOW_PROPOSED=1` is set outside production; `validate_creation_overlay.py` checks them. Creation operation ids are bound to
+a request fingerprint, so reusing an id for a changed request is a CONFLICT rather than a silent replay. Gym archive shows a
+read-only inventory of open records per gym (`app/src/obligations.mjs`) before TR-007.
+
+Gaps found and left open, not filled: no transition for a temporary platform support grant or for ownership transfer; the step-up
+trigger is undefined; no command edits the workspace display name; TR-002/003 require a reason but declare no reason field; the
+engine does not enforce "at least one owner" (the UI only hides that revoke); the core engine's replay is not payload-bound.
+
+Evidence: 145 app tests pass with `SOURCE_DATE_EPOCH=1641013200`. A browser sweep of 12 screens × 5 presets × 2 modes ×
+1440/820/390 px (360 renders) found no horizontal overflow, the exact footer on every page, the left nav at 1440 and the bottom nav at
+820 and 390. Owner onboarding was clicked through end to end with the dev adapter. Synthetic data only, and no provider was exercised.
+
 ## Builder handover (same edition)
 
 `HANDOVER.md` is the builder entry point, linked from README.md, BUILD_BRIEF.md and AGENTS.md. It records the

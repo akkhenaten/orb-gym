@@ -18,6 +18,7 @@ import { EVENTS } from '../generated/notifications.mjs';
 import { ENUMS } from '../generated/enums.mjs';
 import { TRANSITIONS } from '../generated/transitions.mjs';
 import { screenTables } from './records.mjs';
+import { PRODUCT_SCREENS, SCREEN_CSS, FORM_SCRIPT } from './screens/index.mjs';
 
 const DOMAIN_ORDER = ['PUBLIC', 'AUTH', 'SPACE', 'DESIGN', 'RELEASE', 'USER', 'MEM', 'JUNIOR', 'CLASS',
   'COACH', 'TRIAL', 'ENTRY', 'TASK', 'STAFF', 'CAL', 'POS', 'FIN', 'DOC', 'FEED', 'AI', 'IMPORT', 'LAND'];
@@ -31,6 +32,9 @@ const DOMAIN_LABEL = {
 };
 
 export const DEFAULT_PRESET = 'basic-01';
+/** CMP-FOOTER: exact protected attribution, on every app/auth page. */
+export const FOOTER_TEXT = 'Orb Gym - powered by orbsolutions.co.uk';
+const FOOTER = `<footer class="foot"><a href="https://orbsolutions.co.uk">${FOOTER_TEXT}</a></footer>`;
 export const DEFAULT_MODE = 'light';
 
 export function screenById(id) {
@@ -75,7 +79,7 @@ function navGroups() {
   });
 }
 
-function shell({ title, preset, mode, body, activeScreen }) {
+export function shell({ title, preset, mode, body, activeScreen, account = null, extraCss = '', script = '' }) {
   const theme = findTheme(preset, mode);
   const groups = navGroups();
   const nav = groups.map(([domain, screens]) => `
@@ -92,9 +96,10 @@ function shell({ title, preset, mode, body, activeScreen }) {
 *{box-sizing:border-box}
 body{margin:0;font:15px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--canvas);color:var(--text)}
 a{color:inherit;text-decoration:none}
-.top{display:flex;gap:12px;align-items:center;padding:12px 18px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:5}
+.top{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;padding:10px 18px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:5}
 .brand{font-weight:700;letter-spacing:-.01em;margin-right:auto}
-select,button{font:inherit;padding:7px 10px;border:1px solid var(--control);border-radius:8px;background:var(--surface);color:var(--text)}
+select,button,input,textarea{font:inherit;padding:7px 10px;border:1px solid var(--control);border-radius:8px;background:var(--surface);color:var(--text);max-width:100%}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 button{cursor:pointer}
 .wrap{display:grid;grid-template-columns:264px 1fr;min-height:calc(100vh - 57px)}
 aside{background:var(--surface);border-right:1px solid var(--border);padding:14px 10px;overflow:auto}
@@ -103,10 +108,16 @@ aside{background:var(--surface);border-right:1px solid var(--border);padding:14p
 .navlink{display:block;padding:6px 8px;border-radius:7px;font-size:13.5px;color:var(--text)}
 .navlink:hover{background:var(--selectedSurface);color:var(--selectedText)}
 .navlink.on{background:var(--selectedSurface);color:var(--selectedText);font-weight:600}
-main{padding:22px 26px 60px;max-width:1100px}
+main{padding:22px 26px 24px;max-width:1100px;min-width:0;display:flex;flex-direction:column}
+main>.content{flex:1}
+.foot{margin-top:32px;padding-top:14px;border-top:1px solid var(--border);font-size:12.5px;color:var(--muted)}
+.foot a{text-decoration:underline}
+.acct{font-size:13px;color:var(--muted)}
+.scroll{overflow-x:auto;max-width:100%}
+pre{white-space:pre-wrap;word-break:break-word}
 h1{font-size:22px;margin:0 0 4px;letter-spacing:-.01em}
 .crumb{color:var(--muted);font-size:12.5px;margin-bottom:18px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:14px;overflow-x:auto}
 .card h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:0 0 12px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:12px;padding:3px 9px;border-radius:99px;background:var(--selectedSurface);color:var(--selectedText);border:1px solid var(--border)}
@@ -125,20 +136,25 @@ th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute
  .wrap{grid-template-columns:1fr}
  aside{display:none}
  main{padding:16px 14px 88px}
+ .top{padding:10px 14px}
+ .top .hide-sm{display:none}
+ #preset{flex:1 1 140px;min-width:0}
  .bottom{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);z-index:6}
  .bottom a{flex:1;text-align:center;padding:11px 4px;font-size:11.5px;color:var(--muted)}
  .bottom a.on{color:var(--accent);font-weight:600}
 }
+${extraCss}
 </style></head><body style="${tokenCss(theme)}">
 <header class="top">
   <span class="brand">Orb Gym</span>
   <select id="preset" aria-label="UI preset">${presetOpts}</select>
   <button class="btn" id="mode">${mode === 'light' ? 'Dark' : 'Light'}</button>
-  <a class="muted" href="/">Console</a>
+  ${account ? `<span class="acct">${account}</span>` : ''}
+  <a class="muted hide-sm" href="/">Console</a>
 </header>
 <div class="wrap">
   <aside>${nav}</aside>
-  <main>${body}</main>
+  <main><div class="content">${body}</div>${FOOTER}</main>
 </div>
 <nav class="bottom">
   <a class="on" href="/app${activeScreen && screenById(activeScreen) ? screenById(activeScreen).route : '/public/landing'}?preset=${preset}&mode=${mode}">Screen</a>
@@ -151,6 +167,7 @@ const p=document.getElementById('preset'),m=document.getElementById('mode');
 p.addEventListener('change',()=>{const u=new URL(location.href);u.searchParams.set('preset',p.value);location.assign(u)});
 m.addEventListener('click',()=>{const u=new URL(location.href);u.searchParams.set('mode',m.textContent.trim().toLowerCase());location.assign(u)});
 </script>
+${script ? `<script>${script}</script>` : ''}
 </body></html>`;
 }
 
@@ -203,7 +220,7 @@ function commandCard(screen, { preset, mode }) {
     <p class="muted">Bound by shared domain (${esc(binding.domains.join(', '))}); the specification declares no screen-to-command edge.</p>
     <table><thead><tr><th>Command</th><th>Table</th><th>Transition</th><th>Authorization</th></tr></thead><tbody>${rows}</tbody></table>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:14px">
       <label class="muted">Command<select id="cmd">${commands.map((c) => `<option value="${esc(c.command)}">${esc(c.command)}</option>`).join('')}</select></label>
       <label class="muted">Record ID<input id="rec" value=""></label>
       <label class="muted">Expected version<input id="ver" value="1"></label>
@@ -317,11 +334,39 @@ function recordsCard(screen) {
   </section>`;
 }
 
-export function renderScreen(screen, { preset, mode }) {
+/**
+ * A screen with a product renderer (src/screens/) gets a working page when request
+ * context is supplied; the spec preview stays underneath in a collapsed section. Without
+ * context, or for screens no card has built yet, the spec preview renders as before.
+ */
+export function renderScreen(screen, { preset, mode, ctx = null }) {
+  const product = ctx && PRODUCT_SCREENS[screen.screen_id];
+  if (product) {
+    let inner;
+    try {
+      inner = product.render(ctx, ctx.query ?? new URLSearchParams());
+    } catch (err) {
+      inner = `<section class="card state state-failed" role="alert" data-state="failed"><p class="state-kind">Something went wrong</p><p>This page could not be built. Nothing was changed.</p></section>`;
+      console.error(err);
+    }
+    const who = ctx.actor?.display_name ?? ctx.session?.contact ?? null;
+    const account = who
+      ? `${esc(who)}${ctx.identity.capabilities().synthetic ? ' · synthetic' : ''} · <a href="/app/auth/sessions-and-security?preset=${esc(preset)}&mode=${esc(mode)}"><u>Account</u></a>`
+      : `<a href="/app/auth/sign-in?preset=${esc(preset)}&mode=${esc(mode)}"><u>Sign in</u></a>`;
+    const body = `<h1>${esc(screen.name)}</h1>
+      <p class="crumb">${esc(DOMAIN_LABEL[screen.domain] ?? screen.domain)} · card ${esc(product.card)}</p>
+      ${inner}
+      <details class="spec card"><summary>Specification: ${esc(screen.screen_id)} ${esc(screen.route)}</summary>${specPreview(screen, { preset, mode })}</details>`;
+    return shell({ title: screen.name, preset, mode, body, activeScreen: screen.screen_id, account, extraCss: SCREEN_CSS, script: FORM_SCRIPT });
+  }
+  return shell({ title: screen.name, preset, mode, body: specPreview(screen, { preset, mode }, true), activeScreen: screen.screen_id });
+}
+
+function specPreview(screen, { preset, mode }, standalone = false) {
   const machine = ENUMS.find((m) => m.machine_id === `SM-${(screen.domain ?? '').toUpperCase()}`);
-  const body = `
+  return `${standalone ? `
     <h1>${esc(screen.name)}</h1>
-    <p class="crumb">${esc(screen.screen_id)} · ${esc(DOMAIN_LABEL[screen.domain] ?? screen.domain)} · ${esc(screen.route)}</p>
+    <p class="crumb">${esc(screen.screen_id)} · ${esc(DOMAIN_LABEL[screen.domain] ?? screen.domain)} · ${esc(screen.route)}</p>` : ''}
 
     <section class="card">
       <h2>Declared components</h2>
@@ -361,5 +406,4 @@ export function renderScreen(screen, { preset, mode }) {
       </div>
       <p><button class="btn" disabled style="opacity:.55;cursor:not-allowed">Primary action (wired in the next stage)</button></p>
     </section>`;
-  return shell({ title: screen.name, preset, mode, body, activeScreen: screen.screen_id });
 }

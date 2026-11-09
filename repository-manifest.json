@@ -28,8 +28,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "size_bytes": 22231,
-      "sha256": "e8cb22bab661cc8d9c317d4f83f8a1f1a7a44fc0b4376780e3e10b3ce3ddcae5"
+      "size_bytes": 24750,
+      "sha256": "62e3ec95ced370e32e3e764cece475b5fec686b4c3a5a2d02c166fb576a2ccb5"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -43,8 +43,8 @@
     },
     {
       "path": "HANDOVER.md",
-      "sha256": "b70231744a34e037a26c5339ec3c832a4402533746327747cf901628f1770c0e",
-      "size_bytes": 8526
+      "sha256": "0f7568bec3fb9535657342024dc2e2f8303157e584be6bc59ad9e37405fe232a",
+      "size_bytes": 9775
     },
     {
       "path": "README.md",
@@ -95,6 +95,11 @@
       "path": "app/generated/compile-report.json",
       "sha256": "5dedd587abe890e32f2a99231fba4695cb34e5eb26b21abbe4367db4b0f26849",
       "size_bytes": 2322
+    },
+    {
+      "path": "app/generated/creations.mjs",
+      "size_bytes": 8175,
+      "sha256": "3b2973b24705d7ac26d2b007afe6ec3225a0d1e6f15b421913176ceeedfe019f"
     },
     {
       "path": "app/generated/documents-report.json",
@@ -157,6 +162,11 @@
       "size_bytes": 29913
     },
     {
+      "path": "app/generated/role-grants.mjs",
+      "size_bytes": 20408,
+      "sha256": "ee113ae251532d5e3b9328eadb0e462c1c613a7523fa92d317c4d8ef74d149e2"
+    },
+    {
       "path": "app/generated/schema.sql",
       "sha256": "c6cd6f9c13e90b699c92a2a3932b680aa8eacbe15d3acb8b89ac39d430217053",
       "size_bytes": 43094
@@ -192,6 +202,11 @@
       "size_bytes": 4370
     },
     {
+      "path": "app/src/creation.mjs",
+      "size_bytes": 11199,
+      "sha256": "04f752d5a7c6d2b4cefa0c230a4e06d8c6bd38911364ad5099424a9c956759bd"
+    },
+    {
       "path": "app/src/db.mjs",
       "sha256": "ab21fcf0a783d9dc78f848fb5b7bd215c17ddb5c314fc96b79bb5ea094e051c8",
       "size_bytes": 2498
@@ -207,6 +222,21 @@
       "size_bytes": 10157
     },
     {
+      "path": "app/src/identity/actor.mjs",
+      "size_bytes": 4121,
+      "sha256": "262e51827bc227df8496034ad3399688a196882beb5ea78198edd194712954be"
+    },
+    {
+      "path": "app/src/identity/dev-seed.mjs",
+      "size_bytes": 2927,
+      "sha256": "5c3529a9792fd5c436a90c02fea82d6c45bec1d5a043a6b75a3264240e8d0b51"
+    },
+    {
+      "path": "app/src/identity/index.mjs",
+      "size_bytes": 6676,
+      "sha256": "b516817ab3bf0c92f8be68a16ed1ac4aad9212b7ff243744a5f598602bfeeab3"
+    },
+    {
       "path": "app/src/integrations.mjs",
       "sha256": "5f9f9aef30760dcc1b6bd698f4df358c7f66a54c3507f7e38bb2aea773523d4b",
       "size_bytes": 7128
@@ -215,6 +245,11 @@
       "path": "app/src/notify.mjs",
       "sha256": "06d999dd9ba7d7f303a48c177d4b39c96fd599a2731d376ee1961a9a69f01f0b",
       "size_bytes": 7732
+    },
+    {
+      "path": "app/src/obligations.mjs",
+      "size_bytes": 1936,
+      "sha256": "9df4e8c71f668caaff91620d2153ec775020d230a6980337ad4205fc2d3e9f6e"
     },
     {
       "path": "app/src/policies.mjs",
@@ -232,14 +267,34 @@
       "size_bytes": 5861
     },
     {
+      "path": "app/src/screens/auth.mjs",
+      "size_bytes": 11068,
+      "sha256": "0ab1656a6d53f2076e13bc5e3a4d16793d5dadab517828ea2977bbf80c52542f"
+    },
+    {
+      "path": "app/src/screens/components.mjs",
+      "size_bytes": 9551,
+      "sha256": "229981a3c431c59ff53a1a6e34558d839c5992f65e3e11abf67fdaab2ec5d2d7"
+    },
+    {
+      "path": "app/src/screens/index.mjs",
+      "size_bytes": 1185,
+      "sha256": "b70c2a74f85302adacd30fab05f82be6f0cc27499b352068588ad94eecf55cd9"
+    },
+    {
+      "path": "app/src/screens/space.mjs",
+      "size_bytes": 12588,
+      "sha256": "4f0e5672c4fc6895d15b3e89feffea19378d3385e34cfbcf906ac1ce860f14ce"
+    },
+    {
       "path": "app/src/server.mjs",
-      "sha256": "2cd328489e7270f8234d722536c18ef42accae061e0962057590677d3b500f10",
-      "size_bytes": 22584
+      "sha256": "3cbf1f110e37178e85ff5fe9d9d9d30739bf7eaac3814efe1ffd9c00a8ea63a4",
+      "size_bytes": 29878
     },
     {
       "path": "app/src/ui.mjs",
-      "sha256": "1ca0f575380aa75dc92f67edda05b5c909dbf5da59bd1af99e04bb27185f6dcc",
-      "size_bytes": 20493
+      "sha256": "903f89045baf8c9e579412e08665c82af764204afee954870f8bb528b4d28a43",
+      "size_bytes": 23338
     },
     {
       "path": "app/test/capabilities.test.mjs",
@@ -277,14 +332,29 @@
       "size_bytes": 9499
     },
     {
+      "path": "app/test/screens-auth.test.mjs",
+      "size_bytes": 7915,
+      "sha256": "cca7e3e56a542ed4e6d611775c7ddae02813146d75951857aa5b31da17b80608"
+    },
+    {
+      "path": "app/test/screens-space.test.mjs",
+      "size_bytes": 11655,
+      "sha256": "c5b8c314b4f84a804e013531f3f8150be9fbeab9bc0ffabfe8e77532c3ddf732"
+    },
+    {
+      "path": "app/test/support/screen-context.mjs",
+      "size_bytes": 1369,
+      "sha256": "848c52e5849a7ea6da5974bdcc43f14b53a6c1f049a33a33b556689f33d37926"
+    },
+    {
       "path": "app/test/ui.test.mjs",
       "sha256": "930fa6aecacdc88e21ad665b95893360f9469fa900ec5765c7aa48a48f4e771c",
       "size_bytes": 11676
     },
     {
       "path": "app/tools/compile-spec/build-all.mjs",
-      "sha256": "9f7874febcbc31a4411de2d3bd985e90ee4f68e9d6928340f991537f6e1da085",
-      "size_bytes": 1351
+      "sha256": "44342d1be47ef6b4e7a1812ac4a82487fb6e7dbf07ee4f971d164c3bab0266ac",
+      "size_bytes": 1555
     },
     {
       "path": "app/tools/compile-spec/build-clock.mjs",
@@ -317,6 +387,11 @@
       "size_bytes": 7879
     },
     {
+      "path": "app/tools/compile-spec/compile-role-grants.mjs",
+      "size_bytes": 2617,
+      "sha256": "fa1e8b385ec95983747b082c074147f90f66b891adf207307f4ed1b58c8c3199"
+    },
+    {
       "path": "app/tools/compile-spec/compile-ui.mjs",
       "sha256": "a483c2fedc72e0f1fdf7b573b08c16ef517813d7105a8d9b3e2ae654e74b9a57",
       "size_bytes": 16425
@@ -325,6 +400,11 @@
       "path": "app/tools/compile-spec/compile.mjs",
       "sha256": "c4046dbb38cd51c2684978fc355e38367890ab5432d84bcbdf04164dca3af08e",
       "size_bytes": 20379
+    },
+    {
+      "path": "app/tools/compile-spec/derive-creation-overlay.mjs",
+      "size_bytes": 12585,
+      "sha256": "a2fefc700268ed61c3e3f133458517c5f20740e581fd8fb33caf3253893d5a4b"
     },
     {
       "path": "app/tools/compile-spec/derive-relationships.mjs",
@@ -463,8 +543,8 @@
     },
     {
       "path": "docs/access/role-permission-matrix.csv",
-      "size_bytes": 305997,
-      "sha256": "92ed1bf6f0a8f3aba6aecb2bfd0d41c514170ab7d40840e5480f6a7f64ad9cac"
+      "size_bytes": 305764,
+      "sha256": "583bab8d51a5a2644dba7108e0093194dc0d4a026364cf30141503cd441fc451"
     },
     {
       "path": "docs/access/self-service-contract.json",
@@ -603,8 +683,8 @@
     },
     {
       "path": "docs/data/transition-matrix.csv",
-      "size_bytes": 233891,
-      "sha256": "2b8a7f6abe24827451e40c713d27dac083b0c0f85cdba685ff1f3a70fc285914"
+      "size_bytes": 233657,
+      "sha256": "6d3010c39004883bd39a66e8aa73cd9edcdeb767e60c12e9aa5ccfecec781f6c"
     },
     {
       "path": "docs/data/transitions.json",
@@ -643,8 +723,8 @@
     },
     {
       "path": "docs/delivery/card-index.md",
-      "size_bytes": 36051,
-      "sha256": "5d35803cf3059c1bf6539247f7e25aea26481252299201582158eb7d4ba453b9"
+      "size_bytes": 36427,
+      "sha256": "0dcbd84097252caf4d2c14d842ceab0f49f31016fcf092c02dd0851cdc6e25a2"
     },
     {
       "path": "docs/delivery/card-template.md",
@@ -658,8 +738,8 @@
     },
     {
       "path": "docs/delivery/remaining-inputs.csv",
-      "size_bytes": 3197,
-      "sha256": "dec59345260015344345769066e46e0eeb9104bdc2b1fbc4e9993e569fe7db89"
+      "size_bytes": 3183,
+      "sha256": "9f11ab52601392230fd8331c764a663e4bdb23f8da0d99f74b0f2838b865a0af"
     },
     {
       "path": "docs/delivery/source-map.json",
@@ -675,6 +755,11 @@
       "path": "docs/derived/commercial-readiness.md",
       "sha256": "e91ffe54a939713f5d77ec37ea2da02a6259a0dae0e7ceb7fde117a836645bfe",
       "size_bytes": 1860
+    },
+    {
+      "path": "docs/derived/creation-overlay.json",
+      "size_bytes": 8993,
+      "sha256": "f9193c319dfefb76359760c5f35f67b74dfbdb7f819c20e7bf2af06c3a2c5bf3"
     },
     {
       "path": "docs/derived/document-readiness.md",
@@ -863,8 +948,8 @@
     },
     {
       "path": "docs/documents/template-matrix.csv",
-      "size_bytes": 8735,
-      "sha256": "c347f80a95b0fc3186adbe19c676fc74dffd30f8c8e01faaba4268f0386822a7"
+      "size_bytes": 8700,
+      "sha256": "14d699b9f8b5ef6764af6c1e15ad8ede38d137cad1e96a527b7407541fa5f119"
     },
     {
       "path": "docs/documents/validation.json",
@@ -1018,8 +1103,8 @@
     },
     {
       "path": "docs/notifications/event-matrix.csv",
-      "size_bytes": 69505,
-      "sha256": "58696d790f15faa94dd63a2d9c264b61890bce8a2e6a58debbf58cadcd688305"
+      "size_bytes": 69413,
+      "sha256": "7785d979150d250da40e09b663e417ede2ee2252d151ebf829ffdc2e7af77671"
     },
     {
       "path": "docs/notifications/notification-contract.md",
@@ -1078,8 +1163,8 @@
     },
     {
       "path": "docs/reporting/metric-catalogue.csv",
-      "size_bytes": 34382,
-      "sha256": "145da3ec4abd668bbdf0683675ed418b36a4522a2615bf626dec1e79fba1e6a7"
+      "size_bytes": 34319,
+      "sha256": "0e717aa5be7b558302a818ed5fd59cf298d129361507698f298a292b0cf7984d"
     },
     {
       "path": "docs/reporting/metric-catalogue.json",
@@ -1520,6 +1605,11 @@
       "path": "scripts/validate_commercial.py",
       "sha256": "49b17d6a036d61a9b6d755ccf0977439a3b1f699c650e82c4756ef0ef7b414a7",
       "size_bytes": 3053
+    },
+    {
+      "path": "scripts/validate_creation_overlay.py",
+      "size_bytes": 3934,
+      "sha256": "9fbc1568996d7985f0c94eb4aa43bc6a330ec9385a8f02adcfd871a6fd851f36"
     },
     {
       "path": "scripts/validate_data_contract.py",

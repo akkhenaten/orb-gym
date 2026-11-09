@@ -32,6 +32,8 @@ reference you may reinterpret.
 | Commercial policy | 11 policies, 90 tenant-supplied fields, fail-closed gate | `app/src/policies.mjs` |
 | Capabilities | 22 capabilities, 7-state contract, readiness computed from evidence | `app/src/capabilities.mjs` |
 | Integrations | HMAC-verified inbound events, replay window, provider-event dedup; POS sale validation | `app/src/integrations.mjs` |
+| Identity seam | provider-neutral adapter (unconfigured by default; synthetic dev personas under `ORB_DEV=1`); session resolves to an actor from stored role assignments only | `app/src/identity/` |
+| Product screens | SCR-006..017 (auth and workspace setup) are real forms and tables; every other screen is still a spec preview | `app/src/screens/` |
 
 ## Commands
 
@@ -91,6 +93,9 @@ approved overlay is a defect, however much better the demo looks.
 | `CHARGE_HAS_ALLOCATION`, `CHARGE_HAS_CREDIT` | void only before reference; correct by credit note |
 | Notifications not fired by commands | no transition-to-event edge exists; callers name events explicitly |
 | Non-`in_app` channels fail with "no adapter configured" | no provider, sender or credentials selected |
+| `IDENTITY_PROVIDER_UNCONFIGURED` (503) | no identity provider chosen; sign-in, factors and recovery are never simulated outside `ORB_DEV=1` |
+| `FACTOR_UNSUPPORTED` | the dev identity adapter has no MFA; a factor is never faked |
+| `PROPOSAL_NOT_APPROVED` (403) | DTR-003..005 creation commands are proposals; they run only with `ORB_ALLOW_PROPOSED=1` outside production |
 
 ## Do not
 
@@ -111,8 +116,13 @@ Bring these to the owner as proposals. Do not implement a guess.
 1. **Creation commands.** None of the 233 transitions creates a record; 70 start from an initial state.
    Draft one creation command per entity from the entity catalogue's invariants as `proposed` overlay
    entries. This is the largest gap between this repository and a usable product.
+   *Started:* DTR-003 CreateWorkspaceWithOwner, DTR-004 CreateGym and DTR-005 UpdateGymDetails are drafted in
+   `docs/derived/creation-overlay.json` (`app/tools/compile-spec/derive-creation-overlay.mjs`), all `proposed`.
 2. **Identity provider and role mapping.** `resolveActor()` in `app/src/server.mjs` is the single seam.
    Build an identity adapter behind it; the provider choice is the owner's.
+   *Started:* the adapter exists in `app/src/identity/`; no provider is chosen or configured.
+   *Owner, 9 November 2026: "no sign in for now".* Provider choice is deferred. Keep the adapter
+   unconfigured; do not pick, configure or simulate a provider. Cards 02–05 stay blocked on this decision.
 3. **Providers** for payments, e-signature, POS, email and SMS. Adapters exist as refusals.
 4. **SM-DOCUMENT** lacks `PARTIALLY_SIGNED`, which TR-217's effect implies.
 5. **ENT-AuditEvent** has no derivable relationship (`workspace_id_or_platform` is a union field).

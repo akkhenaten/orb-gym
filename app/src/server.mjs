@@ -5,10 +5,12 @@
  * command routed through src/engine.mjs; there are no ad-hoc write endpoints, so
  * the 233-transition contract cannot be bypassed by the transport.
  *
- * Auth note: identity is read from an X-Actor header for local/dev use. A real
- * deployment replaces resolveActor() with the selected identity provider. The
- * header is NOT production authentication and refuses to load when
- * NODE_ENV=production unless ORB_ALLOW_DEV_ACTOR=1 is set deliberately.
+ * Auth note: the actor comes from the identity adapter's session (src/identity/),
+ * resolved to company person, active role assignments and overrides. With no provider
+ * configured every sign-in is refused (IDENTITY_PROVIDER_UNCONFIGURED). The X-Actor
+ * header and body actor remain for local/dev use only: they are NOT production
+ * authentication and are refused when NODE_ENV=production unless
+ * ORB_ALLOW_DEV_ACTOR=1 is set deliberately. A session actor always takes precedence.
  */
 import { createServer } from 'node:http';
 import { randomUUID } from 'node:crypto';
@@ -30,6 +32,11 @@ import { listTemplates, templateById, renderDraft, issueDocument, validatePayloa
 import { capabilities, evaluateCapability } from './capabilities.mjs';
 import { listRecords, createFixture, screenTables, RecordError } from './records.mjs';
 import { ingestProviderEvent, recordTillSale, validateTillSale } from './integrations.mjs';
+import { createIdentity, IdentityError } from './identity/index.mjs';
+import { resolveSessionActor } from './identity/actor.mjs';
+import { seedDevPersonas } from './identity/dev-seed.mjs';
+import { executeCreation, creationStatus } from './creation.mjs';
+import { obligationInventory } from './obligations.mjs';
 import { REPORT_VIEWS, IMPLEMENTED_METRICS, UNIMPLEMENTED_METRICS } from '../generated/reporting.mjs';
 import { SCREEN_COMMANDS } from '../generated/screen-commands.mjs';
 import { SCREENS } from '../generated/screens.mjs';
@@ -47,8 +54,33 @@ const DB_FILE = process.env.ORB_DB ?? join(tmpdir(), 'orb-gym', 'orb.db');
 const DEV_ACTOR_ALLOWED = process.env.NODE_ENV !== 'production' || process.env.ORB_ALLOW_DEV_ACTOR === '1';
 
 const db = openDb(DB_FILE);
+const DEV = process.env.ORB_DEV === '1';
+const identity = createIdentity();
+if (identity.id === 'dev') seedDevPersonas(db);
+
+const SESSION_COOKIE = 'orb_session';
+const WORKSPACE_COOKIE = 'orb_ws';
+function cookie(req, name) {
+  for (const part of String(req.headers.cookie ?? '').split(';')) {
+    const [k, ...v] = part.trim().split('=');
+    if (k === name) return decodeURIComponent(v.join('='));
+  }
+  return null;
+}
+const setCookie = (name, value, maxAge) =>
+  `${name}=${encodeURIComponent(value)}; Path=/; HttpOnly; SameSite=Strict${maxAge === 0 ? '; Max-Age=0' : ''}`;
+
+/** The signed-in actor, or null. Grants come only from stored assignments. */
+function sessionContext(req) {
+  const token = cookie(req, SESSION_COOKIE);
+  const session = identity.session(token);
+  const actor = session ? resolveSessionActor(db, session, { workspaceId: cookie(req, WORKSPACE_COOKIE), dev: DEV }) : null;
+  return { token, session, actor };
+}
 
 function resolveActor(req) {
+  const fromSession = sessionContext(req).actor;
+  if (fromSession) return fromSession;
   const raw = req.headers['x-actor'];
   if (!raw) return null;
   if (!DEV_ACTOR_ALLOWED) throw new CommandError('DENIED', 'dev actor header disabled in production');
@@ -161,7 +193,10 @@ const routes = async (req, res) => {
     if (!screen) return send(res, 404, { ok: false, reason: `no screen at ${route}` });
     const preset = url.searchParams.get('preset') ?? DEFAULT_PRESET;
     const mode = url.searchParams.get('mode') ?? DEFAULT_MODE;
-    return send(res, 200, renderScreen(screen, { preset, mode }), 'text/html; charset=utf-8');
+    const sc = sessionContext(req);
+    const sessions = sc.session ? await identity.listSessions(sc.token).catch(() => null) : null;
+    const ctx = { ...sc, sessions, query: url.searchParams, db, identity, dev: DEV, creations: creationStatus(), obligations: (gymId) => obligationInventory(db, gymId) };
+    return send(res, 200, renderScreen(screen, { preset, mode, ctx }), 'text/html; charset=utf-8');
   }
   {
     const m = path.match(/^\/api\/screens\/([^/]+)\/tables$/);
@@ -456,7 +491,8 @@ const routes = async (req, res) => {
     const command = decodeURIComponent(cmdMatch[1]);
     const body = await readBody(req).catch(() => null);
     if (!body) return send(res, 400, { ok: false, outcome: 'VALIDATION', reason: 'invalid JSON body' });
-    const actor = body.actor ?? resolveActor(req);
+    const sessionActor = sessionContext(req).actor;
+    const actor = sessionActor ?? (DEV_ACTOR_ALLOWED ? (body.actor ?? resolveActor(req)) : null);
     if (!actor) return send(res, 401, { ok: false, outcome: 'DENIED', reason: 'no actor supplied' });
     try {
       const out = executeCommand({
@@ -476,6 +512,97 @@ const routes = async (req, res) => {
         return send(res, status, { ok: false, outcome: err.outcome, reason: err.message, details: err.details });
       }
       throw err;
+    }
+  }
+
+  // ---- identity adapter: every call goes to the configured provider, or is refused
+  if (req.method === 'GET' && path === '/api/session') {
+    const { session, actor } = sessionContext(req);
+    return send(res, 200, {
+      capabilities: identity.capabilities(), signed_in: Boolean(session), personas: identity.personas(),
+      actor: actor && { id: actor.id, display_name: actor.display_name, workspace_id: actor.workspace_id, gym_id: actor.gym_id,
+        platform_admin: actor.platform_admin, verified: actor.identity.verified, grant_basis: actor.grant_basis, memberships: actor.memberships },
+    });
+  }
+  {
+    const m = path.match(/^\/api\/auth\/([a-z-]+)$/);
+    if (req.method === 'POST' && m) {
+      if (!String(req.headers['content-type'] ?? '').startsWith('application/json')) {
+        return send(res, 415, { ok: false, code: 'JSON_REQUIRED', reason: 'identity calls accept application/json only' });
+      }
+      const body = await readBody(req).catch(() => ({}));
+      const token = cookie(req, SESSION_COOKIE);
+      const ua = { userAgent: req.headers['user-agent'] };
+      try {
+        switch (m[1]) {
+          case 'sign-in':
+          case 'sign-up': {
+            const out = await (m[1] === 'sign-in' ? identity.signIn(body, ua) : identity.signUp(body, ua));
+            res.setHeader('set-cookie', [setCookie(SESSION_COOKIE, out.token), setCookie(WORKSPACE_COOKIE, '', 0)]);
+            return send(res, 200, { ok: true, session: { token_id: out.session.token_id, assurance: out.session.assurance } });
+          }
+          case 'verify': return send(res, 200, { ok: true, ...(await identity.verifyContact(token, body)) });
+          case 'challenge': return send(res, 200, { ok: true, ...(await identity.challenge(token, body)) });
+          case 'enrol-factor': return send(res, 200, { ok: true, ...(await identity.enrolFactor(token, body)) });
+          case 'sessions': return send(res, 200, { ok: true, sessions: await identity.listSessions(token) });
+          case 'revoke-session': return send(res, 200, { ok: true, ...(await identity.revokeSession(token, body.token_id)) });
+          case 'recovery': return send(res, 200, { ok: true, ...(await identity.beginRecovery(body)) });
+          case 'sign-out': {
+            const out = await identity.signOut(token);
+            res.setHeader('set-cookie', [setCookie(SESSION_COOKIE, '', 0), setCookie(WORKSPACE_COOKIE, '', 0)]);
+            return send(res, 200, { ok: true, ...out });
+          }
+          case 'workspace': {
+            const { actor } = sessionContext(req);
+            if (!actor) return send(res, 401, { ok: false, code: 'SESSION_REQUIRED', reason: 'sign in first' });
+            if (!actor.memberships.some((x) => x.workspace_id === body.workspace_id)) {
+              return send(res, 403, { ok: false, code: 'DENIED', reason: 'not a member of that workspace' });
+            }
+            res.setHeader('set-cookie', setCookie(WORKSPACE_COOKIE, body.workspace_id));
+            return send(res, 200, { ok: true, workspace_id: body.workspace_id });
+          }
+          default: return send(res, 404, { ok: false, reason: `no identity call ${m[1]}` });
+        }
+      } catch (err) {
+        if (err instanceof IdentityError) return send(res, err.status, { ok: false, code: err.code, outcome: err.code, reason: err.message });
+        throw err;
+      }
+    }
+  }
+
+  // ---- creation commands: derived proposals, refused unless approved or ORB_ALLOW_PROPOSED=1 in dev
+  if (req.method === 'GET' && path === '/api/creations') return send(res, 200, { creations: creationStatus() });
+  {
+    const m = path.match(/^\/api\/create\/([A-Za-z]+)$/);
+    if (req.method === 'POST' && m) {
+      const body = await readBody(req).catch(() => null);
+      if (!body) return send(res, 400, { ok: false, outcome: 'VALIDATION', reason: 'invalid JSON body' });
+      const { actor } = sessionContext(req);
+      if (!actor) return send(res, 401, { ok: false, outcome: 'DENIED', reason: 'sign in first' });
+      try {
+        const out = executeCreation({
+          db, command: m[1], actor, operationId: body.operationId, payload: body.payload ?? {},
+          recordId: body.recordId, expectedVersion: body.expectedVersion,
+        });
+        if (out.entity_table === 'workspace' && out.records) res.setHeader('set-cookie', setCookie(WORKSPACE_COOKIE, out.record_id));
+        return send(res, 200, out);
+      } catch (err) {
+        if (err instanceof CommandError) {
+          const status = { DENIED: 403, NOT_FOUND: 404, UNKNOWN_COMMAND: 400, VALIDATION: 400, CONFLICT: 409, INVALID_STATE: 409, PROPOSAL_NOT_APPROVED: 403 }[err.outcome] ?? 400;
+          return send(res, status, { ok: false, outcome: err.outcome, reason: err.message, details: err.details });
+        }
+        throw err;
+      }
+    }
+  }
+  {
+    const m = path.match(/^\/api\/space\/gyms\/([^/]+)\/obligations$/);
+    if (req.method === 'GET' && m) {
+      const { actor } = sessionContext(req);
+      if (!actor) return send(res, 401, { ok: false, reason: 'sign in first' });
+      const gym = getRow(db, 'gym', decodeURIComponent(m[1]));
+      if (!gym || gym.workspace_id !== actor.workspace_id) return send(res, 404, { ok: false, reason: 'not found' });
+      return send(res, 200, { ok: true, gym_id: gym.id, inventory: obligationInventory(db, gym.id) });
     }
   }
 
