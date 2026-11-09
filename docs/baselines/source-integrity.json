@@ -1,0 +1,23 @@
+{
+  "edition": "0.31",
+  "source": "Preserved product/requirements/policy/logo bytes from reviewed0.30 input; original source bodies already validated against retained baseline. Workflow business fields preserved separately from current clarification metadata.",
+  "files": [
+    {
+      "path": "docs/product-architecture.md",
+      "sha256": "f95aa88900cf2fe108525910138f0c33d472af84ce06736c3ec384104814779b"
+    },
+    {
+      "path": "docs/source-requirement-register.md",
+      "sha256": "0a04a2b2c72efd1c6288b68a1a3a2906841a42931add5dd4f6d02c3772b84d9f"
+    },
+    {
+      "path": "docs/policy-settings-contract.json",
+      "sha256": "df5dbfc55b873a638091f94867b66485497d3cb68d1d057b6961dd7323cc3339"
+    },
+    {
+      "path": "assets/orb-gym-logo.png",
+      "sha256": "20b47e4822ba7f240ea1a655fa404b7772e3544372d05dccb1a46a40d3157e41"
+    }
+  ],
+  "workflow_business_sha256": "51659bbdb45d249d49873567521f1230ec2cfef3ea973ffe366ee1d2214b713d"
+}

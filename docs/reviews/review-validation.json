@@ -1,0 +1,59 @@
+{
+  "edition": "0.31",
+  "correction_groups": 8,
+  "previously_unbound_screens_corrected": 17,
+  "standalone_validators_passed": 9,
+  "controlled_mutation_probes": [
+    {
+      "case": "remove_required_screen_binding",
+      "validator": "validate_review_regressions.py",
+      "expected_diagnostic": "Screen missing workflow binding",
+      "result": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "public_route_requires_customer_role",
+      "validator": "validate_review_regressions.py",
+      "expected_diagnostic": "Public route incorrectly requires customer role",
+      "result": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "partial_capture_marks_whole_document_signed",
+      "validator": "validate_review_regressions.py",
+      "expected_diagnostic": "Partial signature prematurely completes document",
+      "result": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "staff_cancel_missing_cancellation_grant",
+      "validator": "validate_review_regressions.py",
+      "expected_diagnostic": "Staff cancellation must require",
+      "result": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "guardian_misclassified_as_self_member",
+      "validator": "validate_review_regressions.py",
+      "expected_diagnostic": "Guardian booking incorrectly uses self-book",
+      "result": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "source_basic_typography_changed",
+      "validator": "validate_review_regressions.py",
+      "expected_diagnostic": "Basic source typography",
+      "result": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "source_integrity_checked_without_authoring_folders",
+      "validator": "validate_frontend_blueprint.py",
+      "expected_diagnostic": "Changed preserved source",
+      "result": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "unlisted_file_not_covered_by_manifest",
+      "validator": "validate_repository.py",
+      "expected_diagnostic": "Manifest inventory differs",
+      "result": "REJECTED_AS_EXPECTED"
+    }
+  ],
+  "markdown_fragments_checked": 195,
+  "live_app_or_signature_provider_tested": false,
+  "limitations": "Controlled document mutations and synthetic signer propositions verify the specification checks, not production permissions, signatures, transaction isolation or UI behaviour."
+}

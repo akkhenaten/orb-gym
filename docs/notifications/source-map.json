@@ -1,0 +1,48 @@
+{
+  "edition": "0.26",
+  "source_id": "OG-NOT-001",
+  "authority": "Founder accepted proposed event/recipient/channel/reminder/escalation/privacy contract in current conversation",
+  "related_sources": [
+    "OG-REV-005"
+  ],
+  "workflow_ids": [
+    "WF-CAL-03",
+    "WF-CAL-04"
+  ],
+  "specification_paths": [
+    "spec/calendar-notifications.md",
+    "spec/workspace-access.md"
+  ],
+  "contract_paths": [
+    "docs/notifications/notification-contract.md",
+    "docs/notifications/event-catalogue.json",
+    "docs/notifications/policy-settings.json",
+    "docs/notifications/template-contract.md"
+  ],
+  "acceptance_ids": [
+    "NOT-AC01",
+    "NOT-AC02",
+    "NOT-AC03",
+    "NOT-AC04",
+    "NOT-AC05",
+    "NOT-AC06",
+    "NOT-AC07",
+    "NOT-AC08",
+    "NOT-AC09",
+    "NOT-AC10",
+    "NOT-AC11",
+    "NOT-AC12",
+    "NOT-AC13",
+    "NOT-AC14",
+    "NOT-AC15",
+    "NOT-AC16",
+    "NOT-AC17",
+    "NOT-AC18",
+    "NOT-AC19",
+    "NOT-AC20",
+    "NOT-AC21",
+    "NOT-AC22",
+    "NOT-AC23",
+    "NOT-AC24"
+  ]
+}

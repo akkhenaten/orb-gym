@@ -1,0 +1,401 @@
+{
+  "edition": "0.30",
+  "sections": [
+    {
+      "section_id": "SET-00",
+      "name": "Secure account and recovery",
+      "responsible_role": "owner",
+      "policy_contract_id": "auth.privileged",
+      "section_dependencies": [],
+      "specification_path": "spec/privileged-auth-recovery.md",
+      "requirements": "Current verified identity, supported assurance enrolment/recovery and bounded bootstrap proof",
+      "incomplete_behaviour": "Restricted own setup remains reachable; no privileged customer finance/export/support data before assurance",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-01",
+      "name": "Company identity and issuer",
+      "responsible_role": "owner",
+      "policy_contract_id": null,
+      "section_dependencies": [],
+      "specification_path": "spec/workspace-access.md",
+      "requirements": "Company name/contact and reviewed legal issuer/currency where issuing money/employment documents; workspace/owner saved together",
+      "incomplete_behaviour": "Private workspace drafts usable within auth scope; no assumed legal issuer from logo",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-02",
+      "name": "Gyms and locations",
+      "responsible_role": "owner/delegated manager",
+      "policy_contract_id": null,
+      "section_dependencies": [
+        "SET-01"
+      ],
+      "specification_path": "spec/workspace-access.md",
+      "requirements": "Gym name/address/contact/timezone, approved public-field selection and responsible management scope",
+      "incomplete_behaviour": "Create draft gyms/resources; public promotion or booking remains separately gated",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-03",
+      "name": "Style and white labelling",
+      "responsible_role": "owner/delegated brand publisher",
+      "policy_contract_id": null,
+      "section_dependencies": [
+        "SET-01"
+      ],
+      "specification_path": "spec/shell-settings-branding.md",
+      "requirements": "Choose preset/modes and optional approved logo/colours; explicit white-label activation; preview/publish/inheritance",
+      "incomplete_behaviour": "Orb Gym Basic/default logo remains valid without custom brand upload; optional setup may be skipped",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-04",
+      "name": "People roles and staff onboarding",
+      "responsible_role": "owner/delegated gym manager",
+      "policy_contract_id": null,
+      "section_dependencies": [
+        "SET-02"
+      ],
+      "specification_path": "spec/staff-hr-rota.md",
+      "requirements": "Invite correct journey; scopes/individual exceptions; current HR/contract/qualification/rota requirements",
+      "incomplete_behaviour": "Prepare profiles/role drafts within authority; invitations require verified delivery and assignments never self-escalate",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-05",
+      "name": "Reviewed forms and documents",
+      "responsible_role": "owner/delegated document/content reviewer",
+      "policy_contract_id": "forms.applicability",
+      "section_dependencies": [
+        "SET-01"
+      ],
+      "specification_path": "spec/documents.md",
+      "requirements": "Applicable published DCT content/fields/reviewer/signatory and verified file/render/signing capability as used",
+      "incomplete_behaviour": "Compose/preview drafts; missing legal/health/safety wording blocks affected document/form issue, not unrelated operations",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-06",
+      "name": "Payment and financial collection",
+      "responsible_role": "owner/authorised financial administrator",
+      "policy_contract_id": "membership.payment_and_reversal",
+      "section_dependencies": [
+        "SET-01"
+      ],
+      "specification_path": "spec/onboarding-membership.md",
+      "requirements": "Actual merchant/issuer/currency/provider evidence; qualifying payment policy, reversal/arrears/access review and authority",
+      "incomplete_behaviour": "Prepare plans/charges as allowed; no unverified live paid collection or fake mandate-as-payment activation",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-07",
+      "name": "Membership plans and entitlement",
+      "responsible_role": "owner/delegated membership manager",
+      "policy_contract_id": "membership.payment_and_reversal",
+      "section_dependencies": [
+        "SET-02",
+        "SET-05"
+      ],
+      "specification_path": "spec/onboarding-membership.md",
+      "requirements": "Explicit price/inclusion, gyms, reviewed terms/forms, activation and future booking/billing/access effects; collection evidence when actually charging",
+      "incomplete_behaviour": "Public enquiry/holding checklist permitted; plan publication/activation depends on its selected free/included/paid route, no arbitrary price",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-08",
+      "name": "Classes coaches and hourly PT",
+      "responsible_role": "owner/delegated scheduler/service manager",
+      "policy_contract_id": "service.disruption",
+      "section_dependencies": [
+        "SET-02"
+      ],
+      "specification_path": "spec/classes-courses-attendance.md",
+      "requirements": "Coach/role/availability/resource/capacity, terms/RSVP/holds/cancel/no-show/material change, rate/collection mode and applicable forms/payment readiness",
+      "incomplete_behaviour": "Draft timetable and coach profiles; booking/publish/payment independent conditional gates; rental external mode not an unconfigured gym payout",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-09",
+      "name": "Facilities tasks assets and suppliers",
+      "responsible_role": "owner/delegated operational manager",
+      "policy_contract_id": "approval.routing",
+      "section_dependencies": [
+        "SET-02"
+      ],
+      "specification_path": "spec/tasks-assets-contractors.md",
+      "requirements": "Assets/types, queues, evidence/verification, recurrence/dependency/approval limits/backup and supplier authority",
+      "incomplete_behaviour": "Prepare asset/task templates; blocked approval stays owned, never auto-approved or completed",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-10",
+      "name": "POS inventory and till",
+      "responsible_role": "owner/delegated retail/finance manager",
+      "policy_contract_id": "till.reconciliation",
+      "section_dependencies": [
+        "SET-02"
+      ],
+      "specification_path": "spec/pos-stock.md",
+      "requirements": "Products/prices/currency/tax, stock policy, tender/device capability, till shifts/discount/refund/void and recovery authority",
+      "incomplete_behaviour": "Stock catalogue/receiving preparation may proceed; live unverified tender mode unavailable",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-11",
+      "name": "Communications and preferences",
+      "responsible_role": "owner/delegated communications operator",
+      "policy_contract_id": null,
+      "section_dependencies": [
+        "SET-01"
+      ],
+      "specification_path": "spec/calendar-notifications.md",
+      "requirements": "Current event/purpose/recipient/channel capability; configured reminders/escalations; safe template and timing",
+      "incomplete_behaviour": "Required in-app/source states visible; unconfigured automation off. Auth/invitation delivery is separately required before actual account onboarding",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-12",
+      "name": "Public pages and signup routes",
+      "responsible_role": "owner/delegated public publisher",
+      "policy_contract_id": null,
+      "section_dependencies": [
+        "SET-02"
+      ],
+      "specification_path": "spec/public-pages.md",
+      "requirements": "Approved gym/coach/service sources, media/links/brand/publication scope; actual signup route capability if exposed",
+      "incomplete_behaviour": "Draft or information-only public page may be prepared independently; cannot advertise an unready paid/bookable service",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-13",
+      "name": "Existing data import",
+      "responsible_role": "owner/delegated import operator/reviewer",
+      "policy_contract_id": "import.batch",
+      "section_dependencies": [
+        "SET-02"
+      ],
+      "specification_path": "spec/imports-reconciliation.md",
+      "requirements": "Authorised source, protected staging, mapping/matching/quarantine/dry-run/review/commit/reconciliation and provenance",
+      "incomplete_behaviour": "Optional; staging only until reviewed; no automatic invite/mandate/signature/member activation",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-14",
+      "name": "Reporting basis and completeness",
+      "responsible_role": "owner/delegated report administrator",
+      "policy_contract_id": null,
+      "section_dependencies": [
+        "SET-01"
+      ],
+      "specification_path": "spec/finance-reports.md",
+      "requirements": "Timezone/period, source currency/tax/status mapping, gym/cost allocation and optional valuation/contribution basis",
+      "incomplete_behaviour": "Independent operational metrics available when source/rights exist; incomplete cost/basis is not zero/profit",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "section_id": "SET-15",
+      "name": "Capability readiness and next actions",
+      "responsible_role": "owner and current scoped delegates",
+      "policy_contract_id": null,
+      "section_dependencies": [],
+      "specification_path": "spec/recovery-release.md",
+      "requirements": "Derived current readiness per company/gym/capability, affected blockers/evidence/owner/next action",
+      "incomplete_behaviour": "No all-or-nothing activation button; ready permitted functions usable, optional skipped items not false failures",
+      "scope": "company defaults and per-gym selected capability; ownership/delegation explicit",
+      "progress_statuses": [
+        "not_started",
+        "in_progress",
+        "awaiting_input",
+        "ready_for_review",
+        "ready",
+        "disabled_optional",
+        "blocked",
+        "needs_revalidation"
+      ],
+      "save_resume": "Persist authorised draft/current section/version; resume same workspace/gym with actual saved values and current readiness; unsaved/local draft never claimed server-saved",
+      "source_id": "OG-SET-001"
+    }
+  ],
+  "dependencies": "Section dependencies describe required context, not a forced global wizard. Conditional capability prerequisites below are authoritative for activation. SET-00 restricted enrolment is reachable without pre-existing privileged assurance."
+}

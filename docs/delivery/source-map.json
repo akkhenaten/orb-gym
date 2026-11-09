@@ -1,0 +1,4113 @@
+{
+  "edition": "0.22",
+  "mapping_level": "source block to specification; not atomic requirements or actual board coverage",
+  "source_count": 242,
+  "review_count": 11,
+  "entries": [
+    {
+      "source_id": "OG-SRC-0001",
+      "source_path": "docs/source-requirement-register.md#og-src-0001",
+      "module_path": null,
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0002",
+      "source_path": "docs/source-requirement-register.md#og-src-0002",
+      "module_path": null,
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0003",
+      "source_path": "docs/source-requirement-register.md#og-src-0003",
+      "module_path": null,
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0004",
+      "source_path": "docs/source-requirement-register.md#og-src-0004",
+      "module_path": null,
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0005",
+      "source_path": "docs/source-requirement-register.md#og-src-0005",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0006",
+      "source_path": "docs/source-requirement-register.md#og-src-0006",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0007",
+      "source_path": "docs/source-requirement-register.md#og-src-0007",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0008",
+      "source_path": "docs/source-requirement-register.md#og-src-0008",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0009",
+      "source_path": "docs/source-requirement-register.md#og-src-0009",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0010",
+      "source_path": "docs/source-requirement-register.md#og-src-0010",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0011",
+      "source_path": "docs/source-requirement-register.md#og-src-0011",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0012",
+      "source_path": "docs/source-requirement-register.md#og-src-0012",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0013",
+      "source_path": "docs/source-requirement-register.md#og-src-0013",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0014",
+      "source_path": "docs/source-requirement-register.md#og-src-0014",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0015",
+      "source_path": "docs/source-requirement-register.md#og-src-0015",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0016",
+      "source_path": "docs/source-requirement-register.md#og-src-0016",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0017",
+      "source_path": "docs/source-requirement-register.md#og-src-0017",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0018",
+      "source_path": "docs/source-requirement-register.md#og-src-0018",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0019",
+      "source_path": "docs/source-requirement-register.md#og-src-0019",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0020",
+      "source_path": "docs/source-requirement-register.md#og-src-0020",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0021",
+      "source_path": "docs/source-requirement-register.md#og-src-0021",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0022",
+      "source_path": "docs/source-requirement-register.md#og-src-0022",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0023",
+      "source_path": "docs/source-requirement-register.md#og-src-0023",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0024",
+      "source_path": "docs/source-requirement-register.md#og-src-0024",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0025",
+      "source_path": "docs/source-requirement-register.md#og-src-0025",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0026",
+      "source_path": "docs/source-requirement-register.md#og-src-0026",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0027",
+      "source_path": "docs/source-requirement-register.md#og-src-0027",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/calendar-notifications.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/cal.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0028",
+      "source_path": "docs/source-requirement-register.md#og-src-0028",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/pos-stock.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/pos.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0029",
+      "source_path": "docs/source-requirement-register.md#og-src-0029",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0030",
+      "source_path": "docs/source-requirement-register.md#og-src-0030",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/pos-stock.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/pos.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0031",
+      "source_path": "docs/source-requirement-register.md#og-src-0031",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0032",
+      "source_path": "docs/source-requirement-register.md#og-src-0032",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0033",
+      "source_path": "docs/source-requirement-register.md#og-src-0033",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0034",
+      "source_path": "docs/source-requirement-register.md#og-src-0034",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0035",
+      "source_path": "docs/source-requirement-register.md#og-src-0035",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0036",
+      "source_path": "docs/source-requirement-register.md#og-src-0036",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0037",
+      "source_path": "docs/source-requirement-register.md#og-src-0037",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0038",
+      "source_path": "docs/source-requirement-register.md#og-src-0038",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/calendar-notifications.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0039",
+      "source_path": "docs/source-requirement-register.md#og-src-0039",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/calendar-notifications.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0040",
+      "source_path": "docs/source-requirement-register.md#og-src-0040",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/calendar-notifications.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0041",
+      "source_path": "docs/source-requirement-register.md#og-src-0041",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/calendar-notifications.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0042",
+      "source_path": "docs/source-requirement-register.md#og-src-0042",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0043",
+      "source_path": "docs/source-requirement-register.md#og-src-0043",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0044",
+      "source_path": "docs/source-requirement-register.md#og-src-0044",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0045",
+      "source_path": "docs/source-requirement-register.md#og-src-0045",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0046",
+      "source_path": "docs/source-requirement-register.md#og-src-0046",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0047",
+      "source_path": "docs/source-requirement-register.md#og-src-0047",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0048",
+      "source_path": "docs/source-requirement-register.md#og-src-0048",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/coach.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0049",
+      "source_path": "docs/source-requirement-register.md#og-src-0049",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/coach.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0050",
+      "source_path": "docs/source-requirement-register.md#og-src-0050",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0051",
+      "source_path": "docs/source-requirement-register.md#og-src-0051",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0052",
+      "source_path": "docs/source-requirement-register.md#og-src-0052",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0053",
+      "source_path": "docs/source-requirement-register.md#og-src-0053",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0054",
+      "source_path": "docs/source-requirement-register.md#og-src-0054",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0055",
+      "source_path": "docs/source-requirement-register.md#og-src-0055",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0056",
+      "source_path": "docs/source-requirement-register.md#og-src-0056",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0057",
+      "source_path": "docs/source-requirement-register.md#og-src-0057",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0058",
+      "source_path": "docs/source-requirement-register.md#og-src-0058",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0059",
+      "source_path": "docs/source-requirement-register.md#og-src-0059",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0060",
+      "source_path": "docs/source-requirement-register.md#og-src-0060",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0061",
+      "source_path": "docs/source-requirement-register.md#og-src-0061",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/feed-feedback-cases.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0062",
+      "source_path": "docs/source-requirement-register.md#og-src-0062",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/reception-entry-exit.md",
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0063",
+      "source_path": "docs/source-requirement-register.md#og-src-0063",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/reception-entry-exit.md",
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0064",
+      "source_path": "docs/source-requirement-register.md#og-src-0064",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/reception-entry-exit.md",
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0065",
+      "source_path": "docs/source-requirement-register.md#og-src-0065",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/reception-entry-exit.md",
+        "spec/classes-courses-attendance.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0066",
+      "source_path": "docs/source-requirement-register.md#og-src-0066",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0067",
+      "source_path": "docs/source-requirement-register.md#og-src-0067",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/coach.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0068",
+      "source_path": "docs/source-requirement-register.md#og-src-0068",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0069",
+      "source_path": "docs/source-requirement-register.md#og-src-0069",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0070",
+      "source_path": "docs/source-requirement-register.md#og-src-0070",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0071",
+      "source_path": "docs/source-requirement-register.md#og-src-0071",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0072",
+      "source_path": "docs/source-requirement-register.md#og-src-0072",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0073",
+      "source_path": "docs/source-requirement-register.md#og-src-0073",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0074",
+      "source_path": "docs/source-requirement-register.md#og-src-0074",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0075",
+      "source_path": "docs/source-requirement-register.md#og-src-0075",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0076",
+      "source_path": "docs/source-requirement-register.md#og-src-0076",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0077",
+      "source_path": "docs/source-requirement-register.md#og-src-0077",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0078",
+      "source_path": "docs/source-requirement-register.md#og-src-0078",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0079",
+      "source_path": "docs/source-requirement-register.md#og-src-0079",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0080",
+      "source_path": "docs/source-requirement-register.md#og-src-0080",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0081",
+      "source_path": "docs/source-requirement-register.md#og-src-0081",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0082",
+      "source_path": "docs/source-requirement-register.md#og-src-0082",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0083",
+      "source_path": "docs/source-requirement-register.md#og-src-0083",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0084",
+      "source_path": "docs/source-requirement-register.md#og-src-0084",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0085",
+      "source_path": "docs/source-requirement-register.md#og-src-0085",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0086",
+      "source_path": "docs/source-requirement-register.md#og-src-0086",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0087",
+      "source_path": "docs/source-requirement-register.md#og-src-0087",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0088",
+      "source_path": "docs/source-requirement-register.md#og-src-0088",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0089",
+      "source_path": "docs/source-requirement-register.md#og-src-0089",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0090",
+      "source_path": "docs/source-requirement-register.md#og-src-0090",
+      "module_path": "docs/modules/04-staff-hr-and-rotas.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0091",
+      "source_path": "docs/source-requirement-register.md#og-src-0091",
+      "module_path": "docs/modules/04-staff-hr-and-rotas.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0092",
+      "source_path": "docs/source-requirement-register.md#og-src-0092",
+      "module_path": "docs/modules/04-staff-hr-and-rotas.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0093",
+      "source_path": "docs/source-requirement-register.md#og-src-0093",
+      "module_path": "docs/modules/04-staff-hr-and-rotas.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0094",
+      "source_path": "docs/source-requirement-register.md#og-src-0094",
+      "module_path": "docs/modules/04-staff-hr-and-rotas.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0095",
+      "source_path": "docs/source-requirement-register.md#og-src-0095",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0096",
+      "source_path": "docs/source-requirement-register.md#og-src-0096",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0097",
+      "source_path": "docs/source-requirement-register.md#og-src-0097",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0098",
+      "source_path": "docs/source-requirement-register.md#og-src-0098",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0099",
+      "source_path": "docs/source-requirement-register.md#og-src-0099",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0100",
+      "source_path": "docs/source-requirement-register.md#og-src-0100",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0101",
+      "source_path": "docs/source-requirement-register.md#og-src-0101",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0102",
+      "source_path": "docs/source-requirement-register.md#og-src-0102",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0103",
+      "source_path": "docs/source-requirement-register.md#og-src-0103",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0104",
+      "source_path": "docs/source-requirement-register.md#og-src-0104",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0105",
+      "source_path": "docs/source-requirement-register.md#og-src-0105",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0106",
+      "source_path": "docs/source-requirement-register.md#og-src-0106",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0107",
+      "source_path": "docs/source-requirement-register.md#og-src-0107",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0108",
+      "source_path": "docs/source-requirement-register.md#og-src-0108",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0109",
+      "source_path": "docs/source-requirement-register.md#og-src-0109",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0110",
+      "source_path": "docs/source-requirement-register.md#og-src-0110",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0111",
+      "source_path": "docs/source-requirement-register.md#og-src-0111",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0112",
+      "source_path": "docs/source-requirement-register.md#og-src-0112",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0113",
+      "source_path": "docs/source-requirement-register.md#og-src-0113",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0114",
+      "source_path": "docs/source-requirement-register.md#og-src-0114",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md",
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/feed.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0115",
+      "source_path": "docs/source-requirement-register.md#og-src-0115",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md",
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/feed.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0116",
+      "source_path": "docs/source-requirement-register.md#og-src-0116",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0117",
+      "source_path": "docs/source-requirement-register.md#og-src-0117",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0118",
+      "source_path": "docs/source-requirement-register.md#og-src-0118",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0119",
+      "source_path": "docs/source-requirement-register.md#og-src-0119",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0120",
+      "source_path": "docs/source-requirement-register.md#og-src-0120",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0121",
+      "source_path": "docs/source-requirement-register.md#og-src-0121",
+      "module_path": "docs/modules/03-classes-coaches-and-attendance.md",
+      "specification_paths": [
+        "spec/staff-hr-rota.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/coach.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0122",
+      "source_path": "docs/source-requirement-register.md#og-src-0122",
+      "module_path": "docs/modules/07-community-cases-and-feedback.md",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0123",
+      "source_path": "docs/source-requirement-register.md#og-src-0123",
+      "module_path": "docs/modules/07-community-cases-and-feedback.md",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0124",
+      "source_path": "docs/source-requirement-register.md#og-src-0124",
+      "module_path": "docs/modules/07-community-cases-and-feedback.md",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md",
+        "spec/calendar-notifications.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/class.md",
+        "docs/workflows/feed.md",
+        "docs/workflows/cal.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0125",
+      "source_path": "docs/source-requirement-register.md#og-src-0125",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/documents.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0126",
+      "source_path": "docs/source-requirement-register.md#og-src-0126",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/documents.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0127",
+      "source_path": "docs/source-requirement-register.md#og-src-0127",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0128",
+      "source_path": "docs/source-requirement-register.md#og-src-0128",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0129",
+      "source_path": "docs/source-requirement-register.md#og-src-0129",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0130",
+      "source_path": "docs/source-requirement-register.md#og-src-0130",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0131",
+      "source_path": "docs/source-requirement-register.md#og-src-0131",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0132",
+      "source_path": "docs/source-requirement-register.md#og-src-0132",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0133",
+      "source_path": "docs/source-requirement-register.md#og-src-0133",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0134",
+      "source_path": "docs/source-requirement-register.md#og-src-0134",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0135",
+      "source_path": "docs/source-requirement-register.md#og-src-0135",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0136",
+      "source_path": "docs/source-requirement-register.md#og-src-0136",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0137",
+      "source_path": "docs/source-requirement-register.md#og-src-0137",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0138",
+      "source_path": "docs/source-requirement-register.md#og-src-0138",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0139",
+      "source_path": "docs/source-requirement-register.md#og-src-0139",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0140",
+      "source_path": "docs/source-requirement-register.md#og-src-0140",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0141",
+      "source_path": "docs/source-requirement-register.md#og-src-0141",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0142",
+      "source_path": "docs/source-requirement-register.md#og-src-0142",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0143",
+      "source_path": "docs/source-requirement-register.md#og-src-0143",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0144",
+      "source_path": "docs/source-requirement-register.md#og-src-0144",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0145",
+      "source_path": "docs/source-requirement-register.md#og-src-0145",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0146",
+      "source_path": "docs/source-requirement-register.md#og-src-0146",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0147",
+      "source_path": "docs/source-requirement-register.md#og-src-0147",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0148",
+      "source_path": "docs/source-requirement-register.md#og-src-0148",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0149",
+      "source_path": "docs/source-requirement-register.md#og-src-0149",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0150",
+      "source_path": "docs/source-requirement-register.md#og-src-0150",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0151",
+      "source_path": "docs/source-requirement-register.md#og-src-0151",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0152",
+      "source_path": "docs/source-requirement-register.md#og-src-0152",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0153",
+      "source_path": "docs/source-requirement-register.md#og-src-0153",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0154",
+      "source_path": "docs/source-requirement-register.md#og-src-0154",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0155",
+      "source_path": "docs/source-requirement-register.md#og-src-0155",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0156",
+      "source_path": "docs/source-requirement-register.md#og-src-0156",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0157",
+      "source_path": "docs/source-requirement-register.md#og-src-0157",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0158",
+      "source_path": "docs/source-requirement-register.md#og-src-0158",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0159",
+      "source_path": "docs/source-requirement-register.md#og-src-0159",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0160",
+      "source_path": "docs/source-requirement-register.md#og-src-0160",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0161",
+      "source_path": "docs/source-requirement-register.md#og-src-0161",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0162",
+      "source_path": "docs/source-requirement-register.md#og-src-0162",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0163",
+      "source_path": "docs/source-requirement-register.md#og-src-0163",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0164",
+      "source_path": "docs/source-requirement-register.md#og-src-0164",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0165",
+      "source_path": "docs/source-requirement-register.md#og-src-0165",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0166",
+      "source_path": "docs/source-requirement-register.md#og-src-0166",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0167",
+      "source_path": "docs/source-requirement-register.md#og-src-0167",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0168",
+      "source_path": "docs/source-requirement-register.md#og-src-0168",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0169",
+      "source_path": "docs/source-requirement-register.md#og-src-0169",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0170",
+      "source_path": "docs/source-requirement-register.md#og-src-0170",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0171",
+      "source_path": "docs/source-requirement-register.md#og-src-0171",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/documents.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0172",
+      "source_path": "docs/source-requirement-register.md#og-src-0172",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0173",
+      "source_path": "docs/source-requirement-register.md#og-src-0173",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0174",
+      "source_path": "docs/source-requirement-register.md#og-src-0174",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0175",
+      "source_path": "docs/source-requirement-register.md#og-src-0175",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/public-pages.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/land.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0176",
+      "source_path": "docs/source-requirement-register.md#og-src-0176",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0177",
+      "source_path": "docs/source-requirement-register.md#og-src-0177",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0178",
+      "source_path": "docs/source-requirement-register.md#og-src-0178",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0179",
+      "source_path": "docs/source-requirement-register.md#og-src-0179",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0180",
+      "source_path": "docs/source-requirement-register.md#og-src-0180",
+      "module_path": "docs/modules/08-design-branding-documents-pages.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0181",
+      "source_path": "docs/source-requirement-register.md#og-src-0181",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0182",
+      "source_path": "docs/source-requirement-register.md#og-src-0182",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0183",
+      "source_path": "docs/source-requirement-register.md#og-src-0183",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0184",
+      "source_path": "docs/source-requirement-register.md#og-src-0184",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0185",
+      "source_path": "docs/source-requirement-register.md#og-src-0185",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0186",
+      "source_path": "docs/source-requirement-register.md#og-src-0186",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0187",
+      "source_path": "docs/source-requirement-register.md#og-src-0187",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0188",
+      "source_path": "docs/source-requirement-register.md#og-src-0188",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0189",
+      "source_path": "docs/source-requirement-register.md#og-src-0189",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0190",
+      "source_path": "docs/source-requirement-register.md#og-src-0190",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0191",
+      "source_path": "docs/source-requirement-register.md#og-src-0191",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0192",
+      "source_path": "docs/source-requirement-register.md#og-src-0192",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/documents.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/space.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/design.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0193",
+      "source_path": "docs/source-requirement-register.md#og-src-0193",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0194",
+      "source_path": "docs/source-requirement-register.md#og-src-0194",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0195",
+      "source_path": "docs/source-requirement-register.md#og-src-0195",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/calendar-notifications.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/cal.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0196",
+      "source_path": "docs/source-requirement-register.md#og-src-0196",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/calendar-notifications.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/cal.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0197",
+      "source_path": "docs/source-requirement-register.md#og-src-0197",
+      "module_path": "docs/modules/09-navigation-calendar-ai.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/calendar-notifications.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0198",
+      "source_path": "docs/source-requirement-register.md#og-src-0198",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0199",
+      "source_path": "docs/source-requirement-register.md#og-src-0199",
+      "module_path": "docs/modules/01-workspaces-and-access.md",
+      "specification_paths": [
+        "spec/reception-entry-exit.md",
+        "spec/workspace-access.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/space.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0200",
+      "source_path": "docs/source-requirement-register.md#og-src-0200",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0201",
+      "source_path": "docs/source-requirement-register.md#og-src-0201",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0202",
+      "source_path": "docs/source-requirement-register.md#og-src-0202",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0203",
+      "source_path": "docs/source-requirement-register.md#og-src-0203",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0204",
+      "source_path": "docs/source-requirement-register.md#og-src-0204",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/feed.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0205",
+      "source_path": "docs/source-requirement-register.md#og-src-0205",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0206",
+      "source_path": "docs/source-requirement-register.md#og-src-0206",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0207",
+      "source_path": "docs/source-requirement-register.md#og-src-0207",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md",
+        "spec/feed-feedback-cases.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/class.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0208",
+      "source_path": "docs/source-requirement-register.md#og-src-0208",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0209",
+      "source_path": "docs/source-requirement-register.md#og-src-0209",
+      "module_path": "docs/modules/05-task-engine-facilities-contractors.md",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/task.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0210",
+      "source_path": "docs/source-requirement-register.md#og-src-0210",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0211",
+      "source_path": "docs/source-requirement-register.md#og-src-0211",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0212",
+      "source_path": "docs/source-requirement-register.md#og-src-0212",
+      "module_path": "docs/modules/02-onboarding-membership-retention.md",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/ai-operations.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/mem.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0213",
+      "source_path": "docs/source-requirement-register.md#og-src-0213",
+      "module_path": "docs/modules/06-pos-and-inventory.md",
+      "specification_paths": [
+        "spec/pos-stock.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/pos.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0214",
+      "source_path": "docs/source-requirement-register.md#og-src-0214",
+      "module_path": "docs/modules/06-pos-and-inventory.md",
+      "specification_paths": [
+        "spec/pos-stock.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/pos.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0215",
+      "source_path": "docs/source-requirement-register.md#og-src-0215",
+      "module_path": "docs/modules/06-pos-and-inventory.md",
+      "specification_paths": [
+        "spec/pos-stock.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/pos.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0216",
+      "source_path": "docs/source-requirement-register.md#og-src-0216",
+      "module_path": "docs/modules/06-pos-and-inventory.md",
+      "specification_paths": [
+        "spec/pos-stock.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/pos.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0217",
+      "source_path": "docs/source-requirement-register.md#og-src-0217",
+      "module_path": "docs/modules/07-community-cases-and-feedback.md",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/feed.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0218",
+      "source_path": "docs/source-requirement-register.md#og-src-0218",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0219",
+      "source_path": "docs/source-requirement-register.md#og-src-0219",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0220",
+      "source_path": "docs/source-requirement-register.md#og-src-0220",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0221",
+      "source_path": "docs/source-requirement-register.md#og-src-0221",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0222",
+      "source_path": "docs/source-requirement-register.md#og-src-0222",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0223",
+      "source_path": "docs/source-requirement-register.md#og-src-0223",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0224",
+      "source_path": "docs/source-requirement-register.md#og-src-0224",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0225",
+      "source_path": "docs/source-requirement-register.md#og-src-0225",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0226",
+      "source_path": "docs/source-requirement-register.md#og-src-0226",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0227",
+      "source_path": "docs/source-requirement-register.md#og-src-0227",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0228",
+      "source_path": "docs/source-requirement-register.md#og-src-0228",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0229",
+      "source_path": "docs/source-requirement-register.md#og-src-0229",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0230",
+      "source_path": "docs/source-requirement-register.md#og-src-0230",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/class.md",
+        "docs/workflows/entry.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0231",
+      "source_path": "docs/source-requirement-register.md#og-src-0231",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0232",
+      "source_path": "docs/source-requirement-register.md#og-src-0232",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0233",
+      "source_path": "docs/source-requirement-register.md#og-src-0233",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0234",
+      "source_path": "docs/source-requirement-register.md#og-src-0234",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0235",
+      "source_path": "docs/source-requirement-register.md#og-src-0235",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0236",
+      "source_path": "docs/source-requirement-register.md#og-src-0236",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0237",
+      "source_path": "docs/source-requirement-register.md#og-src-0237",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md",
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0238",
+      "source_path": "docs/source-requirement-register.md#og-src-0238",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0239",
+      "source_path": "docs/source-requirement-register.md#og-src-0239",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0240",
+      "source_path": "docs/source-requirement-register.md#og-src-0240",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0241",
+      "source_path": "docs/source-requirement-register.md#og-src-0241",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-SRC-0242",
+      "source_path": "docs/source-requirement-register.md#og-src-0242",
+      "module_path": "docs/modules/10-data-integration-and-verification.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "source block indexed; atomic decomposition and scope disposition pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-001",
+      "source_path": "docs/modules/11-finance-reports-and-analytics.md",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-002",
+      "source_path": "docs/modules/11-finance-reports-and-analytics.md",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/coach.md",
+        "docs/workflows/pos.md",
+        "docs/workflows/fin.md",
+        "docs/workflows/ai.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-003",
+      "source_path": "docs/modules/12-access-navigation-and-notifications.md",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/space.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-004",
+      "source_path": "docs/modules/12-access-navigation-and-notifications.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md",
+        "spec/calendar-notifications.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-005",
+      "source_path": "docs/modules/12-access-navigation-and-notifications.md",
+      "specification_paths": [
+        "spec/calendar-notifications.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/staff.md",
+        "docs/workflows/cal.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-006",
+      "source_path": "docs/planning-gap-register.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-007",
+      "source_path": "docs/planning-gap-register.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-008",
+      "source_path": "docs/design-and-token-deliverables.md",
+      "specification_paths": [
+        "spec/shell-settings-branding.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/user.md",
+        "docs/workflows/land.md",
+        "docs/workflows/doc.md",
+        "docs/workflows/cal.md",
+        "docs/workflows/design.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-009",
+      "source_path": "docs/platform-evidence-and-delivery-gates.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-010",
+      "source_path": "docs/platform-evidence-and-delivery-gates.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    },
+    {
+      "source_id": "OG-REV-011",
+      "source_path": "docs/board-card-contract.md",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "disposition": "review requirement indexed; detailed delivery mapping pending",
+      "delivery_sequence": null,
+      "platform_card_id": null,
+      "workflow_domain_documents": [
+        "docs/workflows/release.md"
+      ]
+    }
+  ],
+  "workflow_catalogue": "docs/workflows/catalogue.json",
+  "operational_review": "docs/reviews/operational-gap-review-0.21.md",
+  "extension_source_map": "docs/delivery/extension-source-map.json",
+  "current_gap_resolution": "docs/gap-resolution-status.md"
+}

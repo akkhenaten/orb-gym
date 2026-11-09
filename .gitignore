@@ -1,0 +1,29 @@
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+
+# Dependencies and generated app output (framework remains unselected)
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+coverage/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local tools, upload staging, logs and private operational data
+.openkbs/tmp/
+.uploads/
+private-uploads/
+tmp/
+*.log
+.DS_Store
+Thumbs.db

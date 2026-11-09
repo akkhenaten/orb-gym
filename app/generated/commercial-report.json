@@ -1,0 +1,28 @@
+{
+ "generated_at": "2022-01-01T05:00:00.000Z",
+ "counts": {
+  "policies": 11,
+  "unconfigured": 11,
+  "required_fields_total": 90,
+  "workflows_referenced": 18,
+  "governing_rules": 11
+ },
+ "enforcement": {
+  "rule": "A command that declares a workflow governed by an unconfigured policy is REFUSED with POLICY_UNCONFIGURED. Values are supplied per workspace and cannot come from the specification.",
+  "limitation": "The specification has no transition-to-workflow edge, so gating applies only when the caller declares the workflow context."
+ },
+ "decisions_referenced": [
+  "DEC-GR-01",
+  "DEC-GR-02",
+  "DEC-GR-03",
+  "DEC-GR-04",
+  "DEC-GR-05",
+  "DEC-GR-06",
+  "DEC-GR-07",
+  "OG-EXT-001",
+  "OG-EXT-002",
+  "OG-EXT-003",
+  "OG-EXT-004"
+ ],
+ "errors": []
+}

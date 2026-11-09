@@ -1,0 +1,3674 @@
+[
+ {
+  "entity_id": "ENT-Identity",
+  "table": "identity",
+  "field": "provider_subject",
+  "column": "provider_subject",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Identity",
+  "table": "identity",
+  "field": "account_status",
+  "column": "account_status",
+  "sql_type": "INTEGER",
+  "note": "integer"
+ },
+ {
+  "entity_id": "ENT-Identity",
+  "table": "identity",
+  "field": "verified_contact_reference",
+  "column": "verified_contact_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Workspace",
+  "table": "workspace",
+  "field": "owner_assignment_id",
+  "column": "owner_assignment_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Workspace",
+  "table": "workspace",
+  "field": "display_name",
+  "column": "display_name",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Workspace",
+  "table": "workspace",
+  "field": "workspace_state",
+  "column": "workspace_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Workspace",
+  "table": "workspace",
+  "field": "policy_version",
+  "column": "policy_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CompanyPerson",
+  "table": "company_person",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CompanyPerson",
+  "table": "company_person",
+  "field": "identity_id_optional",
+  "column": "identity_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CompanyPerson",
+  "table": "company_person",
+  "field": "display_name",
+  "column": "display_name",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CompanyPerson",
+  "table": "company_person",
+  "field": "contact_reference",
+  "column": "contact_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CompanyPerson",
+  "table": "company_person",
+  "field": "company_access_state",
+  "column": "company_access_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Gym",
+  "table": "gym",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Gym",
+  "table": "gym",
+  "field": "display_name",
+  "column": "display_name",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Gym",
+  "table": "gym",
+  "field": "location",
+  "column": "location",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Gym",
+  "table": "gym",
+  "field": "timezone",
+  "column": "timezone",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Gym",
+  "table": "gym",
+  "field": "gym_state",
+  "column": "gym_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Gym",
+  "table": "gym",
+  "field": "billing_entity_id",
+  "column": "billing_entity_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-BillingEntity",
+  "table": "billing_entity",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-BillingEntity",
+  "table": "billing_entity",
+  "field": "legal_name",
+  "column": "legal_name",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-BillingEntity",
+  "table": "billing_entity",
+  "field": "currency_configuration",
+  "column": "currency_configuration",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-BillingEntity",
+  "table": "billing_entity",
+  "field": "issuer_details",
+  "column": "issuer_details",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AreaResource",
+  "table": "area_resource",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AreaResource",
+  "table": "area_resource",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AreaResource",
+  "table": "area_resource",
+  "field": "resource_type",
+  "column": "resource_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AreaResource",
+  "table": "area_resource",
+  "field": "availability_reference",
+  "column": "availability_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleTemplate",
+  "table": "role_template",
+  "field": "workspace_id_or_platform",
+  "column": "workspace_id_or_platform",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleTemplate",
+  "table": "role_template",
+  "field": "template_version",
+  "column": "template_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleTemplate",
+  "table": "role_template",
+  "field": "rule_references",
+  "column": "rule_references",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleAssignment",
+  "table": "role_assignment",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleAssignment",
+  "table": "role_assignment",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleAssignment",
+  "table": "role_assignment",
+  "field": "role_template_id",
+  "column": "role_template_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleAssignment",
+  "table": "role_assignment",
+  "field": "scope",
+  "column": "scope",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RoleAssignment",
+  "table": "role_assignment",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-IndividualOverride",
+  "table": "individual_override",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IndividualOverride",
+  "table": "individual_override",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IndividualOverride",
+  "table": "individual_override",
+  "field": "permission_id",
+  "column": "permission_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IndividualOverride",
+  "table": "individual_override",
+  "field": "effect",
+  "column": "effect",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IndividualOverride",
+  "table": "individual_override",
+  "field": "scope",
+  "column": "scope",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IndividualOverride",
+  "table": "individual_override",
+  "field": "field_bundles",
+  "column": "field_bundles",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Invitation",
+  "table": "invitation",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Invitation",
+  "table": "invitation",
+  "field": "intended_journey",
+  "column": "intended_journey",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Invitation",
+  "table": "invitation",
+  "field": "destination_reference",
+  "column": "destination_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Invitation",
+  "table": "invitation",
+  "field": "scope",
+  "column": "scope",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Invitation",
+  "table": "invitation",
+  "field": "expires_at",
+  "column": "expires_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-Invitation",
+  "table": "invitation",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GuardianRelationship",
+  "table": "guardian_relationship",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GuardianRelationship",
+  "table": "guardian_relationship",
+  "field": "guardian_person_id",
+  "column": "guardian_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GuardianRelationship",
+  "table": "guardian_relationship",
+  "field": "dependent_person_id",
+  "column": "dependent_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GuardianRelationship",
+  "table": "guardian_relationship",
+  "field": "verified_rights",
+  "column": "verified_rights",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GuardianRelationship",
+  "table": "guardian_relationship",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-GuardianRelationship",
+  "table": "guardian_relationship",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Application",
+  "table": "application",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Application",
+  "table": "application",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Application",
+  "table": "application",
+  "field": "beneficiary_person_id",
+  "column": "beneficiary_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Application",
+  "table": "application",
+  "field": "joining_route",
+  "column": "joining_route",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Application",
+  "table": "application",
+  "field": "checklist_version",
+  "column": "checklist_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Application",
+  "table": "application",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormVersion",
+  "table": "form_version",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormVersion",
+  "table": "form_version",
+  "field": "form_type",
+  "column": "form_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormVersion",
+  "table": "form_version",
+  "field": "published_version",
+  "column": "published_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormVersion",
+  "table": "form_version",
+  "field": "reviewed_content_reference",
+  "column": "reviewed_content_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormRequirement",
+  "table": "form_requirement",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormRequirement",
+  "table": "form_requirement",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormRequirement",
+  "table": "form_requirement",
+  "field": "form_version_id",
+  "column": "form_version_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormRequirement",
+  "table": "form_requirement",
+  "field": "applicability",
+  "column": "applicability",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormRequirement",
+  "table": "form_requirement",
+  "field": "required_action",
+  "column": "required_action",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormRequirement",
+  "table": "form_requirement",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormResponse",
+  "table": "form_response",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormResponse",
+  "table": "form_response",
+  "field": "requirement_id",
+  "column": "requirement_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormResponse",
+  "table": "form_response",
+  "field": "respondent_person_id",
+  "column": "respondent_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormResponse",
+  "table": "form_response",
+  "field": "protected_answers",
+  "column": "protected_answers",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-FormResponse",
+  "table": "form_response",
+  "field": "signature_reference",
+  "column": "signature_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PlanVersion",
+  "table": "plan_version",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PlanVersion",
+  "table": "plan_version",
+  "field": "plan_id",
+  "column": "plan_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PlanVersion",
+  "table": "plan_version",
+  "field": "price_terms",
+  "column": "price_terms_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-PlanVersion",
+  "table": "plan_version",
+  "field": "eligible_gyms",
+  "column": "eligible_gyms",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PlanVersion",
+  "table": "plan_version",
+  "field": "activation_policy",
+  "column": "activation_policy_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-Membership",
+  "table": "membership",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Membership",
+  "table": "membership",
+  "field": "beneficiary_person_id",
+  "column": "beneficiary_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Membership",
+  "table": "membership",
+  "field": "plan_version_id",
+  "column": "plan_version_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Membership",
+  "table": "membership",
+  "field": "service_state",
+  "column": "service_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Membership",
+  "table": "membership",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-EntitlementGrant",
+  "table": "entitlement_grant",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EntitlementGrant",
+  "table": "entitlement_grant",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EntitlementGrant",
+  "table": "entitlement_grant",
+  "field": "purpose",
+  "column": "purpose",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EntitlementGrant",
+  "table": "entitlement_grant",
+  "field": "gym_scope",
+  "column": "gym_scope",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EntitlementGrant",
+  "table": "entitlement_grant",
+  "field": "source_id",
+  "column": "source_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EntitlementGrant",
+  "table": "entitlement_grant",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-EntitlementGrant",
+  "table": "entitlement_grant",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CoachArrangement",
+  "table": "coach_arrangement",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CoachArrangement",
+  "table": "coach_arrangement",
+  "field": "coach_person_id",
+  "column": "coach_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CoachArrangement",
+  "table": "coach_arrangement",
+  "field": "arrangement_type",
+  "column": "arrangement_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CoachArrangement",
+  "table": "coach_arrangement",
+  "field": "gyms",
+  "column": "gyms",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CoachArrangement",
+  "table": "coach_arrangement",
+  "field": "terms_version",
+  "column": "terms_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CoachArrangement",
+  "table": "coach_arrangement",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-RateVersion",
+  "table": "rate_version",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RateVersion",
+  "table": "rate_version",
+  "field": "coach_id_optional",
+  "column": "coach_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RateVersion",
+  "table": "rate_version",
+  "field": "service_type",
+  "column": "service_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RateVersion",
+  "table": "rate_version",
+  "field": "amount",
+  "column": "amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-RateVersion",
+  "table": "rate_version",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RateVersion",
+  "table": "rate_version",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-ClassDefinition",
+  "table": "class_definition",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassDefinition",
+  "table": "class_definition",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassDefinition",
+  "table": "class_definition",
+  "field": "service_type",
+  "column": "service_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassDefinition",
+  "table": "class_definition",
+  "field": "coach_arrangement_id",
+  "column": "coach_arrangement_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassDefinition",
+  "table": "class_definition",
+  "field": "collection_mode",
+  "column": "collection_mode",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassOccurrence",
+  "table": "class_occurrence",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassOccurrence",
+  "table": "class_occurrence",
+  "field": "class_definition_id",
+  "column": "class_definition_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassOccurrence",
+  "table": "class_occurrence",
+  "field": "starts_at",
+  "column": "starts_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-ClassOccurrence",
+  "table": "class_occurrence",
+  "field": "ends_at",
+  "column": "ends_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-ClassOccurrence",
+  "table": "class_occurrence",
+  "field": "capacity",
+  "column": "capacity",
+  "sql_type": "INTEGER",
+  "note": "integer"
+ },
+ {
+  "entity_id": "ENT-ClassOccurrence",
+  "table": "class_occurrence",
+  "field": "resource_ids",
+  "column": "resource_ids",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ClassOccurrence",
+  "table": "class_occurrence",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CourseBlock",
+  "table": "course_block",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CourseBlock",
+  "table": "course_block",
+  "field": "class_definition_id",
+  "column": "class_definition_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CourseBlock",
+  "table": "course_block",
+  "field": "occurrence_ids",
+  "column": "occurrence_ids",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CourseBlock",
+  "table": "course_block",
+  "field": "enrolment_terms_version",
+  "column": "enrolment_terms_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Booking",
+  "table": "booking",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Booking",
+  "table": "booking",
+  "field": "participant_person_id",
+  "column": "participant_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Booking",
+  "table": "booking",
+  "field": "occurrence_id_or_pt_id",
+  "column": "occurrence_id_or_pt_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Booking",
+  "table": "booking",
+  "field": "accepted_terms",
+  "column": "accepted_terms",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Booking",
+  "table": "booking",
+  "field": "hold_reference",
+  "column": "hold_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Booking",
+  "table": "booking",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-WaitlistOffer",
+  "table": "waitlist_offer",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-WaitlistOffer",
+  "table": "waitlist_offer",
+  "field": "booking_request_id",
+  "column": "booking_request_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-WaitlistOffer",
+  "table": "waitlist_offer",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-WaitlistOffer",
+  "table": "waitlist_offer",
+  "field": "occurrence_id",
+  "column": "occurrence_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-WaitlistOffer",
+  "table": "waitlist_offer",
+  "field": "hold_id",
+  "column": "hold_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-WaitlistOffer",
+  "table": "waitlist_offer",
+  "field": "expires_at",
+  "column": "expires_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-WaitlistOffer",
+  "table": "waitlist_offer",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RegisterEntry",
+  "table": "register_entry",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RegisterEntry",
+  "table": "register_entry",
+  "field": "occurrence_or_pt_id",
+  "column": "occurrence_or_pt_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RegisterEntry",
+  "table": "register_entry",
+  "field": "participant_person_id",
+  "column": "participant_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RegisterEntry",
+  "table": "register_entry",
+  "field": "outcome",
+  "column": "outcome",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RegisterEntry",
+  "table": "register_entry",
+  "field": "review_evidence",
+  "column": "review_evidence",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "coach_person_id",
+  "column": "coach_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "client_person_id",
+  "column": "client_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "starts_at",
+  "column": "starts_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "ends_at",
+  "column": "ends_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "rate_snapshot",
+  "column": "rate_snapshot",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-PTAppointment",
+  "table": "ptappointment",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Visit",
+  "table": "visit",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Visit",
+  "table": "visit",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Visit",
+  "table": "visit",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Visit",
+  "table": "visit",
+  "field": "entry_event_id",
+  "column": "entry_event_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Visit",
+  "table": "visit",
+  "field": "exit_event_id_optional",
+  "column": "exit_event_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Visit",
+  "table": "visit",
+  "field": "correction",
+  "column": "correction",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Visit",
+  "table": "visit",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ScanEvent",
+  "table": "scan_event",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ScanEvent",
+  "table": "scan_event",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ScanEvent",
+  "table": "scan_event",
+  "field": "purpose",
+  "column": "purpose",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ScanEvent",
+  "table": "scan_event",
+  "field": "token_reference",
+  "column": "token_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ScanEvent",
+  "table": "scan_event",
+  "field": "actor_id",
+  "column": "actor_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ScanEvent",
+  "table": "scan_event",
+  "field": "event_time",
+  "column": "event_time",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ScanEvent",
+  "table": "scan_event",
+  "field": "outcome",
+  "column": "outcome",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EmploymentAssignment",
+  "table": "employment_assignment",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EmploymentAssignment",
+  "table": "employment_assignment",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EmploymentAssignment",
+  "table": "employment_assignment",
+  "field": "gym_assignments",
+  "column": "gym_assignments",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EmploymentAssignment",
+  "table": "employment_assignment",
+  "field": "employment_status",
+  "column": "employment_status",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EmploymentAssignment",
+  "table": "employment_assignment",
+  "field": "contract_reference",
+  "column": "contract_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StaffAvailability",
+  "table": "staff_availability",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StaffAvailability",
+  "table": "staff_availability",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StaffAvailability",
+  "table": "staff_availability",
+  "field": "intervals",
+  "column": "intervals",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StaffAvailability",
+  "table": "staff_availability",
+  "field": "applicability",
+  "column": "applicability",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StaffAvailability",
+  "table": "staff_availability",
+  "field": "source_version",
+  "column": "source_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Shift",
+  "table": "shift",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Shift",
+  "table": "shift",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Shift",
+  "table": "shift",
+  "field": "person_id_optional",
+  "column": "person_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Shift",
+  "table": "shift",
+  "field": "starts_at",
+  "column": "starts_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-Shift",
+  "table": "shift",
+  "field": "ends_at",
+  "column": "ends_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-Shift",
+  "table": "shift",
+  "field": "rota_version",
+  "column": "rota_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Shift",
+  "table": "shift",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Timesheet",
+  "table": "timesheet",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Timesheet",
+  "table": "timesheet",
+  "field": "shift_id",
+  "column": "shift_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Timesheet",
+  "table": "timesheet",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Timesheet",
+  "table": "timesheet",
+  "field": "actual_intervals",
+  "column": "actual_intervals",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Timesheet",
+  "table": "timesheet",
+  "field": "breaks",
+  "column": "breaks",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Timesheet",
+  "table": "timesheet",
+  "field": "review_state",
+  "column": "review_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-HRRecord",
+  "table": "hrrecord",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-HRRecord",
+  "table": "hrrecord",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-HRRecord",
+  "table": "hrrecord",
+  "field": "record_type",
+  "column": "record_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-HRRecord",
+  "table": "hrrecord",
+  "field": "audience",
+  "column": "audience",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-HRRecord",
+  "table": "hrrecord",
+  "field": "document_reference",
+  "column": "document_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-HRRecord",
+  "table": "hrrecord",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "person_id",
+  "column": "person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "training_or_sop_version",
+  "column": "training_or_sop_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "applicability",
+  "column": "applicability",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "due_at",
+  "column": "due_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "renewal_of_requirement_id_optional",
+  "column": "renewal_of_requirement_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TrainingRequirement",
+  "table": "training_requirement",
+  "field": "reviewer_assignment_reference",
+  "column": "reviewer_assignment_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskTemplate",
+  "table": "task_template",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskTemplate",
+  "table": "task_template",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskTemplate",
+  "table": "task_template",
+  "field": "task_type",
+  "column": "task_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskTemplate",
+  "table": "task_template",
+  "field": "recurrence",
+  "column": "recurrence",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskTemplate",
+  "table": "task_template",
+  "field": "required_evidence",
+  "column": "required_evidence",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskOccurrence",
+  "table": "task_occurrence",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskOccurrence",
+  "table": "task_occurrence",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskOccurrence",
+  "table": "task_occurrence",
+  "field": "task_type",
+  "column": "task_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskOccurrence",
+  "table": "task_occurrence",
+  "field": "parent_id_optional",
+  "column": "parent_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskOccurrence",
+  "table": "task_occurrence",
+  "field": "template_version_id_optional",
+  "column": "template_version_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskOccurrence",
+  "table": "task_occurrence",
+  "field": "asset_id_optional",
+  "column": "asset_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskOccurrence",
+  "table": "task_occurrence",
+  "field": "execution_state",
+  "column": "execution_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskGroup",
+  "table": "task_group",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskGroup",
+  "table": "task_group",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskGroup",
+  "table": "task_group",
+  "field": "label",
+  "column": "label",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskGroup",
+  "table": "task_group",
+  "field": "task_ids",
+  "column": "task_ids",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskDependency",
+  "table": "task_dependency",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskDependency",
+  "table": "task_dependency",
+  "field": "predecessor_id",
+  "column": "predecessor_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskDependency",
+  "table": "task_dependency",
+  "field": "successor_id",
+  "column": "successor_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskDependency",
+  "table": "task_dependency",
+  "field": "condition",
+  "column": "condition",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskVerification",
+  "table": "task_verification",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskVerification",
+  "table": "task_verification",
+  "field": "task_id",
+  "column": "task_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskVerification",
+  "table": "task_verification",
+  "field": "submission_id",
+  "column": "submission_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskVerification",
+  "table": "task_verification",
+  "field": "reviewer_id",
+  "column": "reviewer_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskVerification",
+  "table": "task_verification",
+  "field": "outcome",
+  "column": "outcome",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-TaskVerification",
+  "table": "task_verification",
+  "field": "evidence_reference",
+  "column": "evidence_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ActivityEntry",
+  "table": "activity_entry",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ActivityEntry",
+  "table": "activity_entry",
+  "field": "source_type",
+  "column": "source_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ActivityEntry",
+  "table": "activity_entry",
+  "field": "source_id",
+  "column": "source_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ActivityEntry",
+  "table": "activity_entry",
+  "field": "actor_id",
+  "column": "actor_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ActivityEntry",
+  "table": "activity_entry",
+  "field": "typed_payload",
+  "column": "typed_payload",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-ActivityEntry",
+  "table": "activity_entry",
+  "field": "audience",
+  "column": "audience",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ActivityEntry",
+  "table": "activity_entry",
+  "field": "attachment_links",
+  "column": "attachment_links",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DecisionRequest",
+  "table": "decision_request",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DecisionRequest",
+  "table": "decision_request",
+  "field": "source_type",
+  "column": "source_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DecisionRequest",
+  "table": "decision_request",
+  "field": "source_id",
+  "column": "source_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DecisionRequest",
+  "table": "decision_request",
+  "field": "source_version",
+  "column": "source_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DecisionRequest",
+  "table": "decision_request",
+  "field": "requested_action",
+  "column": "requested_action",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DecisionRequest",
+  "table": "decision_request",
+  "field": "assignee",
+  "column": "assignee",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DecisionRequest",
+  "table": "decision_request",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Asset",
+  "table": "asset",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Asset",
+  "table": "asset",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Asset",
+  "table": "asset",
+  "field": "area_id",
+  "column": "area_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Asset",
+  "table": "asset",
+  "field": "qr_reference",
+  "column": "qr_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Asset",
+  "table": "asset",
+  "field": "current_service_state",
+  "column": "current_service_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AssetStatusInterval",
+  "table": "asset_status_interval",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AssetStatusInterval",
+  "table": "asset_status_interval",
+  "field": "asset_id",
+  "column": "asset_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AssetStatusInterval",
+  "table": "asset_status_interval",
+  "field": "service_state",
+  "column": "service_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AssetStatusInterval",
+  "table": "asset_status_interval",
+  "field": "starts_at",
+  "column": "starts_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-AssetStatusInterval",
+  "table": "asset_status_interval",
+  "field": "ends_at_optional",
+  "column": "ends_at_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AssetStatusInterval",
+  "table": "asset_status_interval",
+  "field": "reason",
+  "column": "reason",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierOrganisation",
+  "table": "supplier_organisation",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierOrganisation",
+  "table": "supplier_organisation",
+  "field": "legal_contact",
+  "column": "legal_contact",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierOrganisation",
+  "table": "supplier_organisation",
+  "field": "credentials",
+  "column": "credentials",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierOrganisation",
+  "table": "supplier_organisation",
+  "field": "review_state",
+  "column": "review_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierAssignment",
+  "table": "supplier_assignment",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierAssignment",
+  "table": "supplier_assignment",
+  "field": "supplier_id",
+  "column": "supplier_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierAssignment",
+  "table": "supplier_assignment",
+  "field": "task_id",
+  "column": "task_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierAssignment",
+  "table": "supplier_assignment",
+  "field": "operative_person_id_optional",
+  "column": "operative_person_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierAssignment",
+  "table": "supplier_assignment",
+  "field": "shared_audience",
+  "column": "shared_audience",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierAssignment",
+  "table": "supplier_assignment",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-QuoteVersion",
+  "table": "quote_version",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-QuoteVersion",
+  "table": "quote_version",
+  "field": "supplier_id",
+  "column": "supplier_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-QuoteVersion",
+  "table": "quote_version",
+  "field": "task_id",
+  "column": "task_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-QuoteVersion",
+  "table": "quote_version",
+  "field": "amount",
+  "column": "amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-QuoteVersion",
+  "table": "quote_version",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-QuoteVersion",
+  "table": "quote_version",
+  "field": "valid_until",
+  "column": "valid_until",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-QuoteVersion",
+  "table": "quote_version",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommercialCommitment",
+  "table": "commercial_commitment",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommercialCommitment",
+  "table": "commercial_commitment",
+  "field": "quote_version_id",
+  "column": "quote_version_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommercialCommitment",
+  "table": "commercial_commitment",
+  "field": "approved_amount",
+  "column": "approved_amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-CommercialCommitment",
+  "table": "commercial_commitment",
+  "field": "invoice_consumption",
+  "column": "invoice_consumption",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommercialCommitment",
+  "table": "commercial_commitment",
+  "field": "remaining_amount",
+  "column": "remaining_amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "beneficiary_id",
+  "column": "beneficiary_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "payer_id_optional",
+  "column": "payer_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "source_type",
+  "column": "source_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "source_id",
+  "column": "source_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "billing_entity_id",
+  "column": "billing_entity_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "amount",
+  "column": "amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-CustomerCharge",
+  "table": "customer_charge",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentSetup",
+  "table": "payment_setup",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentSetup",
+  "table": "payment_setup",
+  "field": "payer_id",
+  "column": "payer_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentSetup",
+  "table": "payment_setup",
+  "field": "billing_entity_id",
+  "column": "billing_entity_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentSetup",
+  "table": "payment_setup",
+  "field": "provider_mandate_reference",
+  "column": "provider_mandate_reference",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-PaymentSetup",
+  "table": "payment_setup",
+  "field": "setup_state",
+  "column": "setup_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAttempt",
+  "table": "payment_attempt",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAttempt",
+  "table": "payment_attempt",
+  "field": "operation_id",
+  "column": "operation_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAttempt",
+  "table": "payment_attempt",
+  "field": "charge_ids",
+  "column": "charge_ids",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAttempt",
+  "table": "payment_attempt",
+  "field": "provider_reference",
+  "column": "provider_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAttempt",
+  "table": "payment_attempt",
+  "field": "attempt_state",
+  "column": "attempt_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MoneyMovement",
+  "table": "money_movement",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MoneyMovement",
+  "table": "money_movement",
+  "field": "billing_entity_id",
+  "column": "billing_entity_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MoneyMovement",
+  "table": "money_movement",
+  "field": "provider_event_id_optional",
+  "column": "provider_event_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MoneyMovement",
+  "table": "money_movement",
+  "field": "movement_type",
+  "column": "movement_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MoneyMovement",
+  "table": "money_movement",
+  "field": "amount",
+  "column": "amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-MoneyMovement",
+  "table": "money_movement",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MoneyMovement",
+  "table": "money_movement",
+  "field": "effective_at",
+  "column": "effective_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-PaymentAllocation",
+  "table": "payment_allocation",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAllocation",
+  "table": "payment_allocation",
+  "field": "movement_id",
+  "column": "movement_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAllocation",
+  "table": "payment_allocation",
+  "field": "charge_or_invoice_id",
+  "column": "charge_or_invoice_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAllocation",
+  "table": "payment_allocation",
+  "field": "signed_amount",
+  "column": "signed_amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-PaymentAllocation",
+  "table": "payment_allocation",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PaymentAllocation",
+  "table": "payment_allocation",
+  "field": "correction_reference",
+  "column": "correction_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CreditNote",
+  "table": "credit_note",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CreditNote",
+  "table": "credit_note",
+  "field": "charge_or_invoice_id",
+  "column": "charge_or_invoice_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CreditNote",
+  "table": "credit_note",
+  "field": "issuer_id",
+  "column": "issuer_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CreditNote",
+  "table": "credit_note",
+  "field": "amount",
+  "column": "amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-CreditNote",
+  "table": "credit_note",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CreditNote",
+  "table": "credit_note",
+  "field": "reason",
+  "column": "reason",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RefundRequest",
+  "table": "refund_request",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RefundRequest",
+  "table": "refund_request",
+  "field": "original_payment_id",
+  "column": "original_payment_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RefundRequest",
+  "table": "refund_request",
+  "field": "sale_or_charge_id",
+  "column": "sale_or_charge_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RefundRequest",
+  "table": "refund_request",
+  "field": "amount",
+  "column": "amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-RefundRequest",
+  "table": "refund_request",
+  "field": "reason",
+  "column": "reason",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RefundRequest",
+  "table": "refund_request",
+  "field": "provider_operation",
+  "column": "provider_operation",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-RefundRequest",
+  "table": "refund_request",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierInvoice",
+  "table": "supplier_invoice",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierInvoice",
+  "table": "supplier_invoice",
+  "field": "supplier_id",
+  "column": "supplier_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierInvoice",
+  "table": "supplier_invoice",
+  "field": "invoice_reference",
+  "column": "invoice_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierInvoice",
+  "table": "supplier_invoice",
+  "field": "linked_commitment",
+  "column": "linked_commitment",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierInvoice",
+  "table": "supplier_invoice",
+  "field": "amount",
+  "column": "amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-SupplierInvoice",
+  "table": "supplier_invoice",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SupplierInvoice",
+  "table": "supplier_invoice",
+  "field": "review_state",
+  "column": "review_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GymCostAllocation",
+  "table": "gym_cost_allocation",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GymCostAllocation",
+  "table": "gym_cost_allocation",
+  "field": "source_line_type",
+  "column": "source_line_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GymCostAllocation",
+  "table": "gym_cost_allocation",
+  "field": "source_line_id",
+  "column": "source_line_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GymCostAllocation",
+  "table": "gym_cost_allocation",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-GymCostAllocation",
+  "table": "gym_cost_allocation",
+  "field": "allocated_amount",
+  "column": "allocated_amount_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-GymCostAllocation",
+  "table": "gym_cost_allocation",
+  "field": "currency",
+  "column": "currency",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Product",
+  "table": "product",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Product",
+  "table": "product",
+  "field": "sku",
+  "column": "sku",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Product",
+  "table": "product",
+  "field": "barcode",
+  "column": "barcode",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Product",
+  "table": "product",
+  "field": "unit_of_measure",
+  "column": "unit_of_measure",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Product",
+  "table": "product",
+  "field": "price_version",
+  "column": "price_version_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-Product",
+  "table": "product",
+  "field": "stock_policy",
+  "column": "stock_policy",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Sale",
+  "table": "sale",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Sale",
+  "table": "sale",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Sale",
+  "table": "sale",
+  "field": "billing_entity_id",
+  "column": "billing_entity_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Sale",
+  "table": "sale",
+  "field": "customer_id_optional",
+  "column": "customer_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Sale",
+  "table": "sale",
+  "field": "operation_id",
+  "column": "operation_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Sale",
+  "table": "sale",
+  "field": "tender_references",
+  "column": "tender_references",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-Sale",
+  "table": "sale",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SaleLine",
+  "table": "sale_line",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SaleLine",
+  "table": "sale_line",
+  "field": "sale_id",
+  "column": "sale_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SaleLine",
+  "table": "sale_line",
+  "field": "product_id_optional",
+  "column": "product_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SaleLine",
+  "table": "sale_line",
+  "field": "existing_charge_id_optional",
+  "column": "existing_charge_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-SaleLine",
+  "table": "sale_line",
+  "field": "quantity",
+  "column": "quantity",
+  "sql_type": "INTEGER",
+  "note": "integer"
+ },
+ {
+  "entity_id": "ENT-SaleLine",
+  "table": "sale_line",
+  "field": "price_snapshot",
+  "column": "price_snapshot_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-StockMovement",
+  "table": "stock_movement",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockMovement",
+  "table": "stock_movement",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockMovement",
+  "table": "stock_movement",
+  "field": "sku",
+  "column": "sku",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockMovement",
+  "table": "stock_movement",
+  "field": "quantity_signed",
+  "column": "quantity_signed",
+  "sql_type": "INTEGER",
+  "note": "integer"
+ },
+ {
+  "entity_id": "ENT-StockMovement",
+  "table": "stock_movement",
+  "field": "movement_type",
+  "column": "movement_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockMovement",
+  "table": "stock_movement",
+  "field": "source_operation_id",
+  "column": "source_operation_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "source_gym_id",
+  "column": "source_gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "destination_gym_id",
+  "column": "destination_gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "sku",
+  "column": "sku",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "dispatched",
+  "column": "dispatched",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "received",
+  "column": "received",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "state",
+  "column": "state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "adjusted_resolution_quantity",
+  "column": "adjusted_resolution_quantity",
+  "sql_type": "INTEGER",
+  "note": "integer"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "in_transit_quantity",
+  "column": "in_transit_quantity",
+  "sql_type": "INTEGER",
+  "note": "integer"
+ },
+ {
+  "entity_id": "ENT-StockTransfer",
+  "table": "stock_transfer",
+  "field": "resolution_evidence_references",
+  "column": "resolution_evidence_references",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedReceipt",
+  "table": "issued_receipt",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedReceipt",
+  "table": "issued_receipt",
+  "field": "sale_or_payment_id",
+  "column": "sale_or_payment_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedReceipt",
+  "table": "issued_receipt",
+  "field": "issuer_snapshot",
+  "column": "issuer_snapshot",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-IssuedReceipt",
+  "table": "issued_receipt",
+  "field": "brand_snapshot",
+  "column": "brand_snapshot",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-IssuedReceipt",
+  "table": "issued_receipt",
+  "field": "line_snapshot",
+  "column": "line_snapshot",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-IssuedReceipt",
+  "table": "issued_receipt",
+  "field": "issued_at",
+  "column": "issued_at",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-DocumentTemplate",
+  "table": "document_template",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DocumentTemplate",
+  "table": "document_template",
+  "field": "template_id",
+  "column": "template_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DocumentTemplate",
+  "table": "document_template",
+  "field": "content_reference",
+  "column": "content_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-DocumentTemplate",
+  "table": "document_template",
+  "field": "publication_state",
+  "column": "publication_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "template_version_id",
+  "column": "template_version_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "person_or_source_id",
+  "column": "person_or_source_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "data_snapshot",
+  "column": "data_snapshot",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "brand_snapshot",
+  "column": "brand_snapshot",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "issue_state",
+  "column": "issue_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "required_signatory_roles",
+  "column": "required_signatory_roles",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "signature_evidence_references",
+  "column": "signature_evidence_references",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-IssuedDocument",
+  "table": "issued_document",
+  "field": "signature_summary",
+  "column": "signature_summary",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-BrandVersion",
+  "table": "brand_version",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-BrandVersion",
+  "table": "brand_version",
+  "field": "gym_override_id_optional",
+  "column": "gym_override_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-BrandVersion",
+  "table": "brand_version",
+  "field": "preset_id",
+  "column": "preset_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-BrandVersion",
+  "table": "brand_version",
+  "field": "tokens",
+  "column": "tokens",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-BrandVersion",
+  "table": "brand_version",
+  "field": "logo_reference",
+  "column": "logo_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-BrandVersion",
+  "table": "brand_version",
+  "field": "white_label_state",
+  "column": "white_label_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PublicProjection",
+  "table": "public_projection",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PublicProjection",
+  "table": "public_projection",
+  "field": "gym_id_or_company",
+  "column": "gym_id_or_company",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PublicProjection",
+  "table": "public_projection",
+  "field": "source_versions",
+  "column": "source_versions",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PublicProjection",
+  "table": "public_projection",
+  "field": "approved_fields",
+  "column": "approved_fields",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PublicProjection",
+  "table": "public_projection",
+  "field": "publication_state",
+  "column": "publication_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommunityEntry",
+  "table": "community_entry",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommunityEntry",
+  "table": "community_entry",
+  "field": "gym_id_optional",
+  "column": "gym_id_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommunityEntry",
+  "table": "community_entry",
+  "field": "audience",
+  "column": "audience",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommunityEntry",
+  "table": "community_entry",
+  "field": "author_person_id",
+  "column": "author_person_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommunityEntry",
+  "table": "community_entry",
+  "field": "content",
+  "column": "content",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CommunityEntry",
+  "table": "community_entry",
+  "field": "moderation_state",
+  "column": "moderation_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CaseRecord",
+  "table": "case_record",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CaseRecord",
+  "table": "case_record",
+  "field": "gym_id",
+  "column": "gym_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CaseRecord",
+  "table": "case_record",
+  "field": "reporter_id",
+  "column": "reporter_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CaseRecord",
+  "table": "case_record",
+  "field": "case_type",
+  "column": "case_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CaseRecord",
+  "table": "case_record",
+  "field": "assignee",
+  "column": "assignee",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-CaseRecord",
+  "table": "case_record",
+  "field": "resolution_state",
+  "column": "resolution_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EvidenceFile",
+  "table": "evidence_file",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EvidenceFile",
+  "table": "evidence_file",
+  "field": "private_storage_reference",
+  "column": "private_storage_reference_minor",
+  "sql_type": "INTEGER",
+  "note": "money, integer minor units"
+ },
+ {
+  "entity_id": "ENT-EvidenceFile",
+  "table": "evidence_file",
+  "field": "content_hash",
+  "column": "content_hash",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EvidenceFile",
+  "table": "evidence_file",
+  "field": "media_type",
+  "column": "media_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EvidenceFile",
+  "table": "evidence_file",
+  "field": "scan_state",
+  "column": "scan_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-EvidenceFile",
+  "table": "evidence_file",
+  "field": "access_links",
+  "column": "access_links",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ImportBatch",
+  "table": "import_batch",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ImportBatch",
+  "table": "import_batch",
+  "field": "operator_id",
+  "column": "operator_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ImportBatch",
+  "table": "import_batch",
+  "field": "source_hash",
+  "column": "source_hash",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ImportBatch",
+  "table": "import_batch",
+  "field": "mapping_version",
+  "column": "mapping_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ImportBatch",
+  "table": "import_batch",
+  "field": "review_snapshot",
+  "column": "review_snapshot",
+  "sql_type": "TEXT",
+  "note": "JSON document"
+ },
+ {
+  "entity_id": "ENT-ImportBatch",
+  "table": "import_batch",
+  "field": "commit_state",
+  "column": "commit_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-NotificationEvent",
+  "table": "notification_event",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-NotificationEvent",
+  "table": "notification_event",
+  "field": "source_type",
+  "column": "source_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-NotificationEvent",
+  "table": "notification_event",
+  "field": "source_id",
+  "column": "source_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-NotificationEvent",
+  "table": "notification_event",
+  "field": "source_revision",
+  "column": "source_revision",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-NotificationEvent",
+  "table": "notification_event",
+  "field": "event_type",
+  "column": "event_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-NotificationEvent",
+  "table": "notification_event",
+  "field": "recipient_purpose",
+  "column": "recipient_purpose",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "notification_id",
+  "column": "notification_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "recipient_id",
+  "column": "recipient_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "channel",
+  "column": "channel",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "provider_reference",
+  "column": "provider_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "delivery_state",
+  "column": "delivery_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "attempt_evidence_references",
+  "column": "attempt_evidence_references",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "current_failure_classification",
+  "column": "current_failure_classification",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ChannelDelivery",
+  "table": "channel_delivery",
+  "field": "current_attempt_id",
+  "column": "current_attempt_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MetricDefinition",
+  "table": "metric_definition",
+  "field": "workspace_id_or_platform",
+  "column": "workspace_id_or_platform",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MetricDefinition",
+  "table": "metric_definition",
+  "field": "metric_id",
+  "column": "metric_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MetricDefinition",
+  "table": "metric_definition",
+  "field": "formula_contract",
+  "column": "formula_contract",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-MetricDefinition",
+  "table": "metric_definition",
+  "field": "basis",
+  "column": "basis",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ReportSnapshot",
+  "table": "report_snapshot",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ReportSnapshot",
+  "table": "report_snapshot",
+  "field": "definition_version",
+  "column": "definition_version",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ReportSnapshot",
+  "table": "report_snapshot",
+  "field": "filters",
+  "column": "filters",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ReportSnapshot",
+  "table": "report_snapshot",
+  "field": "as_of",
+  "column": "as_of",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ReportSnapshot",
+  "table": "report_snapshot",
+  "field": "source_freshness",
+  "column": "source_freshness",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ReportSnapshot",
+  "table": "report_snapshot",
+  "field": "permitted_result",
+  "column": "permitted_result",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-ReportSnapshot",
+  "table": "report_snapshot",
+  "field": "export_state",
+  "column": "export_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AIProposal",
+  "table": "aiproposal",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AIProposal",
+  "table": "aiproposal",
+  "field": "actor_id",
+  "column": "actor_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AIProposal",
+  "table": "aiproposal",
+  "field": "source_references",
+  "column": "source_references",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AIProposal",
+  "table": "aiproposal",
+  "field": "proposed_command",
+  "column": "proposed_command",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AIProposal",
+  "table": "aiproposal",
+  "field": "required_authority",
+  "column": "required_authority",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AIProposal",
+  "table": "aiproposal",
+  "field": "proposal_state",
+  "column": "proposal_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AuditEvent",
+  "table": "audit_event",
+  "field": "workspace_id_or_platform",
+  "column": "workspace_id_or_platform",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AuditEvent",
+  "table": "audit_event",
+  "field": "actor_id",
+  "column": "actor_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AuditEvent",
+  "table": "audit_event",
+  "field": "operation_id",
+  "column": "operation_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AuditEvent",
+  "table": "audit_event",
+  "field": "target_reference",
+  "column": "target_reference",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AuditEvent",
+  "table": "audit_event",
+  "field": "before_after",
+  "column": "before_after",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AuditEvent",
+  "table": "audit_event",
+  "field": "reason",
+  "column": "reason",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-AuditEvent",
+  "table": "audit_event",
+  "field": "time",
+  "column": "time",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PolicyVersion",
+  "table": "policy_version",
+  "field": "workspace_id",
+  "column": "workspace_id",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PolicyVersion",
+  "table": "policy_version",
+  "field": "gym_scope_optional",
+  "column": "gym_scope_optional",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PolicyVersion",
+  "table": "policy_version",
+  "field": "policy_type",
+  "column": "policy_type",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PolicyVersion",
+  "table": "policy_version",
+  "field": "reviewed_values",
+  "column": "reviewed_values",
+  "sql_type": "TEXT",
+  "note": "text"
+ },
+ {
+  "entity_id": "ENT-PolicyVersion",
+  "table": "policy_version",
+  "field": "effective_dates",
+  "column": "effective_dates",
+  "sql_type": "TEXT",
+  "note": "ISO-8601 timestamp"
+ },
+ {
+  "entity_id": "ENT-PolicyVersion",
+  "table": "policy_version",
+  "field": "readiness_state",
+  "column": "readiness_state",
+  "sql_type": "TEXT",
+  "note": "text"
+ }
+]

@@ -1,0 +1,84 @@
+{
+  "scope": "Synthetic contract/arithmetic propositions, not live signature or access engine tests",
+  "signature_cases": [
+    {
+      "id": "two_parties_one_signed",
+      "required": [
+        "member",
+        "company"
+      ],
+      "issue_hash": "hash1",
+      "evidence": [
+        {
+          "party": "member",
+          "issue_hash": "hash1"
+        }
+      ],
+      "expected": "AWAITING_SIGNATURE"
+    },
+    {
+      "id": "both_actual_parties_signed",
+      "required": [
+        "member",
+        "company"
+      ],
+      "issue_hash": "hash1",
+      "evidence": [
+        {
+          "party": "member",
+          "issue_hash": "hash1"
+        },
+        {
+          "party": "company",
+          "issue_hash": "hash1"
+        }
+      ],
+      "expected": "SIGNED"
+    },
+    {
+      "id": "duplicate_party_capture",
+      "required": [
+        "member",
+        "company"
+      ],
+      "issue_hash": "hash1",
+      "evidence": [
+        {
+          "party": "member",
+          "issue_hash": "hash1"
+        },
+        {
+          "party": "member",
+          "issue_hash": "hash1"
+        }
+      ],
+      "expected": "AWAITING_SIGNATURE"
+    },
+    {
+      "id": "wrong_issue_hash",
+      "required": [
+        "member",
+        "company"
+      ],
+      "issue_hash": "hash1",
+      "evidence": [
+        {
+          "party": "member",
+          "issue_hash": "hash1"
+        },
+        {
+          "party": "company",
+          "issue_hash": "hash2"
+        }
+      ],
+      "expected": "AWAITING_SIGNATURE"
+    },
+    {
+      "id": "empty_signing_request",
+      "required": [],
+      "issue_hash": "hash1",
+      "evidence": [],
+      "expected": "INVALID_SIGNATURE_REQUEST"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "status": "synthetic expected policy decisions, not executed application tests",
+  "cases": [
+    {
+      "id": "scope-combination",
+      "roles": [
+        "manager@gymA",
+        "coach@gymB"
+      ],
+      "request": "rota.publish@gymB",
+      "expected": "deny unless separate matching grant"
+    },
+    {
+      "id": "individual-deny",
+      "roles": [
+        "manager@gymA"
+      ],
+      "individual": "deny work.close@gymA",
+      "request": "work.close@gymA",
+      "expected": "deny"
+    },
+    {
+      "id": "specific-allow",
+      "roles": [
+        "reception@gymA"
+      ],
+      "individual": "allow finance.view_reports@gymA with restricted field bundle",
+      "request": "finance.view_reports@gymB",
+      "expected": "deny"
+    },
+    {
+      "id": "owner-new-gym",
+      "roles": [
+        "owner@companyA"
+      ],
+      "request": "workspace.view@new-gym-in-companyA",
+      "expected": "allow subject to account/business/channel guards"
+    },
+    {
+      "id": "platform-escalation",
+      "roles": [
+        "owner@companyA"
+      ],
+      "request": "platform.assign_platform_admin",
+      "expected": "deny"
+    }
+  ]
+}

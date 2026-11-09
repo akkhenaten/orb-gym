@@ -1,0 +1,12 @@
+{
+  "package_edition": "0.35",
+  "validator_contract_version": "0.29",
+  "document_form_types": 34,
+  "typed_field_bindings": 52,
+  "declarative_layouts": 34,
+  "planned_acceptance_cases": 24,
+  "errors": [],
+  "actual_legal_medical_content_approved": false,
+  "actual_signature_render_provider_tested": false,
+  "live_documents_issued": false
+}

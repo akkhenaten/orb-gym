@@ -1,0 +1,60 @@
+{
+  "edition": "0.30",
+  "rules": [
+    {
+      "category": "appearance",
+      "treatment": "inherit published company preset/modes; permitted explicit gym override; default Orb until white-label activated",
+      "new_gym_rule": "Custom logo optional; upload alone does not activate white label"
+    },
+    {
+      "category": "company_and_billing_identity",
+      "treatment": "company details prefill approved source; actual legal issuer/merchant applicability separately confirmed",
+      "new_gym_rule": "Never infer legal entity from gym logo or copy another gym merchant credentials blindly"
+    },
+    {
+      "category": "roles_and_people",
+      "treatment": "reuse role templates; actual new-gym people/manager assignments explicit",
+      "new_gym_rule": "Owner covers own new gym; senior/local/staff/coach scope expands only via appropriate current grants"
+    },
+    {
+      "category": "documents_and_forms",
+      "treatment": "reuse applicable published template/version references and company-reviewed rules; select activity/gym applicability",
+      "new_gym_rule": "No new signature/evidence fabricated; gym-specific local terms need review when required"
+    },
+    {
+      "category": "membership_plans",
+      "treatment": "offer existing plan only under accepted gym scope and future-gym policy; local price/terms explicit",
+      "new_gym_rule": "All-gym label does not automatically extend historic rights to newly added location"
+    },
+    {
+      "category": "coaches_classes_staff_rota",
+      "treatment": "reuse template definitions as drafts where permitted; local resources/qualification/time availability/travel and actual assignment checked",
+      "new_gym_rule": "Do not copy live bookings, registers or published shifts into another gym"
+    },
+    {
+      "category": "tasks_assets_suppliers",
+      "treatment": "reuse approved task templates/approval policy by reference; local assets/areas/assignees and actual supplier scope explicit",
+      "new_gym_rule": "Create new recurrence occurrence identities; do not copy completion evidence, costs or asset QR identity"
+    },
+    {
+      "category": "products_stock_till",
+      "treatment": "product definitions may be reused; local availability/price/tax/tender/device/stock-opening input verified",
+      "new_gym_rule": "Stock transfer/opening ledger required; never clone another gym quantity or sales/receipts"
+    },
+    {
+      "category": "notifications",
+      "treatment": "inherit allowed event/purpose templates and company policy; gym recipients/timezone/source schedules resolved",
+      "new_gym_rule": "No blind copied old assignee/recipient list or unsupported external sender state"
+    },
+    {
+      "category": "public_pages",
+      "treatment": "generate draft card/page from approved gym Settings references; published projection under existing explicit publication config",
+      "new_gym_rule": "No private data leak or new gym auto-live paid CTA; information-only route available when ready"
+    },
+    {
+      "category": "reports",
+      "treatment": "reuse metric definitions; actual local sources/allocations/source completeness and report timeframe apply",
+      "new_gym_rule": "No seeded sample revenue/member counts or duplicated all-gym money"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "edition": "0.35",
+  "components": [
+    {
+      "component_id": "CMP-SHELL",
+      "name": "Role shell",
+      "behaviour": "Desktop left gym tree; tablet/mobile bottom navigation; context banner; account menu; exact footer.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-STATE",
+      "name": "State boundary",
+      "behaviour": "Loading, empty, filtered-empty, partial, denied, offline, stale, failed, saving, uncertain and confirmed outcomes.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-FOOTER",
+      "name": "Protected attribution",
+      "behaviour": "Orb Gym - powered by orbsolutions.co.uk; URL https://orbsolutions.co.uk; every public/app/error/auth page.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-FORM",
+      "name": "Validated form and policy stepper",
+      "behaviour": "Label, help, requiredness, field errors and error summary; conditional steps from workflow; explicit save/cancel; no automatic financial submission.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-TABLE",
+      "name": "Operational collection",
+      "behaviour": "Reference/name/status/gym/owner/date/next action; financial columns right aligned; field-scoped projections and selection scope.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-CALENDAR",
+      "name": "Unified schedule",
+      "behaviour": "Day/week/month/list; gym/type/person filters; source badges; collisions visible; event edits execute source-module command.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-ITEM",
+      "name": "Three-region item workspace",
+      "behaviour": "Top details/asset/evidence; lower feed and records; one authoritative task for cleaning/maintenance/admin and separate typed cases.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-FEED",
+      "name": "Activity feed and composer",
+      "behaviour": "Typed note/attachment/mention/quote/invoice/decision request; audience visible before submit; submitted is not approved.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-RECORDS",
+      "name": "Record projection tabs",
+      "behaviour": "Attachments, Decisions, Quotes, Invoices, Audit; links to original typed entries, versions and actors; no copied parallel truth.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-MEDIA",
+      "name": "Protected attachment viewer",
+      "behaviour": "In-app image zoom/fit/rotate where supported; download only if allowed; next/previous; source event link; permission recheck.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-RECEPTION",
+      "name": "Reception identity card",
+      "behaviour": "Photo left; name and pass outcome right; gym, visit, entitlement; separate advisory and blocking alerts; private HR/health absent.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-QR",
+      "name": "Purpose-specific QR",
+      "behaviour": "Distinguish identity pass, PT/trial visit window and asset lookup; expiry/revoked/unavailable text; camera/manual lookup fallback.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-TILL",
+      "name": "Till basket and tender",
+      "behaviour": "Scan/search product; quantity/price permissions; unstocked sale; member/anonymous; tender pending/confirmed/unknown; original-reference recovery.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-RECEIPT",
+      "name": "Issued receipt preview",
+      "behaviour": "Frozen issuer/brand/totals/tender reference; print/share/member receipt destination; reprint never creates sale.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-BRAND",
+      "name": "Theme preview and publisher",
+      "behaviour": "Company scope, preset, light/dark, editable token controls, contrast feedback, white-label toggle, logo/icon distinction and version rollback.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending",
+      "appearance_contract": "docs/design/appearance-settings-contract.json",
+      "style_rules": "docs/design/ui-direction-settings.md"
+    },
+    {
+      "component_id": "CMP-COACH",
+      "name": "Coach flip card",
+      "behaviour": "Front approved photo/name; explicit View details; reverse specialities/approved fees; no hover-only content or private HR/rent.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-ASSISTANT",
+      "name": "Orb assistant and action result",
+      "behaviour": "Scope and sources; proposed command, permission/approval result, pending/failed outcome; no authority in uploaded instructions.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-OVERLAY",
+      "name": "Dialog drawer and sheet",
+      "behaviour": "Bounded decision modal vs contextual nonmodal drawer; focus/dirty-state/escape contracts; complex workflows use addressable route.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-UPLOAD",
+      "name": "Protected upload",
+      "behaviour": "Allowed formats/size from runtime capability; progress/cancel/retry, scan outcome, failed/quarantined/ready; no public storage assumption.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    },
+    {
+      "component_id": "CMP-NOTIFICATION",
+      "name": "Notification and announcement",
+      "behaviour": "Delivery/read/ack/action separate; scoped deep link; expired/inaccessible destination recovers to safe current context.",
+      "states": "STATE-01",
+      "tokens": "semantic and component aliases in theme-tokens.json",
+      "keyboard": "Visible focus, labelled controls, logical DOM order; widget-specific rules in component-library.md",
+      "status": "specified, implementation verification pending"
+    }
+  ]
+}

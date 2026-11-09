@@ -1,0 +1,23 @@
+{
+  "edition": "0.27",
+  "source_id": "OG-MET-001",
+  "status": "SETUP_REQUIRED; no company commercial/accounting values guessed",
+  "tenant_values": null,
+  "required_inputs": {
+    "period": "report timezone, cutoff and comparable-period basis",
+    "money": "actual legal issuer, native currency/precision, tax-inclusive/exclusive display, provider-confirmed state mapping and provenance rules",
+    "allocation": "approved gym/cost-category allocation and unallocated bucket handling; source amounts unchanged",
+    "membership": "home-versus-entitlement gym view; known activation history and source quality",
+    "operations": "published retention/renewal/training/fault lookback rules; actual time/break and eligible availability semantics",
+    "valuation_and_contribution": "approved stock valuation/cost basis and contribution required cost categories/income basis before dependent metric available",
+    "runtime": "schema keys, exact source-state/history queries, source freshness and observed refresh evidence"
+  },
+  "safe_defaults": {
+    "different_currencies": "separate totals; no FX sum",
+    "missing_costs": "incomplete/unavailable; not zero/profit",
+    "zero_denominator": "unavailable with reason",
+    "unknown_history": "unclassified, not invented first activation",
+    "scheduled_external_reports": "not activated by viewing reports",
+    "generated_concept_figures": "illustrative only"
+  }
+}

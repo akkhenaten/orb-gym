@@ -1,0 +1,87 @@
+{
+  "edition": "0.24",
+  "scope": "Five dashboard references; not all roles, pages or both modes",
+  "default_preset": "basic-01",
+  "assets": [
+    {
+      "asset_id": "AST-DASH-01",
+      "preset_id": "basic-01",
+      "label": "Basic Bento",
+      "path": "assets/ui-dashboard-comparisons/01-basic-bento.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "666b3b97b7a36e2b7e9e7e75d0e0c119a3e7d97fb8892c57f4844331e7d0aacf",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-02",
+      "preset_id": "flat-02",
+      "label": "Flat Studio",
+      "path": "assets/ui-dashboard-comparisons/02-flat-studio.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "a2534b9b4d0f2c7be8a8d32f27ef21437c93063870108df39cbdd8b2cf0b0ff2",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-03",
+      "preset_id": "editorial-03",
+      "label": "Minimal Editorial",
+      "path": "assets/ui-dashboard-comparisons/03-minimal-editorial.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "7e1e3c92097a7764d39ac567a3bbc01bb309279d1d29e066328ea04403d55f2b",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-04",
+      "preset_id": "glass-04",
+      "label": "Soft Glass",
+      "path": "assets/ui-dashboard-comparisons/04-soft-glass.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "497be0780c7564f07a0964a8da7c7c5010a7c66619ff98961ea78f9547b1b5d1",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-05",
+      "preset_id": "console-05",
+      "label": "Performance Console",
+      "path": "assets/ui-dashboard-comparisons/05-performance-console.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "66af5965e167f4d5140eb5df90f54177f8abf1c88aa749180ada48967d60e52e",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "dark",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "edition": "0.32",
+  "source": "Founder request: review for errors, second pass",
+  "workflow_ids": [
+    "WF-USER-08",
+    "WF-SPACE-04",
+    "WF-SPACE-05",
+    "WF-MEM-04",
+    "WF-MEM-08",
+    "WF-COACH-04",
+    "WF-COACH-06",
+    "WF-JUNIOR-01"
+  ],
+  "contract_paths": [
+    "docs/data/authorization-contract.md",
+    "docs/access/policy-contract.json",
+    "docs/reviews/error-review-0.32.md",
+    "docs/reviews/second-review-acceptance.md"
+  ],
+  "acceptance_ids": [
+    "REV2-AC01",
+    "REV2-AC02",
+    "REV2-AC03",
+    "REV2-AC04",
+    "REV2-AC05",
+    "REV2-AC06",
+    "REV2-AC07",
+    "REV2-AC08"
+  ]
+}

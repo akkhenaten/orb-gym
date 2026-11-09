@@ -1,0 +1,67 @@
+{
+ "generated_at": "2022-01-01T05:00:00.000Z",
+ "counts": {
+  "screens": 114,
+  "presets": 5,
+  "selectable_theme_modes": 10,
+  "deferred_theme_modes": 2,
+  "cards": 156,
+  "parent_cards": 22,
+  "child_cards": 134,
+  "features_covered": 134,
+  "workflows_total": 149,
+  "workflows_bound_to_screen": 149
+ },
+ "ordering": {
+  "rule": "contiguous 00..N, foundations first, parents before their children, domains in declared precedence",
+  "dependency_edges_in_source": false,
+  "limitation": "feature-register.json exposes no depends_on/blocked_by field, so prerequisite ordering between features cannot be derived without inventing data. Ordering is by declared domain precedence and feature_id sequence.",
+  "domain_precedence": [
+   "AUTH",
+   "IMPORT",
+   "LAND",
+   "SPACE",
+   "DESIGN",
+   "RELEASE",
+   "USER",
+   "MEM",
+   "JUNIOR",
+   "CLASS",
+   "COACH",
+   "TRIAL",
+   "ENTRY",
+   "TASK",
+   "STAFF",
+   "CAL",
+   "POS",
+   "FIN",
+   "DOC",
+   "FEED",
+   "AI"
+  ]
+ },
+ "coverage": {
+  "command_domains_without_a_screen": [],
+  "screen_command_binding": {
+   "method": "derived by shared domain vocabulary (screen domain + its workflow domains); the specification declares no screen-to-command edge",
+   "commands_per_screen_median": 14,
+   "commands_reachable": 235,
+   "commands_total": 235,
+   "screens_with_commands": 104,
+   "screens_without_commands": [
+    "SCR-006",
+    "SCR-007",
+    "SCR-009",
+    "SCR-010",
+    "SCR-011",
+    "SCR-084",
+    "SCR-085",
+    "SCR-086",
+    "SCR-087",
+    "SCR-088"
+   ]
+  }
+ },
+ "notes": [],
+ "errors": []
+}

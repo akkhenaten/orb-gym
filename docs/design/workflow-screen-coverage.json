@@ -1,0 +1,3284 @@
+{
+  "edition": "0.31",
+  "workflows": [
+    {
+      "workflow_id": "WF-TASK-01",
+      "feature_id": "FEAT-TASK-01",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-052",
+        "SCR-101",
+        "SCR-102",
+        "SCR-103"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-02",
+      "feature_id": "FEAT-TASK-02",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-03",
+      "feature_id": "FEAT-TASK-03",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-04",
+      "feature_id": "FEAT-TASK-04",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-05",
+      "feature_id": "FEAT-TASK-05",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-053"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-06",
+      "feature_id": "FEAT-TASK-06",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-07",
+      "feature_id": "FEAT-TASK-07",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-054"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-08",
+      "feature_id": "FEAT-TASK-08",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-053",
+        "SCR-055"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-09",
+      "feature_id": "FEAT-TASK-09",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-052"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-10",
+      "feature_id": "FEAT-TASK-10",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-052"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-11",
+      "feature_id": "FEAT-TASK-11",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-12",
+      "feature_id": "FEAT-TASK-12",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-13",
+      "feature_id": "FEAT-TASK-13",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-14",
+      "feature_id": "FEAT-TASK-14",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-15",
+      "feature_id": "FEAT-TASK-15",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-16",
+      "feature_id": "FEAT-TASK-16",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-052"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-17",
+      "feature_id": "FEAT-TASK-17",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-01",
+      "feature_id": "FEAT-STAFF-01",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-02",
+      "feature_id": "FEAT-STAFF-02",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-03",
+      "feature_id": "FEAT-STAFF-03",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-044"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-04",
+      "feature_id": "FEAT-STAFF-04",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-045"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-05",
+      "feature_id": "FEAT-STAFF-05",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-06",
+      "feature_id": "FEAT-STAFF-06",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-046"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-07",
+      "feature_id": "FEAT-STAFF-07",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-08",
+      "feature_id": "FEAT-STAFF-08",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-09",
+      "feature_id": "FEAT-STAFF-09",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-10",
+      "feature_id": "FEAT-STAFF-10",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-048",
+        "SCR-049"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-11",
+      "feature_id": "FEAT-STAFF-11",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-047",
+        "SCR-048"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-12",
+      "feature_id": "FEAT-STAFF-12",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-048",
+        "SCR-049"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-13",
+      "feature_id": "FEAT-STAFF-13",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-049"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-14",
+      "feature_id": "FEAT-STAFF-14",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-15",
+      "feature_id": "FEAT-STAFF-15",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-01",
+      "feature_id": "FEAT-USER-01",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-02",
+      "feature_id": "FEAT-USER-02",
+      "screen_ids": [
+        "SCR-008",
+        "SCR-018",
+        "SCR-019"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-03",
+      "feature_id": "FEAT-USER-03",
+      "screen_ids": [
+        "SCR-008",
+        "SCR-018",
+        "SCR-019"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-04",
+      "feature_id": "FEAT-USER-04",
+      "screen_ids": [
+        "SCR-012",
+        "SCR-018",
+        "SCR-019"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-05",
+      "feature_id": "FEAT-USER-05",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019",
+        "SCR-078"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-06",
+      "feature_id": "FEAT-USER-06",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019",
+        "SCR-078"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-07",
+      "feature_id": "FEAT-USER-07",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019",
+        "SCR-104",
+        "SCR-105",
+        "SCR-106",
+        "SCR-112",
+        "SCR-113",
+        "SCR-114"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-08",
+      "feature_id": "FEAT-USER-08",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019",
+        "SCR-020"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-09",
+      "feature_id": "FEAT-USER-09",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-10",
+      "feature_id": "FEAT-USER-10",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019",
+        "SCR-104",
+        "SCR-105",
+        "SCR-106"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-01",
+      "feature_id": "FEAT-LAND-01",
+      "screen_ids": [
+        "SCR-001",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-02",
+      "feature_id": "FEAT-LAND-02",
+      "screen_ids": [
+        "SCR-002",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-03",
+      "feature_id": "FEAT-LAND-03",
+      "screen_ids": [
+        "SCR-002",
+        "SCR-003",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-04",
+      "feature_id": "FEAT-LAND-04",
+      "screen_ids": [
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-05",
+      "feature_id": "FEAT-LAND-05",
+      "screen_ids": [
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-06",
+      "feature_id": "FEAT-LAND-06",
+      "screen_ids": [
+        "SCR-003",
+        "SCR-005",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-07",
+      "feature_id": "FEAT-LAND-07",
+      "screen_ids": [
+        "SCR-003",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-08",
+      "feature_id": "FEAT-LAND-08",
+      "screen_ids": [
+        "SCR-004",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-09",
+      "feature_id": "FEAT-LAND-09",
+      "screen_ids": [
+        "SCR-003",
+        "SCR-005",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-10",
+      "feature_id": "FEAT-LAND-10",
+      "screen_ids": [
+        "SCR-002",
+        "SCR-079",
+        "SCR-080",
+        "SCR-081"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-SPACE-01",
+      "feature_id": "FEAT-SPACE-01",
+      "screen_ids": [
+        "SCR-001",
+        "SCR-008",
+        "SCR-013",
+        "SCR-014",
+        "SCR-015",
+        "SCR-017",
+        "SCR-112",
+        "SCR-113",
+        "SCR-114"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC37"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/space.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-SPACE-02",
+      "feature_id": "FEAT-SPACE-02",
+      "screen_ids": [
+        "SCR-013",
+        "SCR-014",
+        "SCR-016",
+        "SCR-112",
+        "SCR-113",
+        "SCR-114"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC37"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/space.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-SPACE-03",
+      "feature_id": "FEAT-SPACE-03",
+      "screen_ids": [
+        "SCR-013",
+        "SCR-014",
+        "SCR-017"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC37"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/space.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-SPACE-04",
+      "feature_id": "FEAT-SPACE-04",
+      "screen_ids": [
+        "SCR-013",
+        "SCR-014",
+        "SCR-017"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC37"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/space.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-01",
+      "feature_id": "FEAT-MEM-01",
+      "screen_ids": [
+        "SCR-005",
+        "SCR-008",
+        "SCR-021",
+        "SCR-022",
+        "SCR-097",
+        "SCR-098",
+        "SCR-099",
+        "SCR-100"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-02",
+      "feature_id": "FEAT-MEM-02",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-03",
+      "feature_id": "FEAT-MEM-03",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022",
+        "SCR-023"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-04",
+      "feature_id": "FEAT-MEM-04",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022",
+        "SCR-024"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-05",
+      "feature_id": "FEAT-MEM-05",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022",
+        "SCR-023",
+        "SCR-026"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-06",
+      "feature_id": "FEAT-MEM-06",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-07",
+      "feature_id": "FEAT-MEM-07",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022",
+        "SCR-025"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-01",
+      "feature_id": "FEAT-CLASS-01",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028",
+        "SCR-029",
+        "SCR-032"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-02",
+      "feature_id": "FEAT-CLASS-02",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028",
+        "SCR-029",
+        "SCR-030"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-03",
+      "feature_id": "FEAT-CLASS-03",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-04",
+      "feature_id": "FEAT-CLASS-04",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028",
+        "SCR-030"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-05",
+      "feature_id": "FEAT-CLASS-05",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-06",
+      "feature_id": "FEAT-CLASS-06",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028",
+        "SCR-029",
+        "SCR-031",
+        "SCR-032"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-COACH-01",
+      "feature_id": "FEAT-COACH-01",
+      "screen_ids": [
+        "SCR-004",
+        "SCR-033",
+        "SCR-034",
+        "SCR-035",
+        "SCR-037"
+      ],
+      "acceptance_ids": [
+        "AC11",
+        "AC12",
+        "AC13",
+        "AC14",
+        "AC17",
+        "AC41"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/coach.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-COACH-02",
+      "feature_id": "FEAT-COACH-02",
+      "screen_ids": [
+        "SCR-033",
+        "SCR-034",
+        "SCR-035"
+      ],
+      "acceptance_ids": [
+        "AC11",
+        "AC12",
+        "AC13",
+        "AC14",
+        "AC17",
+        "AC41"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/coach.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-COACH-03",
+      "feature_id": "FEAT-COACH-03",
+      "screen_ids": [
+        "SCR-033",
+        "SCR-034",
+        "SCR-035",
+        "SCR-036"
+      ],
+      "acceptance_ids": [
+        "AC11",
+        "AC12",
+        "AC13",
+        "AC14",
+        "AC17",
+        "AC41"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/coach.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-COACH-04",
+      "feature_id": "FEAT-COACH-04",
+      "screen_ids": [
+        "SCR-033",
+        "SCR-034",
+        "SCR-036"
+      ],
+      "acceptance_ids": [
+        "AC11",
+        "AC12",
+        "AC13",
+        "AC14",
+        "AC17",
+        "AC41"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/coach.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-COACH-05",
+      "feature_id": "FEAT-COACH-05",
+      "screen_ids": [
+        "SCR-033",
+        "SCR-034",
+        "SCR-035",
+        "SCR-036",
+        "SCR-038"
+      ],
+      "acceptance_ids": [
+        "AC11",
+        "AC12",
+        "AC13",
+        "AC14",
+        "AC17",
+        "AC41"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/coach.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-COACH-06",
+      "feature_id": "FEAT-COACH-06",
+      "screen_ids": [
+        "SCR-026",
+        "SCR-033",
+        "SCR-034",
+        "SCR-035",
+        "SCR-038"
+      ],
+      "acceptance_ids": [
+        "AC11",
+        "AC12",
+        "AC13",
+        "AC14",
+        "AC17",
+        "AC41"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/coach.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-ENTRY-01",
+      "feature_id": "FEAT-ENTRY-01",
+      "screen_ids": [
+        "SCR-039",
+        "SCR-040",
+        "SCR-041"
+      ],
+      "acceptance_ids": [
+        "AC09",
+        "AC10",
+        "AC11",
+        "AC12",
+        "AC18",
+        "AC19",
+        "AC32",
+        "AC35",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/entry.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-ENTRY-02",
+      "feature_id": "FEAT-ENTRY-02",
+      "screen_ids": [
+        "SCR-039",
+        "SCR-040"
+      ],
+      "acceptance_ids": [
+        "AC09",
+        "AC10",
+        "AC11",
+        "AC12",
+        "AC18",
+        "AC19",
+        "AC32",
+        "AC35",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/entry.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-ENTRY-03",
+      "feature_id": "FEAT-ENTRY-03",
+      "screen_ids": [
+        "SCR-039",
+        "SCR-040"
+      ],
+      "acceptance_ids": [
+        "AC09",
+        "AC10",
+        "AC11",
+        "AC12",
+        "AC18",
+        "AC19",
+        "AC32",
+        "AC35",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/entry.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-ENTRY-04",
+      "feature_id": "FEAT-ENTRY-04",
+      "screen_ids": [
+        "SCR-039",
+        "SCR-040"
+      ],
+      "acceptance_ids": [
+        "AC09",
+        "AC10",
+        "AC11",
+        "AC12",
+        "AC18",
+        "AC19",
+        "AC32",
+        "AC35",
+        "AC38"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/entry.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-01",
+      "feature_id": "FEAT-POS-01",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057",
+        "SCR-058"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-02",
+      "feature_id": "FEAT-POS-02",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057",
+        "SCR-058",
+        "SCR-059"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-03",
+      "feature_id": "FEAT-POS-03",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-04",
+      "feature_id": "FEAT-POS-04",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-05",
+      "feature_id": "FEAT-POS-05",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-06",
+      "feature_id": "FEAT-POS-06",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057",
+        "SCR-058",
+        "SCR-059",
+        "SCR-060"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-07",
+      "feature_id": "FEAT-POS-07",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057",
+        "SCR-058",
+        "SCR-059"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-08",
+      "feature_id": "FEAT-POS-08",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057",
+        "SCR-061"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FEED-01",
+      "feature_id": "FEAT-FEED-01",
+      "screen_ids": [
+        "SCR-062",
+        "SCR-063"
+      ],
+      "acceptance_ids": [
+        "AC23",
+        "AC31",
+        "AC48",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/feed.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FEED-02",
+      "feature_id": "FEAT-FEED-02",
+      "screen_ids": [
+        "SCR-062",
+        "SCR-063",
+        "SCR-065"
+      ],
+      "acceptance_ids": [
+        "AC23",
+        "AC31",
+        "AC48",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/feed.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FEED-03",
+      "feature_id": "FEAT-FEED-03",
+      "screen_ids": [
+        "SCR-062",
+        "SCR-063"
+      ],
+      "acceptance_ids": [
+        "AC23",
+        "AC31",
+        "AC48",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/feed.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FEED-04",
+      "feature_id": "FEAT-FEED-04",
+      "screen_ids": [
+        "SCR-062",
+        "SCR-063"
+      ],
+      "acceptance_ids": [
+        "AC23",
+        "AC31",
+        "AC48",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/feed.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FEED-05",
+      "feature_id": "FEAT-FEED-05",
+      "screen_ids": [
+        "SCR-062",
+        "SCR-063",
+        "SCR-064"
+      ],
+      "acceptance_ids": [
+        "AC23",
+        "AC31",
+        "AC48",
+        "AC53"
+      ],
+      "permission_source": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/feed.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DOC-01",
+      "feature_id": "FEAT-DOC-01",
+      "screen_ids": [
+        "SCR-066",
+        "SCR-067"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC20",
+        "AC28",
+        "AC43",
+        "AC49"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "source_document": "docs/workflows/doc.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DOC-02",
+      "feature_id": "FEAT-DOC-02",
+      "screen_ids": [
+        "SCR-044",
+        "SCR-066",
+        "SCR-067",
+        "SCR-068"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC20",
+        "AC28",
+        "AC43",
+        "AC49"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "source_document": "docs/workflows/doc.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DOC-03",
+      "feature_id": "FEAT-DOC-03",
+      "screen_ids": [
+        "SCR-044",
+        "SCR-066",
+        "SCR-067"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC20",
+        "AC28",
+        "AC43",
+        "AC49"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "source_document": "docs/workflows/doc.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DOC-04",
+      "feature_id": "FEAT-DOC-04",
+      "screen_ids": [
+        "SCR-046",
+        "SCR-066",
+        "SCR-067",
+        "SCR-068"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC20",
+        "AC28",
+        "AC43",
+        "AC49"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "source_document": "docs/workflows/doc.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FIN-01",
+      "feature_id": "FEAT-FIN-01",
+      "screen_ids": [
+        "SCR-069",
+        "SCR-070",
+        "SCR-071"
+      ],
+      "acceptance_ids": [
+        "AC25",
+        "AC41",
+        "AC45",
+        "AC46"
+      ],
+      "permission_source": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/fin.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FIN-02",
+      "feature_id": "FEAT-FIN-02",
+      "screen_ids": [
+        "SCR-069",
+        "SCR-070",
+        "SCR-110",
+        "SCR-111"
+      ],
+      "acceptance_ids": [
+        "AC25",
+        "AC41",
+        "AC45",
+        "AC46"
+      ],
+      "permission_source": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/fin.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FIN-03",
+      "feature_id": "FEAT-FIN-03",
+      "screen_ids": [
+        "SCR-069",
+        "SCR-070",
+        "SCR-110",
+        "SCR-111"
+      ],
+      "acceptance_ids": [
+        "AC25",
+        "AC41",
+        "AC45",
+        "AC46"
+      ],
+      "permission_source": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/fin.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FIN-04",
+      "feature_id": "FEAT-FIN-04",
+      "screen_ids": [
+        "SCR-069",
+        "SCR-070",
+        "SCR-110",
+        "SCR-111"
+      ],
+      "acceptance_ids": [
+        "AC25",
+        "AC41",
+        "AC45",
+        "AC46"
+      ],
+      "permission_source": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/fin.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CAL-01",
+      "feature_id": "FEAT-CAL-01",
+      "screen_ids": [
+        "SCR-072",
+        "SCR-073"
+      ],
+      "acceptance_ids": [
+        "AC17",
+        "AC19",
+        "AC33",
+        "AC42",
+        "AC48",
+        "AC51"
+      ],
+      "permission_source": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/cal.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CAL-02",
+      "feature_id": "FEAT-CAL-02",
+      "screen_ids": [
+        "SCR-072",
+        "SCR-073"
+      ],
+      "acceptance_ids": [
+        "AC17",
+        "AC19",
+        "AC33",
+        "AC42",
+        "AC48",
+        "AC51"
+      ],
+      "permission_source": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/cal.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CAL-03",
+      "feature_id": "FEAT-CAL-03",
+      "screen_ids": [
+        "SCR-072",
+        "SCR-073",
+        "SCR-074",
+        "SCR-107",
+        "SCR-108",
+        "SCR-109"
+      ],
+      "acceptance_ids": [
+        "AC17",
+        "AC19",
+        "AC33",
+        "AC42",
+        "AC48",
+        "AC51"
+      ],
+      "permission_source": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/cal.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CAL-04",
+      "feature_id": "FEAT-CAL-04",
+      "screen_ids": [
+        "SCR-072",
+        "SCR-073",
+        "SCR-074",
+        "SCR-107",
+        "SCR-108",
+        "SCR-109"
+      ],
+      "acceptance_ids": [
+        "AC17",
+        "AC19",
+        "AC33",
+        "AC42",
+        "AC48",
+        "AC51"
+      ],
+      "permission_source": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/cal.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DESIGN-01",
+      "feature_id": "FEAT-DESIGN-01",
+      "screen_ids": [
+        "SCR-075",
+        "SCR-076"
+      ],
+      "acceptance_ids": [
+        "AC04",
+        "AC05",
+        "AC06",
+        "AC07",
+        "AC30",
+        "AC51",
+        "AC52"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/design.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DESIGN-02",
+      "feature_id": "FEAT-DESIGN-02",
+      "screen_ids": [
+        "SCR-016",
+        "SCR-075",
+        "SCR-076",
+        "SCR-077"
+      ],
+      "acceptance_ids": [
+        "AC04",
+        "AC05",
+        "AC06",
+        "AC07",
+        "AC30",
+        "AC51",
+        "AC52"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/design.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DESIGN-03",
+      "feature_id": "FEAT-DESIGN-03",
+      "screen_ids": [
+        "SCR-075",
+        "SCR-076",
+        "SCR-078"
+      ],
+      "acceptance_ids": [
+        "AC04",
+        "AC05",
+        "AC06",
+        "AC07",
+        "AC30",
+        "AC51",
+        "AC52"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/design.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-DESIGN-04",
+      "feature_id": "FEAT-DESIGN-04",
+      "screen_ids": [
+        "SCR-075",
+        "SCR-076",
+        "SCR-077"
+      ],
+      "acceptance_ids": [
+        "AC04",
+        "AC05",
+        "AC06",
+        "AC07",
+        "AC30",
+        "AC51",
+        "AC52"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/design.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-AI-01",
+      "feature_id": "FEAT-AI-01",
+      "screen_ids": [
+        "SCR-082",
+        "SCR-083"
+      ],
+      "acceptance_ids": [
+        "AC32",
+        "AC34",
+        "AC46"
+      ],
+      "permission_source": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/08-design-branding-documents-pages.md"
+      ],
+      "source_document": "docs/workflows/ai.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-AI-02",
+      "feature_id": "FEAT-AI-02",
+      "screen_ids": [
+        "SCR-082",
+        "SCR-083"
+      ],
+      "acceptance_ids": [
+        "AC32",
+        "AC34",
+        "AC46"
+      ],
+      "permission_source": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/08-design-branding-documents-pages.md"
+      ],
+      "source_document": "docs/workflows/ai.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-AI-03",
+      "feature_id": "FEAT-AI-03",
+      "screen_ids": [
+        "SCR-082",
+        "SCR-083"
+      ],
+      "acceptance_ids": [
+        "AC32",
+        "AC34",
+        "AC46"
+      ],
+      "permission_source": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/08-design-branding-documents-pages.md"
+      ],
+      "source_document": "docs/workflows/ai.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-RELEASE-01",
+      "feature_id": "FEAT-RELEASE-01",
+      "screen_ids": [
+        "SCR-084",
+        "SCR-085"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC35",
+        "AC36",
+        "AC37",
+        "AC38",
+        "AC54",
+        "AC55"
+      ],
+      "permission_source": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/release.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-RELEASE-02",
+      "feature_id": "FEAT-RELEASE-02",
+      "screen_ids": [
+        "SCR-084",
+        "SCR-085"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC35",
+        "AC36",
+        "AC37",
+        "AC38",
+        "AC54",
+        "AC55"
+      ],
+      "permission_source": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/release.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-RELEASE-03",
+      "feature_id": "FEAT-RELEASE-03",
+      "screen_ids": [
+        "SCR-084",
+        "SCR-085"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC35",
+        "AC36",
+        "AC37",
+        "AC38",
+        "AC54",
+        "AC55"
+      ],
+      "permission_source": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/release.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-RELEASE-04",
+      "feature_id": "FEAT-RELEASE-04",
+      "screen_ids": [
+        "SCR-084",
+        "SCR-085"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC35",
+        "AC36",
+        "AC37",
+        "AC38",
+        "AC54",
+        "AC55"
+      ],
+      "permission_source": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/release.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-08",
+      "feature_id": "FEAT-MEM-04",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022",
+        "SCR-024"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39",
+        "AC56"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-MEM-09",
+      "feature_id": "FEAT-MEM-02",
+      "screen_ids": [
+        "SCR-021",
+        "SCR-022"
+      ],
+      "acceptance_ids": [
+        "AC08",
+        "AC09",
+        "AC10",
+        "AC12",
+        "AC32",
+        "AC38",
+        "AC39",
+        "AC57"
+      ],
+      "permission_source": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/mem.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-07",
+      "feature_id": "FEAT-CLASS-05",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028",
+        "SCR-029",
+        "SCR-030",
+        "SCR-032"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53",
+        "AC58"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-CLASS-08",
+      "feature_id": "FEAT-CLASS-02",
+      "screen_ids": [
+        "SCR-027",
+        "SCR-028",
+        "SCR-029",
+        "SCR-030"
+      ],
+      "acceptance_ids": [
+        "AC15",
+        "AC16",
+        "AC17",
+        "AC18",
+        "AC40",
+        "AC53",
+        "AC59"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/class.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-STAFF-16",
+      "feature_id": "FEAT-STAFF-11",
+      "screen_ids": [
+        "SCR-042",
+        "SCR-043",
+        "SCR-047"
+      ],
+      "acceptance_ids": [
+        "AC03",
+        "AC19",
+        "AC20",
+        "AC42",
+        "AC43",
+        "AC60"
+      ],
+      "permission_source": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/staff.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-18",
+      "feature_id": "FEAT-TASK-07",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051",
+        "SCR-052",
+        "SCR-054"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44",
+        "AC61"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-19",
+      "feature_id": "FEAT-TASK-13",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44",
+        "AC62"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-20",
+      "feature_id": "FEAT-TASK-06",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44",
+        "AC63"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TASK-21",
+      "feature_id": "FEAT-TASK-06",
+      "screen_ids": [
+        "SCR-050",
+        "SCR-051"
+      ],
+      "acceptance_ids": [
+        "AC21",
+        "AC22",
+        "AC23",
+        "AC24",
+        "AC25",
+        "AC44",
+        "AC64"
+      ],
+      "permission_source": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "source_document": "docs/workflows/task.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-USER-11",
+      "feature_id": "FEAT-USER-05",
+      "screen_ids": [
+        "SCR-018",
+        "SCR-019"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC04",
+        "AC08",
+        "AC37",
+        "AC38",
+        "AC65"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "source_document": "docs/workflows/user.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-SPACE-05",
+      "feature_id": "FEAT-SPACE-04",
+      "screen_ids": [
+        "SCR-013",
+        "SCR-014"
+      ],
+      "acceptance_ids": [
+        "AC01",
+        "AC02",
+        "AC03",
+        "AC37",
+        "AC66"
+      ],
+      "permission_source": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "source_document": "docs/workflows/space.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-POS-09",
+      "feature_id": "FEAT-POS-03",
+      "screen_ids": [
+        "SCR-056",
+        "SCR-057",
+        "SCR-058",
+        "SCR-059"
+      ],
+      "acceptance_ids": [
+        "AC26",
+        "AC27",
+        "AC28",
+        "AC45",
+        "AC47",
+        "AC67"
+      ],
+      "permission_source": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "source_document": "docs/workflows/pos.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-FIN-05",
+      "feature_id": "FEAT-FIN-01",
+      "screen_ids": [
+        "SCR-024",
+        "SCR-069",
+        "SCR-070"
+      ],
+      "acceptance_ids": [
+        "AC25",
+        "AC41",
+        "AC45",
+        "AC46",
+        "AC68"
+      ],
+      "permission_source": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/fin.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-COACH-07",
+      "feature_id": "FEAT-COACH-02",
+      "screen_ids": [
+        "SCR-033",
+        "SCR-034"
+      ],
+      "acceptance_ids": [
+        "AC11",
+        "AC12",
+        "AC13",
+        "AC14",
+        "AC17",
+        "AC41",
+        "AC69"
+      ],
+      "permission_source": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "source_document": "docs/workflows/coach.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-LAND-11",
+      "feature_id": "FEAT-LAND-10",
+      "screen_ids": [
+        "SCR-003",
+        "SCR-079",
+        "SCR-080"
+      ],
+      "acceptance_ids": [
+        "AC05",
+        "AC06",
+        "AC29",
+        "AC30",
+        "AC49",
+        "AC50",
+        "AC70"
+      ],
+      "permission_source": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "source_document": "docs/workflows/land.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TRIAL-01",
+      "feature_id": "FEAT-TRIAL-01",
+      "screen_ids": [
+        "SCR-086",
+        "SCR-087",
+        "SCR-088"
+      ],
+      "acceptance_ids": [
+        "AC71"
+      ],
+      "permission_source": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "source_document": "docs/workflows/trial.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TRIAL-02",
+      "feature_id": "FEAT-TRIAL-02",
+      "screen_ids": [
+        "SCR-086",
+        "SCR-087",
+        "SCR-088"
+      ],
+      "acceptance_ids": [
+        "AC72"
+      ],
+      "permission_source": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "source_document": "docs/workflows/trial.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TRIAL-03",
+      "feature_id": "FEAT-TRIAL-03",
+      "screen_ids": [
+        "SCR-086",
+        "SCR-087",
+        "SCR-088"
+      ],
+      "acceptance_ids": [
+        "AC73"
+      ],
+      "permission_source": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "source_document": "docs/workflows/trial.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-TRIAL-04",
+      "feature_id": "FEAT-TRIAL-04",
+      "screen_ids": [
+        "SCR-026",
+        "SCR-086",
+        "SCR-087"
+      ],
+      "acceptance_ids": [
+        "AC74"
+      ],
+      "permission_source": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "source_document": "docs/workflows/trial.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-JUNIOR-01",
+      "feature_id": "FEAT-JUNIOR-01",
+      "screen_ids": [
+        "SCR-089",
+        "SCR-090",
+        "SCR-091"
+      ],
+      "acceptance_ids": [
+        "AC75"
+      ],
+      "permission_source": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "source_document": "docs/workflows/junior.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-JUNIOR-02",
+      "feature_id": "FEAT-JUNIOR-02",
+      "screen_ids": [
+        "SCR-089",
+        "SCR-090"
+      ],
+      "acceptance_ids": [
+        "AC76"
+      ],
+      "permission_source": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "source_document": "docs/workflows/junior.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-JUNIOR-03",
+      "feature_id": "FEAT-JUNIOR-03",
+      "screen_ids": [
+        "SCR-089",
+        "SCR-090",
+        "SCR-091"
+      ],
+      "acceptance_ids": [
+        "AC77"
+      ],
+      "permission_source": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "source_document": "docs/workflows/junior.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-JUNIOR-04",
+      "feature_id": "FEAT-JUNIOR-04",
+      "screen_ids": [
+        "SCR-089",
+        "SCR-090",
+        "SCR-092"
+      ],
+      "acceptance_ids": [
+        "AC78"
+      ],
+      "permission_source": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "source_document": "docs/workflows/junior.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-JUNIOR-05",
+      "feature_id": "FEAT-JUNIOR-05",
+      "screen_ids": [
+        "SCR-089",
+        "SCR-090",
+        "SCR-091"
+      ],
+      "acceptance_ids": [
+        "AC79"
+      ],
+      "permission_source": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "source_document": "docs/workflows/junior.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-JUNIOR-06",
+      "feature_id": "FEAT-JUNIOR-06",
+      "screen_ids": [
+        "SCR-089",
+        "SCR-090",
+        "SCR-093"
+      ],
+      "acceptance_ids": [
+        "AC80"
+      ],
+      "permission_source": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "source_document": "docs/workflows/junior.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-IMPORT-01",
+      "feature_id": "FEAT-IMPORT-01",
+      "screen_ids": [
+        "SCR-094",
+        "SCR-095"
+      ],
+      "acceptance_ids": [
+        "AC81"
+      ],
+      "permission_source": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "source_document": "docs/workflows/import.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-IMPORT-02",
+      "feature_id": "FEAT-IMPORT-02",
+      "screen_ids": [
+        "SCR-094",
+        "SCR-095"
+      ],
+      "acceptance_ids": [
+        "AC82"
+      ],
+      "permission_source": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "source_document": "docs/workflows/import.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-IMPORT-03",
+      "feature_id": "FEAT-IMPORT-03",
+      "screen_ids": [
+        "SCR-094",
+        "SCR-095",
+        "SCR-096"
+      ],
+      "acceptance_ids": [
+        "AC83"
+      ],
+      "permission_source": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "source_document": "docs/workflows/import.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-IMPORT-04",
+      "feature_id": "FEAT-IMPORT-04",
+      "screen_ids": [
+        "SCR-094",
+        "SCR-095"
+      ],
+      "acceptance_ids": [
+        "AC84"
+      ],
+      "permission_source": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "source_document": "docs/workflows/import.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-IMPORT-05",
+      "feature_id": "FEAT-IMPORT-05",
+      "screen_ids": [
+        "SCR-094",
+        "SCR-095"
+      ],
+      "acceptance_ids": [
+        "AC85"
+      ],
+      "permission_source": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "source_document": "docs/workflows/import.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-AUTH-01",
+      "feature_id": "FEAT-AUTH-01",
+      "screen_ids": [
+        "SCR-006",
+        "SCR-007",
+        "SCR-010"
+      ],
+      "acceptance_ids": [
+        "AC86"
+      ],
+      "permission_source": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "source_document": "docs/workflows/auth.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-AUTH-02",
+      "feature_id": "FEAT-AUTH-02",
+      "screen_ids": [
+        "SCR-006",
+        "SCR-007",
+        "SCR-012"
+      ],
+      "acceptance_ids": [
+        "AC87"
+      ],
+      "permission_source": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "source_document": "docs/workflows/auth.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-AUTH-03",
+      "feature_id": "FEAT-AUTH-03",
+      "screen_ids": [
+        "SCR-006",
+        "SCR-007",
+        "SCR-009",
+        "SCR-011"
+      ],
+      "acceptance_ids": [
+        "AC88"
+      ],
+      "permission_source": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "source_document": "docs/workflows/auth.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    },
+    {
+      "workflow_id": "WF-AUTH-04",
+      "feature_id": "FEAT-AUTH-04",
+      "screen_ids": [
+        "SCR-006",
+        "SCR-007",
+        "SCR-012",
+        "SCR-104",
+        "SCR-105",
+        "SCR-106"
+      ],
+      "acceptance_ids": [
+        "AC89"
+      ],
+      "permission_source": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "source_document": "docs/workflows/auth.md",
+      "mapping_status": "Initial domain-level screen/action binding; OpenKBS must refine field/action enforcement and actual route/card IDs before build."
+    }
+  ]
+}

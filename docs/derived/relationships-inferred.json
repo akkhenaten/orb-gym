@@ -1,0 +1,300 @@
+{
+ "edition": "0.28",
+ "inferred": [
+  {
+   "relationship_id": "REL-I-001",
+   "from_entity": "ENT-BillingEntity",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-002",
+   "from_entity": "ENT-AreaResource",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-003",
+   "from_entity": "ENT-AreaResource",
+   "to_entity": "ENT-Gym",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "gym_id",
+   "evidence_note": "derived from declared field gym_id; the source register has no row for this pair",
+   "strength": "gym-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-004",
+   "from_entity": "ENT-Invitation",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-005",
+   "from_entity": "ENT-StaffAvailability",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-006",
+   "from_entity": "ENT-HRRecord",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-007",
+   "from_entity": "ENT-TrainingRequirement",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-008",
+   "from_entity": "ENT-PaymentSetup",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-009",
+   "from_entity": "ENT-PaymentSetup",
+   "to_entity": "ENT-BillingEntity",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "billing_entity_id",
+   "evidence_note": "derived from declared field billing_entity_id; the source register has no row for this pair",
+   "strength": "direct",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-010",
+   "from_entity": "ENT-GymCostAllocation",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-011",
+   "from_entity": "ENT-GymCostAllocation",
+   "to_entity": "ENT-Gym",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "gym_id",
+   "evidence_note": "derived from declared field gym_id; the source register has no row for this pair",
+   "strength": "gym-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-012",
+   "from_entity": "ENT-CommunityEntry",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  },
+  {
+   "relationship_id": "REL-I-013",
+   "from_entity": "ENT-PolicyVersion",
+   "to_entity": "ENT-Workspace",
+   "cardinality": "many-to-one",
+   "authority": "derived-field-evidence",
+   "evidence_field": "workspace_id",
+   "evidence_note": "derived from declared field workspace_id; the source register has no row for this pair",
+   "strength": "tenant-scope",
+   "rule": null,
+   "scope_rule": null
+  }
+ ],
+ "report": {
+  "generated_at": "2022-01-01T05:00:00.000Z",
+  "counts": {
+   "entities": 78,
+   "source_relationships": 61,
+   "orphans_in_source": 11,
+   "inferred": 13,
+   "orphans_remaining": 1,
+   "tenant_scope_edges": 10,
+   "gym_scope_edges": 2,
+   "direct_edges": 1
+  },
+  "authority_note": "Inferred rows carry evidence_field and no rule prose. They close the graph mechanically; they do not supersede or edit docs/data/relationships.json.",
+  "unresolved": [
+   {
+    "entity_id": "ENT-AuditEvent",
+    "reason": "no declared field references another entity; the edge cannot be derived without a product decision",
+    "fields_reviewed": [
+     "workspace_id_or_platform",
+     "actor_id",
+     "operation_id",
+     "target_reference",
+     "before_after",
+     "reason",
+     "time"
+    ]
+   }
+  ],
+  "semantic_gaps": [
+   {
+    "entity_id": "ENT-BillingEntity",
+    "evidence": "Legal issuer is separate from decorative logo; immutable issued snapshot reference",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-AreaResource",
+    "evidence": "Equipment/room/resource cannot be assigned across foreign workspace",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-Invitation",
+    "evidence": "Opaque invitation handle is not gym entry or membership grant",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym",
+     "ENT-Membership"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-StaffAvailability",
+    "evidence": "Rota/PT/classes validate qualification, travel and overlaps under current rules",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-HRRecord",
+    "evidence": "Disciplinary/one-to-one/pay bundles isolated; self HR view not all private notes",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-TrainingRequirement",
+    "evidence": "Version-specific acknowledgement/credential evidence; no blanket indefinite validity; expired accepted evidence is retained, renewal uses current applicable requirement/version and separately reviewed fresh evidence",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-PaymentSetup",
+    "evidence": "Active mandate is not collection; provider supported transfer separately authorised",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-GymCostAllocation",
+    "evidence": "Shares sum to source line or visible unallocated remainder; parent/child/asset links not duplicate expense",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym",
+     "ENT-Asset"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-CommunityEntry",
+    "evidence": "Public/member/internal/vendor audiences explicit; mention never grants access",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-AuditEvent",
+    "evidence": "Attribution survives deactivation; sensitive content minimised and protected",
+    "implied_targets": [
+     "ENT-Workspace"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   },
+   {
+    "entity_id": "ENT-PolicyVersion",
+    "evidence": "Missing commercial/safety/provider input blocks only affected action; no guessed threshold",
+    "implied_targets": [
+     "ENT-Workspace",
+     "ENT-Gym"
+    ],
+    "why_not_an_edge": "no declared field references these entities; adding an edge would require inventing a column"
+   }
+  ],
+  "open_decisions": [
+   "ENT-AuditEvent"
+  ],
+  "still_orphan": [
+   "ENT-AuditEvent"
+  ],
+  "rejected": [],
+  "errors": []
+ }
+}

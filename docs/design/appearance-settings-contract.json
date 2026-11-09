@@ -1,0 +1,79 @@
+{
+  "edition": "0.35",
+  "source_workflows": [
+    "WF-DESIGN-01",
+    "WF-DESIGN-02",
+    "WF-DESIGN-03",
+    "WF-DESIGN-04"
+  ],
+  "screen_id": "SCR-075",
+  "control": {
+    "label": "UI direction",
+    "type": "single-select radio cards with labelled style sample",
+    "values_source": "docs/design/style-options.json",
+    "required": true,
+    "default": "basic-01",
+    "save": "Save draft",
+    "apply": "Publish appearance",
+    "cancel": "Discard preview",
+    "reset": "Reset to inherited style",
+    "rollback": "Restore previous appearance"
+  },
+  "authority": {
+    "draft": [
+      "branding.view_draft",
+      "branding.edit_company"
+    ],
+    "publish": [
+      "branding.publish"
+    ],
+    "gym_override": [
+      "branding.edit_gym",
+      "branding.publish"
+    ],
+    "white_label_activation": [
+      "branding.activate_white_label"
+    ],
+    "rollback": [
+      "branding.rollback"
+    ],
+    "enforcement": "Existing exact workspace/gym/record/action/field and individual deny rules; authorise each actual action separately. Owner has own-company baseline; delegated roles need matching rights. No cross-tenant or global platform restyling."
+  },
+  "scope": {
+    "company": "Published default for all company portals/modules and company-owned public pages, inherited by each gym",
+    "gym": "Company-approved overrides of style/brand tokens only in actual gym scope; reset removes override and re-inherits",
+    "personal": "Light/dark/system and reduced motion/effects only; does not publish a shared preset",
+    "platform": "Platform admin console and Orb Gym platform marketing page retain platform configuration; a tenant cannot alter another workspace or platform identity"
+  },
+  "publication": {
+    "draft_only_preview": true,
+    "expected_version_required": true,
+    "atomic_validated_snapshot": true,
+    "failure_keeps_published": true,
+    "preserve_work_in_progress": true,
+    "rollback_versioned": true,
+    "white_label_activation_is_separate": true,
+    "invalid_draft_blocks_publish": true
+  },
+  "documents": {
+    "new_outputs": "Use approved brand identity and template version, with readable print-safe surfaces",
+    "issued_outputs": "Freeze original brand/template/data snapshot; no retrospective restyling",
+    "effects": "No live blur/translucent/embossed controls on receipts, invoices, signed records or print exports"
+  },
+  "accessibility": {
+    "effects_preference": "auto | full | reduced; personal preference and OS settings can reduce effects, never overridden by company decoration",
+    "effective_reduction": "Reduced transparency, forced colours or reduced effects remove blur/decorative depth; reduced motion stops decorative animation; system or personal reduction wins over full",
+    "opaque_fallback_required": true,
+    "visible_control_boundaries_required": true,
+    "state_not_shadow_only": true,
+    "minimum_touch_target_px": 44,
+    "focus_ring_px": 2,
+    "contrast_requirement": "Normal text at least 4.5:1, large text 3:1, meaningful controls/focus at least 3:1 against adjacent surfaces; verify actual composite backgrounds and user colours, not only base tokens."
+  },
+  "recovery": {
+    "stale": "This appearance has changed. Review the latest version before publishing. Preserve draft for compare/rebase; no silent overwrite.",
+    "failure": "Could not publish appearance. Your draft is saved; the current appearance remains active.",
+    "unavailable_effect": "Use resolved solid fallback and preserve content and current selection; no essential feature depends on blur/shadow support.",
+    "invalid_preset": "Reject invalid publication; render last valid snapshot or inherited Basic 01 and report configuration fault without granting additional access."
+  }
+}

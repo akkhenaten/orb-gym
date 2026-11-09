@@ -1,0 +1,65 @@
+{
+  "edition": "0.30",
+  "records": [
+    {
+      "name": "SetupSectionProgress",
+      "keys": [
+        "workspace",
+        "gym_or_company_scope",
+        "section_id",
+        "selected_capability_context",
+        "source_version_refs",
+        "draft_state",
+        "actual_server_saved_at"
+      ],
+      "invariant": "Progress is not service activation; source values remain in owning settings records"
+    },
+    {
+      "name": "SetupDelegation",
+      "keys": [
+        "workspace",
+        "scope",
+        "section_id",
+        "assignee_or_queue",
+        "assigned_by",
+        "effective_dates",
+        "reason",
+        "version"
+      ],
+      "invariant": "Responsibility assignment never grants underlying permissions or professional authority"
+    },
+    {
+      "name": "ReadinessEvaluation",
+      "keys": [
+        "workspace",
+        "gym_scope",
+        "capability_id",
+        "source_policy_versions",
+        "evidence_refs",
+        "evaluated_at",
+        "outcome",
+        "blocker_refs",
+        "responsible_owner"
+      ],
+      "invariant": "Derived versioned evaluation, not manually editable blanket ready flag"
+    },
+    {
+      "name": "SetupEvidenceReference",
+      "keys": [
+        "workspace",
+        "scope",
+        "evidence_type",
+        "protected_reference",
+        "source_version",
+        "observed_result",
+        "environment",
+        "reviewer_or_trusted_adapter",
+        "observed_at"
+      ],
+      "invariant": "No provider secrets or private health answers copied into public setup progress; mock/screenshots do not prove real capability"
+    }
+  ],
+  "relationships": "Progress/delegation/evaluation reference existing ENT-Workspace/Gym/PolicyVersion/company person/access/audit/file records and source policy catalogues; no duplicated financial/doc/template truth",
+  "concurrency": "Expected versions on draft/assignment/publish; retry identities; source change invalidates cached evaluation; recheck current grants at resolution",
+  "retention": "Follow existing reviewed policy; preserve audit, no invented duration"
+}

@@ -1,0 +1,587 @@
+{
+  "validator_contract_version": "0.31",
+  "screens": 114,
+  "components": 20,
+  "workflow_action_variants": 149,
+  "resolved_theme_modes": 12,
+  "selected_contrast_pairs": [
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "text/surface",
+      "ratio": 18.72
+    },
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "textMuted/surface",
+      "ratio": 5.98
+    },
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.61
+    },
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "danger/surface",
+      "ratio": 8.02
+    },
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "success/surface",
+      "ratio": 7.13
+    },
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "warning/surface",
+      "ratio": 6.85
+    },
+    {
+      "preset": "basic-01",
+      "mode": "light",
+      "pair": "link/surface",
+      "ratio": 7.62
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "text/surface",
+      "ratio": 15.97
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "textMuted/surface",
+      "ratio": 9.2
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.32
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "danger/surface",
+      "ratio": 9.9
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "success/surface",
+      "ratio": 10.71
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "warning/surface",
+      "ratio": 11.64
+    },
+    {
+      "preset": "basic-01",
+      "mode": "dark",
+      "pair": "link/surface",
+      "ratio": 9.86
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "text/surface",
+      "ratio": 18.88
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "textMuted/surface",
+      "ratio": 7.81
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.61
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "danger/surface",
+      "ratio": 8.02
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "success/surface",
+      "ratio": 7.13
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "warning/surface",
+      "ratio": 6.85
+    },
+    {
+      "preset": "flat-02",
+      "mode": "light",
+      "pair": "link/surface",
+      "ratio": 7.62
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "text/surface",
+      "ratio": 15.91
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "textMuted/surface",
+      "ratio": 8.74
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.32
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "danger/surface",
+      "ratio": 10.31
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "success/surface",
+      "ratio": 11.16
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "warning/surface",
+      "ratio": 12.13
+    },
+    {
+      "preset": "flat-02",
+      "mode": "dark",
+      "pair": "link/surface",
+      "ratio": 10.27
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "text/surface",
+      "ratio": 16.09
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "textMuted/surface",
+      "ratio": 6.27
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.61
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "danger/surface",
+      "ratio": 7.89
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "success/surface",
+      "ratio": 7.02
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "warning/surface",
+      "ratio": 6.75
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "light",
+      "pair": "link/surface",
+      "ratio": 7.5
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "text/surface",
+      "ratio": 14.19
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "textMuted/surface",
+      "ratio": 8.31
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.32
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "danger/surface",
+      "ratio": 9.5
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "success/surface",
+      "ratio": 10.28
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "warning/surface",
+      "ratio": 11.17
+    },
+    {
+      "preset": "editorial-03",
+      "mode": "dark",
+      "pair": "link/surface",
+      "ratio": 9.46
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "text/surface",
+      "ratio": 16.33
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "textMuted/surface",
+      "ratio": 6.09
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.61
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "danger/surface",
+      "ratio": 8.02
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "success/surface",
+      "ratio": 7.13
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "warning/surface",
+      "ratio": 6.85
+    },
+    {
+      "preset": "glass-04",
+      "mode": "light",
+      "pair": "link/surface",
+      "ratio": 7.62
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "text/surface",
+      "ratio": 14.11
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "textMuted/surface",
+      "ratio": 8.59
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.32
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "danger/surface",
+      "ratio": 8.89
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "success/surface",
+      "ratio": 9.62
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "warning/surface",
+      "ratio": 10.45
+    },
+    {
+      "preset": "glass-04",
+      "mode": "dark",
+      "pair": "link/surface",
+      "ratio": 8.85
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "text/surface",
+      "ratio": 16.13
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "textMuted/surface",
+      "ratio": 6.29
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.61
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "danger/surface",
+      "ratio": 8.02
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "success/surface",
+      "ratio": 7.13
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "warning/surface",
+      "ratio": 6.85
+    },
+    {
+      "preset": "console-05",
+      "mode": "light",
+      "pair": "link/surface",
+      "ratio": 7.62
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "text/surface",
+      "ratio": 15.49
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "textMuted/surface",
+      "ratio": 8.25
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.32
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "danger/surface",
+      "ratio": 10.05
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "success/surface",
+      "ratio": 10.88
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "warning/surface",
+      "ratio": 11.82
+    },
+    {
+      "preset": "console-05",
+      "mode": "dark",
+      "pair": "link/surface",
+      "ratio": 10.01
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "text/surface",
+      "ratio": 13.54
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "textMuted/surface",
+      "ratio": 5.84
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.61
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "danger/surface",
+      "ratio": 6.81
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "success/surface",
+      "ratio": 6.06
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "warning/surface",
+      "ratio": 5.82
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "light",
+      "pair": "link/surface",
+      "ratio": 6.47
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "text/surface",
+      "ratio": 12.85
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "textMuted/surface",
+      "ratio": 8.36
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "actionText/action",
+      "ratio": 6.0
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "selectedText/selectedSurface",
+      "ratio": 8.32
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "danger/surface",
+      "ratio": 8.09
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "success/surface",
+      "ratio": 8.76
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "warning/surface",
+      "ratio": 9.52
+    },
+    {
+      "preset": "neumorphic-06",
+      "mode": "dark",
+      "pair": "link/surface",
+      "ratio": 8.06
+    }
+  ],
+  "errors": [],
+  "evidence_scope": "Structural references and selected token text pairs only. No browser, keyboard, screen reader, final-font or user testing."
+}

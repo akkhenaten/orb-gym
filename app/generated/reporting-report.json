@@ -1,0 +1,374 @@
+{
+ "generated_at": "2022-01-01T05:00:00.000Z",
+ "counts": {
+  "metrics": 62,
+  "report_views": 10,
+  "implemented": 5,
+  "requires_field_mapping": 21,
+  "unavailable_by_design": 2,
+  "fixture_expectations": 28
+ },
+ "schema_query_testing": {
+  "previously_recorded": false,
+  "now": "five money metrics execute as real SQL against generated tables and are asserted against the pack’s own synthetic fixtures",
+  "still_false_for": [
+   "reversals",
+   "net_collections",
+   "retained_allocations",
+   "outstanding_customer_balance",
+   "unapplied_customer_funds",
+   "gym_net_charge_A",
+   "gym_net_charge_B",
+   "supplier_open_commitment",
+   "supplier_outstanding_invoice",
+   "company_active_beneficiaries",
+   "home_gym_A",
+   "home_gym_B",
+   "entitled_gym_A",
+   "entitled_gym_B",
+   "class_booking_percent",
+   "reviewed_attendance_percent",
+   "register_coverage_percent",
+   "stock_source_sellable",
+   "stock_destination_sellable",
+   "stock_in_transit",
+   "stock_network_sellable",
+   "profit",
+   "stock_value"
+  ]
+ },
+ "report_views": [
+  {
+   "report_id": "RPT-01",
+   "name": "Owner portfolio overview",
+   "metric_ids": [
+    "MET-FIN-01",
+    "MET-FIN-02",
+    "MET-FIN-03",
+    "MET-FIN-04",
+    "MET-FIN-05",
+    "MET-FIN-06",
+    "MET-FIN-07",
+    "MET-FIN-08",
+    "MET-FIN-09",
+    "MET-FIN-10",
+    "MET-FIN-11",
+    "MET-FIN-12",
+    "MET-FIN-13",
+    "MET-FIN-14",
+    "MET-FIN-15",
+    "MET-MEM-01",
+    "MET-MEM-02",
+    "MET-MEM-03",
+    "MET-MEM-04",
+    "MET-MEM-05",
+    "MET-MEM-06",
+    "MET-MEM-07",
+    "MET-MEM-08",
+    "MET-MEM-09",
+    "MET-STAFF-01",
+    "MET-STAFF-02",
+    "MET-STAFF-03",
+    "MET-STAFF-04",
+    "MET-STAFF-05",
+    "MET-STAFF-06",
+    "MET-TASK-01",
+    "MET-TASK-02",
+    "MET-TASK-03",
+    "MET-TASK-04",
+    "MET-TASK-05",
+    "MET-TASK-06",
+    "MET-TASK-07",
+    "MET-TASK-08",
+    "MET-ENTRY-01",
+    "MET-ENTRY-02",
+    "MET-FIN-16"
+   ],
+   "metric_count": 41,
+   "implemented_count": 5
+  },
+  {
+   "report_id": "RPT-02",
+   "name": "Customer charges collections and balances",
+   "metric_ids": [
+    "MET-FIN-01",
+    "MET-FIN-02",
+    "MET-FIN-03",
+    "MET-FIN-04",
+    "MET-FIN-05",
+    "MET-FIN-06",
+    "MET-FIN-07",
+    "MET-FIN-08",
+    "MET-FIN-09",
+    "MET-FIN-10",
+    "MET-FIN-11",
+    "MET-FIN-12",
+    "MET-FIN-13",
+    "MET-FIN-14",
+    "MET-FIN-15",
+    "MET-FIN-16"
+   ],
+   "metric_count": 16,
+   "implemented_count": 5
+  },
+  {
+   "report_id": "RPT-03",
+   "name": "Membership pipeline and retention",
+   "metric_ids": [
+    "MET-MEM-01",
+    "MET-MEM-02",
+    "MET-MEM-03",
+    "MET-MEM-04",
+    "MET-MEM-05",
+    "MET-MEM-06",
+    "MET-MEM-07",
+    "MET-MEM-08",
+    "MET-MEM-09"
+   ],
+   "metric_count": 9,
+   "implemented_count": 0
+  },
+  {
+   "report_id": "RPT-04",
+   "name": "Class capacity attendance and feedback",
+   "metric_ids": [
+    "MET-CLASS-01",
+    "MET-CLASS-02",
+    "MET-CLASS-03",
+    "MET-CLASS-04",
+    "MET-CLASS-05",
+    "MET-CLASS-06",
+    "MET-CLASS-07",
+    "MET-CLASS-08",
+    "MET-CLASS-09"
+   ],
+   "metric_count": 9,
+   "implemented_count": 0
+  },
+  {
+   "report_id": "RPT-05",
+   "name": "Coach PT and rental arrangements",
+   "metric_ids": [
+    "MET-COACH-01",
+    "MET-COACH-02",
+    "MET-COACH-03",
+    "MET-COACH-04",
+    "MET-COACH-05",
+    "MET-COACH-06"
+   ],
+   "metric_count": 6,
+   "implemented_count": 0
+  },
+  {
+   "report_id": "RPT-06",
+   "name": "Staff rota actual hours and training",
+   "metric_ids": [
+    "MET-STAFF-01",
+    "MET-STAFF-02",
+    "MET-STAFF-03",
+    "MET-STAFF-04",
+    "MET-STAFF-05",
+    "MET-STAFF-06"
+   ],
+   "metric_count": 6,
+   "implemented_count": 0
+  },
+  {
+   "report_id": "RPT-07",
+   "name": "Facilities work assets and contractors",
+   "metric_ids": [
+    "MET-TASK-01",
+    "MET-TASK-02",
+    "MET-TASK-03",
+    "MET-TASK-04",
+    "MET-TASK-05",
+    "MET-TASK-06",
+    "MET-TASK-07",
+    "MET-TASK-08"
+   ],
+   "metric_count": 8,
+   "implemented_count": 0
+  },
+  {
+   "report_id": "RPT-08",
+   "name": "Reception visits and recorded occupancy",
+   "metric_ids": [
+    "MET-ENTRY-01",
+    "MET-ENTRY-02"
+   ],
+   "metric_count": 2,
+   "implemented_count": 0
+  },
+  {
+   "report_id": "RPT-09",
+   "name": "Retail till and stock",
+   "metric_ids": [
+    "MET-POS-01",
+    "MET-POS-02",
+    "MET-POS-03",
+    "MET-POS-04",
+    "MET-POS-05",
+    "MET-POS-06"
+   ],
+   "metric_count": 6,
+   "implemented_count": 0
+  },
+  {
+   "report_id": "RPT-10",
+   "name": "Gym comparison",
+   "metric_ids": [
+    "MET-FIN-01",
+    "MET-FIN-02",
+    "MET-FIN-03",
+    "MET-FIN-04",
+    "MET-FIN-05",
+    "MET-FIN-06",
+    "MET-FIN-07",
+    "MET-FIN-08",
+    "MET-FIN-09",
+    "MET-FIN-10",
+    "MET-FIN-11",
+    "MET-FIN-12",
+    "MET-FIN-13",
+    "MET-FIN-14",
+    "MET-FIN-15",
+    "MET-MEM-01",
+    "MET-MEM-02",
+    "MET-MEM-03",
+    "MET-MEM-04",
+    "MET-MEM-05",
+    "MET-MEM-06",
+    "MET-MEM-07",
+    "MET-MEM-08",
+    "MET-MEM-09",
+    "MET-CLASS-01",
+    "MET-CLASS-02",
+    "MET-CLASS-03",
+    "MET-CLASS-04",
+    "MET-CLASS-05",
+    "MET-CLASS-06",
+    "MET-CLASS-07",
+    "MET-CLASS-08",
+    "MET-COACH-01",
+    "MET-COACH-02",
+    "MET-COACH-03",
+    "MET-COACH-04",
+    "MET-COACH-05",
+    "MET-COACH-06",
+    "MET-STAFF-01",
+    "MET-STAFF-02",
+    "MET-STAFF-03",
+    "MET-STAFF-04",
+    "MET-STAFF-05",
+    "MET-STAFF-06",
+    "MET-TASK-01",
+    "MET-TASK-02",
+    "MET-TASK-03",
+    "MET-TASK-04",
+    "MET-TASK-05",
+    "MET-TASK-06",
+    "MET-TASK-07",
+    "MET-TASK-08",
+    "MET-ENTRY-01",
+    "MET-ENTRY-02",
+    "MET-POS-01",
+    "MET-POS-02",
+    "MET-POS-03",
+    "MET-POS-04",
+    "MET-POS-05",
+    "MET-POS-06",
+    "MET-FIN-16",
+    "MET-CLASS-09"
+   ],
+   "metric_count": 62,
+   "implemented_count": 5
+  }
+ ],
+ "unimplemented": [
+  {
+   "key": "reversals",
+   "reason": "no reversal movement entity or column exists in the generated schema; a reversal cannot be distinguished from a refund"
+  },
+  {
+   "key": "net_collections",
+   "reason": "depends on reversals, which the schema cannot represent"
+  },
+  {
+   "key": "retained_allocations",
+   "reason": "requires allocation-vs-collection reconciliation the schema does not expose"
+  },
+  {
+   "key": "outstanding_customer_balance",
+   "reason": "opening_debts have no entity; the fixture models them with provenance prose only"
+  },
+  {
+   "key": "unapplied_customer_funds",
+   "reason": "payment_attempt carries no amount column, so an unapplied payment cannot be valued"
+  },
+  {
+   "key": "gym_net_charge_A",
+   "reason": "charge gym allocation lines are not a schema entity; gym_id is single-valued per charge"
+  },
+  {
+   "key": "gym_net_charge_B",
+   "reason": "charge gym allocation lines are not a schema entity, so the second gym share of a split charge cannot be read back"
+  },
+  {
+   "key": "supplier_open_commitment",
+   "reason": "supplier commitment amount is not declared on supplier_assignment"
+  },
+  {
+   "key": "supplier_outstanding_invoice",
+   "reason": "supplier_invoice exists but no approved commitment basis is declared"
+  },
+  {
+   "key": "company_active_beneficiaries",
+   "reason": "beneficiary status basis requires a people-state field the schema does not carry"
+  },
+  {
+   "key": "home_gym_A",
+   "reason": "home gym versus entitlement scope requires a declared selection the schema does not carry"
+  },
+  {
+   "key": "home_gym_B",
+   "reason": "home gym versus entitlement scope needs a declared per-member selection that the schema does not carry"
+  },
+  {
+   "key": "entitled_gym_A",
+   "reason": "entitlement scope is not a generated relation"
+  },
+  {
+   "key": "entitled_gym_B",
+   "reason": "entitlement scope is not a generated relation, so a second gym entitlement cannot be counted"
+  },
+  {
+   "key": "class_booking_percent",
+   "reason": "no class booking entity in the generated schema"
+  },
+  {
+   "key": "reviewed_attendance_percent",
+   "reason": "no attendance register entity in the generated schema"
+  },
+  {
+   "key": "register_coverage_percent",
+   "reason": "no register coverage entity in the generated schema"
+  },
+  {
+   "key": "stock_source_sellable",
+   "reason": "stock_movement carries no quantity column"
+  },
+  {
+   "key": "stock_destination_sellable",
+   "reason": "stock_movement stores no quantity, so sellable destination units cannot be summed"
+  },
+  {
+   "key": "stock_in_transit",
+   "reason": "stock_transfer records dispatch evidence but no unit quantities, so in-transit stock cannot be valued"
+  },
+  {
+   "key": "stock_network_sellable",
+   "reason": "a network total needs per-location quantities, and no quantity column exists on any stock table"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,33 @@
+{
+  "edition": "0.31",
+  "operations": [
+    {
+      "canonical_operation_id": "CMD-AcceptWaitlistPlace",
+      "component_commands": [
+        "AcceptOffer",
+        "AcceptWaitlistOffer"
+      ],
+      "source_case": "current offer acceptance by intended participant/verified guardian or authorised staff",
+      "consistency_rule": "Validate the same offer/hold/participant/capacity/current authority, then update offer and original booking reservation as one source operation. One hold/booking effect; accepting offer does not claim paid/confirmed until booking finalisation gates pass. Component names are projections/aliases, not two independently replayed allocation commands."
+    },
+    {
+      "canonical_operation_id": "CMD-DecideSupplierQuote",
+      "component_commands": [
+        "ApproveSourceDecision",
+        "ApproveQuoteVersion"
+      ],
+      "source_case": "supplier_quote only; variations/work verification/other decisions choose their own exact source permission and command",
+      "consistency_rule": "Validate exact quote/version/amount/validity/independent authority. Publish one decision+quote outcome+unique commitment as one source operation. Commitment identity unique per accepted quote version; either UI entry reuses original operation/result, never creates a second spend commitment."
+    },
+    {
+      "canonical_operation_id": "CMD-CaptureIssueSignature",
+      "component_commands": [
+        "RecordPartialSignature",
+        "RecordActualSignature"
+      ],
+      "source_case": "actual capture on same immutable issue and intended signer",
+      "consistency_rule": "One signature evidence record per supported capture identity/issue/signer; compute remaining required signers from current issue. Partial capture retains awaiting state; final required capture changes aggregate issue to SIGNED. Supersession never rewrites signature facts."
+    }
+  ],
+  "runtime_boundary": "Logical consistency requirements, not a claim that remote provider effects are one database transaction. OpenKBS maps actual transaction/idempotency/constraints and tests concurrent entry points."
+}

@@ -1,0 +1,15 @@
+{
+  "review_revision": "0.17-r2",
+  "source_blocks": 242,
+  "module_source_blocks": 238,
+  "intro_blocks_in_architecture_only": 4,
+  "review_requirements": 11,
+  "planned_acceptance_scenarios": 55,
+  "logo_sha256": "20b47e4822ba7f240ea1a655fa404b7772e3544372d05dccb1a46a40d3157e41",
+  "errors": [],
+  "runtime_tests": "not performed; documentation-only review",
+  "source_page_updated": false,
+  "builder_project_inspected": false,
+  "numbering_contract_validated": true,
+  "actual_board_numbering_verified": false
+}

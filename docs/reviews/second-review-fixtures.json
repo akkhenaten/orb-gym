@@ -1,0 +1,131 @@
+{
+  "scope": "Simplified synthetic rule propositions with assumed source-guard inputs; not real API/provider/actor proof tests",
+  "authorization_cases": [
+    {
+      "id": "setup_does_not_collect",
+      "command": "SubmitPaymentAttempt",
+      "context": "manual_customer_collection",
+      "permissions": [
+        "membership.setup_payment"
+      ],
+      "guards": true,
+      "expected": "DENY"
+    },
+    {
+      "id": "explicit_manual_collection",
+      "command": "SubmitPaymentAttempt",
+      "context": "manual_customer_collection",
+      "permissions": [
+        "finance.collect_customer_payment"
+      ],
+      "guards": true,
+      "expected": "ALLOW_CONTRACT"
+    },
+    {
+      "id": "non_health_does_not_need_health_grant",
+      "command": "AcceptFormEvidence",
+      "context": "membership_non_health",
+      "permissions": [
+        "membership.review_application"
+      ],
+      "guards": true,
+      "expected": "ALLOW_CONTRACT"
+    },
+    {
+      "id": "health_grant_not_non_health_default",
+      "command": "AcceptFormEvidence",
+      "context": "membership_non_health",
+      "permissions": [
+        "membership.review_health_evidence"
+      ],
+      "guards": true,
+      "expected": "DENY"
+    },
+    {
+      "id": "unknown_decision_type_denies_even_quote_approver",
+      "command": "ApproveSourceDecision",
+      "context": "unknown",
+      "permissions": [
+        "commercial.approve_quote"
+      ],
+      "guards": true,
+      "expected": "DENY"
+    },
+    {
+      "id": "pt_booking_not_disruption_management",
+      "command": "ResolvePTDisruption",
+      "permissions": [
+        "coaching.book_pt"
+      ],
+      "guards": true,
+      "expected": "DENY"
+    },
+    {
+      "id": "pt_remedy_needs_both_grants",
+      "command": "CancelPTWithRemedy",
+      "permissions": [
+        "coaching.cancel_appointment"
+      ],
+      "guards": true,
+      "expected": "DENY"
+    },
+    {
+      "id": "pt_remedy_both_grants",
+      "command": "CancelPTWithRemedy",
+      "permissions": [
+        "coaching.cancel_appointment",
+        "coaching.manage_service_disruption"
+      ],
+      "guards": true,
+      "expected": "ALLOW_CONTRACT"
+    },
+    {
+      "id": "guardian_book_not_payer",
+      "command": "SubmitPaymentAttempt",
+      "context": "accepted_self_service_checkout",
+      "permissions": [
+        "family.book"
+      ],
+      "guards": true,
+      "source_proof": true,
+      "dependent_payment": true,
+      "pay_right_verified": false,
+      "expected": "DENY"
+    },
+    {
+      "id": "guardian_verified_pay_route",
+      "command": "SubmitPaymentAttempt",
+      "context": "accepted_self_service_checkout",
+      "permissions": [
+        "family.book",
+        "family.pay_for_dependent"
+      ],
+      "guards": true,
+      "source_proof": true,
+      "dependent_payment": true,
+      "pay_right_verified": true,
+      "expected": "ALLOW_CONTRACT"
+    },
+    {
+      "id": "source_operation_without_actual_proof",
+      "command": "IssueEffectiveServiceGrant",
+      "context": "membership",
+      "permissions": [
+        "membership.approve_activation"
+      ],
+      "guards": true,
+      "source_proof": false,
+      "expected": "DENY"
+    },
+    {
+      "id": "failed_source_guard_despite_permission",
+      "command": "CancelConfirmedPT",
+      "context": "self_client",
+      "permissions": [
+        "coaching.cancel_appointment"
+      ],
+      "guards": false,
+      "expected": "DENY"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "edition": "0.32",
+  "default": "deny",
+  "individual_effects": [
+    "allow",
+    "deny"
+  ],
+  "evaluation_order": [
+    "Validate identity/session/account and required privileged assurance",
+    "Resolve explicit workspace and separate platform context",
+    "Apply mandatory tenant/state/business/audience guards",
+    "Find active role grants whose action AND scope AND field constraints match this request as one grant",
+    "Add matching individual allows within their exact scope",
+    "Apply any matching explicit individual deny; deny wins even over owner role allowance until authorised removal",
+    "Permit only requested fields and channel projection; otherwise deny",
+    "Recheck consequential command against current policy version and audit outcome"
+  ],
+  "scope_types": [
+    "platform",
+    "workspace",
+    "gym-set",
+    "gym",
+    "assigned-records",
+    "self",
+    "verified-relationship"
+  ],
+  "grant_fields": [
+    "grant_id",
+    "workspace_id",
+    "subject_user_id_or_role_id",
+    "permission_id",
+    "effect",
+    "scope",
+    "field_bundle_ids",
+    "delegation_allowed",
+    "approval_constraints",
+    "effective_from",
+    "expires_at_optional",
+    "version",
+    "created_by",
+    "reason",
+    "revoked_at_optional"
+  ],
+  "conflict_rule": "Do not union scope from one grant with actions/fields from an unrelated grant; evaluate each matching grant atomically. A deny is restricted to its stated scope and never automatically global.",
+  "owner": "Seeded own-workspace full authority including future company gyms; owner can edit company roles and individual grants, never platform admin. Last active owner remains recoverable.",
+  "platform": "Separate platform-owned assignment; company roles cannot create it. Broad cross-platform inspection is supported with explicit audited workspace selection; no hidden impersonation or signature substitution.",
+  "mfa": "Existing provider-supported privileged auth policy remains mandatory.",
+  "revocation": "Reject new requests using obsolete grants; re-evaluate pending jobs and protected file deliveries. Previously downloaded bytes cannot be remotely erased by a role change.",
+  "policy_edit": "Expected-version compare and diff preview; validate issuer delegation, scope and last-owner protection; atomically publish grants/version/audit and invalidate current permission projections. No production implementation claimed.",
+  "lifecycle_scope_contract": {
+    "tenant_boundary": "Every customer request has explicit owning workspace and applicable gym/record/field scope; this never disappears for archived records",
+    "action_classes": {
+      "new_operation": "Requires current operating service/readiness and permissions; closure/suspension cannot be bypassed",
+      "retained_history_read": "Allowed only within current explicit retained-history/audit/financial/document grants and retention; not blocked just because gym/workspace is archived",
+      "resolution_or_recovery": "Allowed only to current designated actors in exact source closure/recovery/reconciliation process; no reopening or new collection by implication",
+      "trusted_source_evidence": "Authenticated late payment/provider events and auditable corrections remain recordable by scoped service authority; does not reactivate customer services"
+    },
+    "forbidden_shortcut": "Do not apply active_workspace == true to every read, callback or recovery command. Do not remove tenant/field restrictions to enable history."
+  }
+}

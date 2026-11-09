@@ -1,0 +1,11 @@
+{
+  "package_edition": "0.35",
+  "validator_contract_version": "0.27",
+  "metric_definitions": 62,
+  "report_views": 10,
+  "planned_acceptance_cases": 24,
+  "synthetic_arithmetic_checked": true,
+  "errors": [],
+  "actual_schema_queries_tested": false,
+  "production_finance_or_accounting_certified": false
+}

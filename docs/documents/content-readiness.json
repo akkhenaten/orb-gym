@@ -1,0 +1,22 @@
+{
+  "edition": "0.29",
+  "source_id": "OG-DOC-001",
+  "status": "SETUP_REQUIRED for actionable templates with reviewed wording or provider dependency",
+  "tenant_values": null,
+  "required_inputs": {
+    "content": "Actual reviewed legal/health/safety/HR/static wording or original source document; source/version/reviewer/applicability",
+    "identity": "Actual beneficiary, payer, issuer and signatory/guardian authority; no role-label substitution",
+    "schema": "Approved question/field/conditional logic and required stage, not AI-invented medical questions",
+    "financial": "Original source confirmed amounts/issuer/currency/tax/receipt/credit facts, not manual unverified template totals",
+    "capabilities": "Actual upload/scan/form/render/signature/private file and email support plus tested format/size limits",
+    "retention": "Reviewed data/record policy and release/deletion/restore handling; no arbitrary dates"
+  },
+  "safe_defaults": {
+    "placeholder_content": "Blocks affected publication/issue; draft preview remains allowed",
+    "unresolved_required_values": "Blocks applicable stage; no invented values",
+    "uploaded_signature": "Original evidence with provenance/review, not new Orb signature",
+    "viewed_equals_signed": false,
+    "template_published_equals_legal_approval": false,
+    "template_edit_changes_existing_issued_record": false
+  }
+}

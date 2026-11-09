@@ -1,0 +1,45 @@
+{
+  "edition": "0.30",
+  "source_id": "OG-SET-001",
+  "authority": "Founder accepted unified setup/resume/delegation/conditional readiness/new-gym inheritance and finite handoff audit after0.29",
+  "workflow_ids": [
+    "WF-SPACE-01",
+    "WF-SPACE-02",
+    "WF-USER-07",
+    "WF-AUTH-01",
+    "WF-AUTH-03"
+  ],
+  "specification_paths": [
+    "spec/workspace-access.md",
+    "spec/privileged-auth-recovery.md"
+  ],
+  "contract_paths": [
+    "docs/setup/setup-hub.md",
+    "docs/setup/section-catalogue.json",
+    "docs/setup/capability-readiness.json",
+    "docs/setup/gym-inheritance.json",
+    "docs/setup/record-contract.json"
+  ],
+  "acceptance_ids": [
+    "SET-AC01",
+    "SET-AC02",
+    "SET-AC03",
+    "SET-AC04",
+    "SET-AC05",
+    "SET-AC06",
+    "SET-AC07",
+    "SET-AC08",
+    "SET-AC09",
+    "SET-AC10",
+    "SET-AC11",
+    "SET-AC12",
+    "SET-AC13",
+    "SET-AC14",
+    "SET-AC15",
+    "SET-AC16",
+    "SET-AC17",
+    "SET-AC18",
+    "SET-AC19",
+    "SET-AC20"
+  ]
+}

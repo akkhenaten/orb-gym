@@ -1,0 +1,31 @@
+{
+  "edition": "0.34",
+  "source": "Founder request to review for undiscovered errors, actor/default-role pass",
+  "workflow_ids": [
+    "WF-TASK-01",
+    "WF-TASK-03",
+    "WF-TASK-05",
+    "WF-USER-05",
+    "WF-USER-06",
+    "WF-STAFF-03",
+    "WF-STAFF-05",
+    "WF-CLASS-04",
+    "WF-CLASS-05"
+  ],
+  "contract_paths": [
+    "docs/access/role-journey-contract.md",
+    "docs/access/self-service-contract.json",
+    "docs/data/transitions.json",
+    "docs/reviews/error-review-0.34.md",
+    "docs/reviews/fourth-review-acceptance.md"
+  ],
+  "acceptance_ids": [
+    "REV4-AC01",
+    "REV4-AC02",
+    "REV4-AC03",
+    "REV4-AC04",
+    "REV4-AC05",
+    "REV4-AC06",
+    "REV4-AC07"
+  ]
+}

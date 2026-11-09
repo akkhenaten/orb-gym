@@ -1,0 +1,51 @@
+{
+  "edition": "0.32",
+  "review_groups": 6,
+  "corrected_active_only_scope_records": 213,
+  "canonical_authorization_transitions": 217,
+  "standalone_checks": 10,
+  "controlled_mutation_probes": [
+    {
+      "case": "reintroduce_blanket_active_only_scope",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Blanket active-workspace scope"
+    },
+    {
+      "case": "reintroduce_route_fallback_permission",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Conflicting default/alternate permission"
+    },
+    {
+      "case": "allow_unknown_context_fallback",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Unmapped context does not deny"
+    },
+    {
+      "case": "mandate_setup_reused_for_manual_collection",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Payment setup incorrectly authorises collection"
+    },
+    {
+      "case": "book_pt_reused_for_service_management",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "PT booking incorrectly manages service"
+    },
+    {
+      "case": "management_without_cancellation_right",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "PT remedy lacks independent authority"
+    },
+    {
+      "case": "nested_manifest_file_unlisted",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Manifest inventory differs"
+    },
+    {
+      "case": "partial_signature_regression",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Partial signature prematurely completes document"
+    }
+  ],
+  "synthetic_authorization_propositions": 12,
+  "runtime_api_scope_or_provider_consent_tested": false
+}

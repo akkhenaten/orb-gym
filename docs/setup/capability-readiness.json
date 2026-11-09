@@ -1,0 +1,536 @@
+{
+  "edition": "0.30",
+  "capabilities": [
+    {
+      "capability_id": "CAP-PRIVATE",
+      "name": "Private setup and draft management",
+      "context_sections": [
+        "SET-00",
+        "SET-01"
+      ],
+      "conditional_requirements": "Bounded verified own bootstrap; after assurance normal authorised records",
+      "safe_independence_rule": "No template, custom logo or optional trial needed to establish own draft workspace",
+      "specification_path": "spec/workspace-access.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-STAFF-INVITE",
+      "name": "Staff and member invitations",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-04",
+        "SET-11"
+      ],
+      "conditional_requirements": "Actual verified invite/recovery delivery; correct identity/journey and delegated grants",
+      "safe_independence_rule": "Missing SMTP/push toggle cannot count as sent; recipient invite acceptance separate from service access",
+      "specification_path": "spec/workspace-access.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-ASSETS",
+      "name": "Internal asset register and preparation",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-09"
+      ],
+      "conditional_requirements": "Current internal source/access capability and scoped asset authority",
+      "safe_independence_rule": "Does not depend on merchant setup, custom logo or membership agreement",
+      "specification_path": "spec/tasks-assets-contractors.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-WORK",
+      "name": "Assigned cleaning maintenance admin work",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-04",
+        "SET-09"
+      ],
+      "conditional_requirements": "Evidence/reviewer/assignment requirements applicable to task type; authorised internal actors",
+      "safe_independence_rule": "External supplier/invite gates only when that workflow actually requires them; no unpaid quote auto-approval",
+      "specification_path": "spec/tasks-assets-contractors.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-ROTA",
+      "name": "Staff rota planning and publication",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-04"
+      ],
+      "conditional_requirements": "Draft planning available; publication needs current staff/qualification/conflict/readiness per source policy",
+      "safe_independence_rule": "Missing payment merchant or custom branding never blocks permitted rota drafts",
+      "specification_path": "spec/staff-hr-rota.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-MEMBERSHIP",
+      "name": "Published membership plan and activation",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-05",
+        "SET-07"
+      ],
+      "conditional_requirements": "SET-06 only for actual paid collection; explicit inclusion/free/manual qualifying policy still required",
+      "safe_independence_rule": "Forms/terms/reviewer and exact access/payment effects cannot be bypassed by marking setup done",
+      "specification_path": "spec/onboarding-membership.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-CLASS",
+      "name": "Published and bookable class/course",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-04",
+        "SET-08"
+      ],
+      "conditional_requirements": "Applicable coach/resource/capacity/terms; SET-05 required forms; SET-06 when charging; membership/guest eligibility checked at booking",
+      "safe_independence_rule": "Draft class setup does not require every optional module; missing price/rate/hold/remedy blocks affected published offer",
+      "specification_path": "spec/classes-courses-attendance.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-PT",
+      "name": "Hourly employed-coach PT",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-04",
+        "SET-08"
+      ],
+      "conditional_requirements": "Specific current PT forms/rate/payment/availability/pass terms; SET-05/06 when applicable",
+      "safe_independence_rule": "No prepaid bundle; PT-only limited account and actual timed pass remain distinct from invitation",
+      "specification_path": "spec/coaching-pt.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-RENTAL",
+      "name": "Rental-coach classes",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-04",
+        "SET-08"
+      ],
+      "conditional_requirements": "Published reviewed rental arrangement and exact external/included/gym-collected mode; merchant/policy evidence only for gym collection",
+      "safe_independence_rule": "Independent default external collection never creates employee wages/client CRM or automatic payout",
+      "specification_path": "spec/coaching-pt.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-ENTRY",
+      "name": "Member PT trial entry passes",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02"
+      ],
+      "conditional_requirements": "Actual valid purpose-bound entitlement, current source restrictions and verified scanner/manual mode",
+      "safe_independence_rule": "No membership/pass merely because identity exists or overall setup score reached100percent",
+      "specification_path": "spec/reception-entry-exit.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-POS",
+      "name": "Live till collection and receipt",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-06",
+        "SET-10"
+      ],
+      "conditional_requirements": "Verified exact selected tender/stock/issuer/refund/device mode; print capability only needed for actual print offer",
+      "safe_independence_rule": "A barcode catalogue may work before tender; unsupported terminal/printer never advertised live",
+      "specification_path": "spec/pos-stock.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-TRIAL",
+      "name": "Optional trial or guest offer",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-05",
+        "SET-08"
+      ],
+      "conditional_requirements": "Existing trial.offer policy required; explicit eligibility/price/forms/reviewer/visit-window; collection evidence if paid",
+      "safe_independence_rule": "Disabled until selected and configured; does not block normal ready membership/PT",
+      "specification_path": "spec/trials-guests.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-JUNIOR",
+      "name": "Optional junior or guardian service",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-05",
+        "SET-04"
+      ],
+      "conditional_requirements": "Existing junior.programme policy and reviewed actual relationship/action-right/safety/privacy content",
+      "safe_independence_rule": "Disabled until selected and configured; no age/login/social defaults invented",
+      "specification_path": "spec/juniors-guardians.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-PUBLIC",
+      "name": "Company and gym public pages",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-12"
+      ],
+      "conditional_requirements": "Approved safe public source/branding/footer and actual page capability; transactional CTA requires its target capability ready",
+      "safe_independence_rule": "Information-only page may publish without paid membership/till; new gym defaults draft",
+      "specification_path": "spec/public-pages.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-IMPORT",
+      "name": "Reviewed import commit",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-13"
+      ],
+      "conditional_requirements": "Current source/schema/authorisation/dry-run approval and per-entity rights",
+      "safe_independence_rule": "Optional and independent of normal new-account setup; committed rows never autoactivate financial/legal history",
+      "specification_path": "spec/imports-reconciliation.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-ALERTS",
+      "name": "External alerts and automatic reminders",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-11"
+      ],
+      "conditional_requirements": "Actual supported verified channel, event purpose/preferences and configured bounded timing/escalation/stop rule",
+      "safe_independence_rule": "Unconfigured automation off; source action remains visible and account-security routes separately gated",
+      "specification_path": "spec/calendar-notifications.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-REPORTS",
+      "name": "Operational and financial reporting",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-14"
+      ],
+      "conditional_requirements": "Each metric needs its own source/rights/basis/completeness; financial/provider or stock valuation only if used",
+      "safe_independence_rule": "Missing formal financial basis cannot fabricate profit or block known permitted operational counts",
+      "specification_path": "spec/finance-reports.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-WHITE-LABEL",
+      "name": "Custom appearance and white-label publication",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-03"
+      ],
+      "conditional_requirements": "Validated current selected preset/modes/assets/scope and explicit white-label state",
+      "safe_independence_rule": "Orb Gym Basic/default branding works without custom logo; upload does not silently activate",
+      "specification_path": "spec/shell-settings-branding.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Computed from current actual owning records/policy/evidence and permissions at activation/command; no editable is_ready boolean",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-DOCUMENTS",
+      "name": "Source-owned documents forms and protected library",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-05"
+      ],
+      "conditional_requirements": "Applicable DCT content/field/source authority; actual renderer/file/signature mode only if used",
+      "safe_independence_rule": "Safe draft composition remains independent; issuing/signing a live document requires its exact source readiness",
+      "specification_path": "spec/documents.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Current owning source records/grants/evidence, not blanket section-complete switch",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-COMMUNITY",
+      "name": "Audience-scoped feed cases and feedback",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-04"
+      ],
+      "conditional_requirements": "Current audience/record/field grants, responsible case/moderation queue and actual protected media capability as used",
+      "safe_independence_rule": "Member feed still needs entitlement; public media/mentions never expand private access",
+      "specification_path": "spec/feed-feedback-cases.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Current owning source records/grants/evidence, not blanket section-complete switch",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-VENDORS",
+      "name": "Assigned contractor collaboration",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-02",
+        "SET-04",
+        "SET-09"
+      ],
+      "conditional_requirements": "Supplier identity/current credentials/assigned scope, supported invite/delivery and review source authority as used",
+      "safe_independence_rule": "No supplier self-approval; missing external invite does not block prepared internal tasks",
+      "specification_path": "spec/tasks-assets-contractors.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Current owning source records/grants/evidence, not blanket section-complete switch",
+      "source_id": "OG-SET-001"
+    },
+    {
+      "capability_id": "CAP-HR",
+      "name": "Private staff HR and pay evidence",
+      "context_sections": [
+        "SET-00",
+        "SET-01",
+        "SET-04",
+        "SET-05"
+      ],
+      "conditional_requirements": "Scoped HR/pay fields, reviewed actual source documents/retention; credential/contract gates apply only where source policy requires",
+      "safe_independence_rule": "Staff profile is not broad HR permission; payslip upload/import is not automatic payroll filing",
+      "specification_path": "spec/staff-hr-rota.md",
+      "state_contract": [
+        "disabled_optional",
+        "draft",
+        "blocked",
+        "ready",
+        "enabled",
+        "suspended",
+        "needs_revalidation"
+      ],
+      "evaluation": "Current owning source records/grants/evidence, not blanket section-complete switch",
+      "source_id": "OG-SET-001"
+    }
+  ],
+  "readiness_is_not_permission": "A ready capability still requires current actor/record/field/service eligibility; an enabled live capability can need revalidation without cancelling original obligations automatically."
+}

@@ -1,0 +1,44 @@
+{
+ "generated_at": "2022-01-01T05:00:00.000Z",
+ "counts": {
+  "templates": 34,
+  "fields": 52,
+  "layouts": 34,
+  "payload_bindings": 162,
+  "layout_blocks": 204
+ },
+ "binding_reality": {
+  "schema_resolvable": 1,
+  "prose_only": 51,
+  "consequence": "The renderer accepts a typed payload supplied by the caller. It cannot resolve document values from the database, so it never manufactures one."
+ },
+ "issuance": {
+  "content_approved": false,
+  "signature_provider_tested": false,
+  "live_documents_issued": false,
+  "ready_template_status": "SETUP_REQUIRED for actionable templates with reviewed wording or provider dependency",
+  "rule": "A draft may be rendered and is marked unreviewed. Issue is refused while content is unapproved, the signature provider is untested, or any required field is missing."
+ },
+ "gates": [
+  "authority_and_safety_review",
+  "authority_review",
+  "commercial_review",
+  "controlled_content",
+  "controlled_hr_content",
+  "controlled_operational_content",
+  "credential_review",
+  "finance_review",
+  "health_review",
+  "legal_or_hr_review",
+  "legal_or_safety_review",
+  "legal_review",
+  "payroll_source_review",
+  "purpose_review",
+  "safety_or_hr_review",
+  "safety_review",
+  "source_verified",
+  "supplier_review",
+  "verification_review"
+ ],
+ "errors": []
+}

@@ -1,0 +1,25 @@
+{
+  "edition": "0.26",
+  "status": "SETUP_REQUIRED for external delivery and automated reminders; in-app/source current states remain visible",
+  "source_id": "OG-NOT-001",
+  "values": null,
+  "required_setup": {
+    "company": "event family enabled state; event purpose; responsible queue; authorised recipients; approved template and brand scope",
+    "timing": "timezone; optional reminder slots and repeat bounds; escalation milestones and stop conditions; applicable quiet hours/digest",
+    "provider": "actual supported channel/sender/domain; verification/test evidence; callback/auth handling and maximum retry schedule; unknown-delivery recovery",
+    "personal": "supported channel preferences, current device consent/subscription, safe contact destination and separate outreach preference",
+    "privacy": "minimum external payload, guarded links, sensitive audience/field projections and safe diagnostics",
+    "release": "unsupported channels unavailable; first-time invite/recovery verified end-to-end before real onboarding"
+  },
+  "safe_defaults": {
+    "baseline_channel": "in-app for authenticated scoped users; source action state persists",
+    "automated_reminders": "off until configured",
+    "automated_escalation": "off until recipient/timing configured",
+    "push": "unavailable until implemented/verified and user grants device permission",
+    "sms": "not a baseline promised capability",
+    "private_external_content": "generic short notice and protected link",
+    "read_is_completion": false,
+    "retry_is_business_command": false
+  },
+  "publication": "Draft preview and expected-version publish; previous working version retained on failure; policy changes reschedule only applicable future work and preserve history"
+}

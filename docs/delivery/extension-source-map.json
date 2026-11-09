@@ -1,0 +1,143 @@
+{
+  "edition": "0.22",
+  "mapping_level": "extension source to product capability/workflow, not atomic or actual card completeness",
+  "entries": [
+    {
+      "extension_id": "OG-EXT-001",
+      "status": "PRODUCT_CAPABILITY_SPECIFIED_FROM_CURRENT_REQUEST",
+      "module_path": "docs/modules/13-trials-and-guests.md",
+      "specification_paths": [
+        "spec/trials-guests.md"
+      ],
+      "workflow_ids": [
+        "WF-TRIAL-01",
+        "WF-TRIAL-02",
+        "WF-TRIAL-03",
+        "WF-TRIAL-04"
+      ],
+      "acceptance_ids": [
+        "AC71",
+        "AC72",
+        "AC73",
+        "AC74"
+      ],
+      "tenant_values": "SETUP_REQUIRED",
+      "actual_board_card_ids": []
+    },
+    {
+      "extension_id": "OG-EXT-002",
+      "status": "PRODUCT_CAPABILITY_SPECIFIED_FROM_CURRENT_REQUEST",
+      "module_path": "docs/modules/14-juniors-and-guardians.md",
+      "specification_paths": [
+        "spec/juniors-guardians.md"
+      ],
+      "workflow_ids": [
+        "WF-JUNIOR-01",
+        "WF-JUNIOR-02",
+        "WF-JUNIOR-03",
+        "WF-JUNIOR-04",
+        "WF-JUNIOR-05",
+        "WF-JUNIOR-06"
+      ],
+      "acceptance_ids": [
+        "AC75",
+        "AC76",
+        "AC77",
+        "AC78",
+        "AC79",
+        "AC80"
+      ],
+      "tenant_values": "SETUP_REQUIRED",
+      "actual_board_card_ids": []
+    },
+    {
+      "extension_id": "OG-EXT-003",
+      "status": "PRODUCT_CAPABILITY_SPECIFIED_FROM_CURRENT_REQUEST",
+      "module_path": "docs/modules/15-import-and-reconciliation.md",
+      "specification_paths": [
+        "spec/imports-reconciliation.md"
+      ],
+      "workflow_ids": [
+        "WF-IMPORT-01",
+        "WF-IMPORT-02",
+        "WF-IMPORT-03",
+        "WF-IMPORT-04",
+        "WF-IMPORT-05"
+      ],
+      "acceptance_ids": [
+        "AC81",
+        "AC82",
+        "AC83",
+        "AC84",
+        "AC85"
+      ],
+      "tenant_values": "SETUP_REQUIRED",
+      "actual_board_card_ids": []
+    },
+    {
+      "extension_id": "OG-EXT-004",
+      "status": "PRODUCT_CAPABILITY_SPECIFIED_FROM_CURRENT_REQUEST",
+      "module_path": "docs/modules/16-privileged-auth-and-recovery.md",
+      "specification_paths": [
+        "spec/privileged-auth-recovery.md"
+      ],
+      "workflow_ids": [
+        "WF-AUTH-01",
+        "WF-AUTH-02",
+        "WF-AUTH-03",
+        "WF-AUTH-04"
+      ],
+      "acceptance_ids": [
+        "AC86",
+        "AC87",
+        "AC88",
+        "AC89"
+      ],
+      "tenant_values": "SETUP_REQUIRED",
+      "actual_board_card_ids": []
+    },
+    {
+      "extension_id": "OG-EXT-005",
+      "status": "DESIGN_SPECIFIED",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/shell-settings-branding.md",
+        "spec/onboarding-membership.md",
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md",
+        "spec/staff-hr-rota.md",
+        "spec/tasks-assets-contractors.md",
+        "spec/pos-stock.md",
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/finance-reports.md",
+        "spec/calendar-notifications.md",
+        "spec/reception-entry-exit.md",
+        "spec/ai-operations.md",
+        "spec/recovery-release.md"
+      ],
+      "workflow_ids": [
+        "WF-MEM-08",
+        "WF-MEM-09",
+        "WF-CLASS-07",
+        "WF-CLASS-08",
+        "WF-STAFF-16",
+        "WF-TASK-18",
+        "WF-TASK-19",
+        "WF-TASK-20",
+        "WF-TASK-21",
+        "WF-USER-11",
+        "WF-SPACE-05",
+        "WF-POS-09",
+        "WF-FIN-05",
+        "WF-COACH-07",
+        "WF-LAND-11"
+      ],
+      "acceptance_ids": [
+        "AC90"
+      ],
+      "tenant_values": "SETUP_REQUIRED",
+      "actual_board_card_ids": []
+    }
+  ]
+}

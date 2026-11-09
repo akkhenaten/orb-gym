@@ -1,0 +1,33 @@
+{
+  "edition": "0.34",
+  "account_self_service": {
+    "condition": "Actual authenticated identity/subject; correct provider/global-self versus company-specific profile context; available during approved pending/PT/trial/member/vendor/staff self-service without requiring active paid membership",
+    "permissions": [
+      "people.view_profile",
+      "people.edit_profile",
+      "branding.edit_own_preferences",
+      "notifications.edit_own_preferences",
+      "auth.edit_own_security",
+      "auth.view_sessions",
+      "calendar.view_notifications"
+    ],
+    "scope": "own safe profile/preferences/security/inbox only, not company role fields, other people, financial/HR administration or another tenant",
+    "field_guards": "Only permitted self-editable name/avatar/contact/preferences. Global verified-email/password/factor changes use actual provider identity proof, not a company profile edit. Company-private facts and issued snapshots remain independent."
+  },
+  "assigned_staff_self_service": {
+    "condition": "Actual own current employment/onboarding assignment, applicable source requirement or issued-to-subject record; not merely job-title role and not rental coach without separate employment",
+    "permissions": [
+      "hr.view_contract",
+      "hr.view_payslip",
+      "hr.acknowledge_sop",
+      "rota.view",
+      "rota.request_leave",
+      "rota.record_actual_time"
+    ],
+    "scope": "own issued contract/payslip, own assigned SOP, own shifts/availability/leave/time evidence only; no other employee/disciplinary/payroll approval",
+    "before_activation": "Applicable intended-subject contract/SOP/evidence tasks reachable during bounded staff onboarding; full operational employment/role privileges not activated by these rights",
+    "after_leaving": "Only explicitly permitted retained-history/issued-recipient access and account resolution remain; no new shift/leave/time actions from archived employment by default"
+  },
+  "override_and_source_guards": "Role templates are editable starting defaults. Company-scoped individual denies and actual account/source restrictions still apply; company role restrictions cannot become global identity takeover or block another company context. Actual source safety/assurance/recipient/field/retention rules always apply. Required provider recovery/resolution routes keep their separately verified minimum boundary.",
+  "not_a_role_escalation": "These self-scoped rules never grant owner/manager/member entitlement, qualification, source approval or broad document/HR access. Owner can configure permitted exceptions through current granular controls."
+}

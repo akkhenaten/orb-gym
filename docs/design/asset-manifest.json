@@ -1,0 +1,195 @@
+{
+  "edition": "0.24",
+  "assets": [
+    {
+      "asset_id": "AST-001",
+      "path": "assets/orb-gym-logo.png",
+      "dimensions": [
+        2048,
+        682
+      ],
+      "sha256": "20b47e4822ba7f240ea1a655fa404b7772e3544372d05dccb1a46a40d3157e41",
+      "status": "supplied master",
+      "usage": "Contain; preserve geometry. White backing in dark mode; never redraw wordmark.",
+      "licence": "User supplied; underlying rights not independently verified"
+    },
+    {
+      "asset_id": "AST-002",
+      "path": "assets/ui-concepts/01-basic-bento.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "571a4936d304755675a7c5166aa667ff9bac492019a8d1287767ccda7c22da60",
+      "status": "historical generated reference only",
+      "usage": "Style reference, not production UI or brand artwork",
+      "licence": "Generated reference; invented identities not production assets"
+    },
+    {
+      "asset_id": "AST-003",
+      "path": "assets/ui-concepts/02-flat-studio.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "138a4225c1dbe95db33c5e50d3d5a3931fe11243a51da93279cb4160205a4f8f",
+      "status": "historical generated reference only",
+      "usage": "Style reference, not production UI or brand artwork",
+      "licence": "Generated reference; invented identities not production assets"
+    },
+    {
+      "asset_id": "AST-004",
+      "path": "assets/ui-concepts/03-minimal-editorial.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "940d064f4e4c86abcb6aba2bed03e319607eb6e16df8e3898e3bb5bb3a7409a6",
+      "status": "historical generated reference only",
+      "usage": "Style reference, not production UI or brand artwork",
+      "licence": "Generated reference; invented identities not production assets"
+    },
+    {
+      "asset_id": "AST-005",
+      "path": "assets/ui-concepts/04-soft-glass.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "dfe65fc7f2663e55465d1a6b815897647d0b018a614c4c500f2fb481525f5115",
+      "status": "historical generated reference only",
+      "usage": "Style reference, not production UI or brand artwork",
+      "licence": "Generated reference; invented identities not production assets"
+    },
+    {
+      "asset_id": "AST-006",
+      "path": "assets/ui-concepts/05-performance-console.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "84975661eec818ab9401b874deb582e4b71238e90b0cf996add636529c3c901b",
+      "status": "historical generated reference only",
+      "usage": "Style reference, not production UI or brand artwork",
+      "licence": "Generated reference; invented identities not production assets"
+    },
+    {
+      "asset_id": "AST-DASH-01",
+      "preset_id": "basic-01",
+      "label": "Basic Bento",
+      "path": "assets/ui-dashboard-comparisons/01-basic-bento.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "666b3b97b7a36e2b7e9e7e75d0e0c119a3e7d97fb8892c57f4844331e7d0aacf",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-02",
+      "preset_id": "flat-02",
+      "label": "Flat Studio",
+      "path": "assets/ui-dashboard-comparisons/02-flat-studio.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "a2534b9b4d0f2c7be8a8d32f27ef21437c93063870108df39cbdd8b2cf0b0ff2",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-03",
+      "preset_id": "editorial-03",
+      "label": "Minimal Editorial",
+      "path": "assets/ui-dashboard-comparisons/03-minimal-editorial.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "7e1e3c92097a7764d39ac567a3bbc01bb309279d1d29e066328ea04403d55f2b",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-04",
+      "preset_id": "glass-04",
+      "label": "Soft Glass",
+      "path": "assets/ui-dashboard-comparisons/04-soft-glass.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "497be0780c7564f07a0964a8da7c7c5010a7c66619ff98961ea78f9547b1b5d1",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "light",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    },
+    {
+      "asset_id": "AST-DASH-05",
+      "preset_id": "console-05",
+      "label": "Performance Console",
+      "path": "assets/ui-dashboard-comparisons/05-performance-console.png",
+      "dimensions": [
+        1586,
+        992
+      ],
+      "sha256": "66af5965e167f4d5140eb5df90f54177f8abf1c88aa749180ada48967d60e52e",
+      "status": "generated visual reference, not approved production frontend",
+      "usage": "Compare presentation of the same owner portfolio dashboard; written rules and token contract govern differences",
+      "mode": "dark",
+      "source": "Founder-requested five dashboard style concepts generated in this conversation,7 November2026",
+      "licence": "AI-generated concept; not supplied brand artwork"
+    }
+  ],
+  "missing": [
+    {
+      "id": "AST-ICON",
+      "item": "Approved standalone Orb Gym/company icon and reverse artwork",
+      "fallback": "Original master on white surface; labelled placeholder for compact icon until supplied/approved; do not crop or reconstruct wordmark"
+    },
+    {
+      "id": "AST-FONTS",
+      "item": "Inter Tight and Manrope production delivery and font licences",
+      "fallback": "system-ui, Arial, sans-serif; verify layout after final fonts"
+    }
+  ],
+  "icons": {
+    "family": "One coherent outline family, chosen and licence checked by builder",
+    "sizePx": [
+      16,
+      20,
+      24
+    ],
+    "strokePx": 2,
+    "mapping": {
+      "overview": "grid",
+      "calendar": "calendar",
+      "tasks": "clipboard",
+      "members": "users",
+      "staff": "badge",
+      "finance": "chart",
+      "scan": "qr",
+      "settings": "gear"
+    },
+    "rule": "Meaningful accessible names; icon alone never carries state or consequence"
+  },
+  "appearance_extension_0_35": {
+    "preset": "neumorphic-06",
+    "reference_status": "Written direction and resolved proposed tokens only; no supplied/generated Neumorphic artwork or rendered preview in this edition",
+    "existing_comparison_images": "Five historical comparisons retained; Glass04 and Flat02 expanded rules govern over any generated image differences",
+    "original_logo_unchanged": true
+  }
+}

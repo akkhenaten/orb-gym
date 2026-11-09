@@ -1,0 +1,14 @@
+{
+  "package_edition": "0.35",
+  "validator_contract_version": "0.28",
+  "core_logical_entities": 78,
+  "core_relationships": 61,
+  "state_dimensions": 40,
+  "guarded_transitions": 233,
+  "logical_commands": 233,
+  "mapped_workflows": 149,
+  "planned_acceptance_cases": 28,
+  "errors": [],
+  "runtime_database_or_state_engine_tested": false,
+  "actual_board_cards_created": false
+}

@@ -1,0 +1,11 @@
+{
+  "package_edition": "0.35",
+  "validator_contract_version": "0.30",
+  "setup_sections": 16,
+  "capability_gates": 22,
+  "remaining_input_groups": 13,
+  "planned_setup_cases": 20,
+  "errors": [],
+  "actual_live_setup_or_provider_readiness_tested": false,
+  "actual_target_project_or_board_inspected": false
+}

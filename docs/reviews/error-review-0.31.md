@@ -1,0 +1,22 @@
+# Orb Gym 0.31 — error review and corrections
+
+Reviewed7November2026 against current 0.30 package, founder decisions and retained source rules. Eight correction groups below; documentation-level findings, not observed production defects. Original0.30 structural checks passed but did not detect these cross-contract issues. Current checks are strengthened accordingly.
+
+| ID | Severity | Error or ambiguity | Correction |
+|---|---|---|---|
+| ERR-01 | High | Seventeen screen definitions had no workflow bindings, including public landing, email verification, plans/arrears, PT booking, contracts/payslips and notifications. Public/auth surfaces also inherited generic company-role access wording. | Explicit stage-appropriate source links; symmetric screen/action/coverage maps; public approved-projection versus identity-flow versus scoped-authenticated access modes. No company membership required just to see approved public pages or sign in. |
+| ERR-02 | High | RecordActualSignature could move issue to SIGNED after a single capture despite multiple required signers. Supersession also mixed issue state with signature fact. | All-required-party/same-issue evidence guard; new partial capture transition retains AWAITING_SIGNATURE. Issue currentness separated from retained signature_summary/per-party evidence. Owner/admin still cannot sign as someone else. |
+| ERR-03 | High | Staff cancellation of another person's booking used book_other alone, despite separate cancellation permission. | Both classes.cancel_booking and classes.book_other required with actual source scope/terms; no implied financial waiver. |
+| ERR-04 | High | Guardian offer/booking variants reused classes.book_self, potentially blocking verified dependent booking or confusing adult with participant. | Explicit family.book actor route plus current verified dependent book right; actual participant eligibility remains. Cancellation additionally requires its scoped cancellation permission. |
+| ERR-05 | High | Offer/booking acceptance and decision/quote approval appeared as separate component commands with overlapping financial/capacity effects. | Canonical-operation contracts bind paired records to one owning operation/unique effect; no second capacity reservation or spend commitment from alternate UI entry. Actual transaction/provider mechanism remains builder work. |
+| ERR-06 | Medium | Basic theme body weight 400 contradicted supplied source Manrope500 and token metadata. | Both Basic modes and generated token catalogue corrected to 500; other presets unchanged. |
+| ERR-07 | Medium | Frontend preserved-source check silently skipped when an authoring sibling directory was absent, so it was weaker when imported elsewhere. | Self-contained source-integrity pins and canonical workflow-business hash inside package; isolated-copy validation and deliberate mutation probes. No local authoring folder required. |
+| ERR-08 | Medium | Manifest validated listed files but did not reject unlisted source files; screen/action/token metadata consistency lacked cross-checks. | Exact manifest inventory/duplicate/path checks; strict JSON and cross-contract regression checks for screens, token exports, signing/permissions and canonical paired operations. |
+
+## Scope and proof
+
+Reviewed current entry/authority files, permission and role rules, public/auth screen inventory, five-theme source/token mappings, state/transition/command relations, document/signature semantics, source/manifest validators and setup/notification/report cross-boundaries. All JSON parsed without duplicate keys and current Markdown file fragments checked. Original source archive/IDs/logo and historical asset files remain preserved.
+
+Nine documentation validators, isolated-copy run and controlled mutation probes are recorded in repository-validation.md and review-validation.json. Synthetic signer propositions illustrate the intended rule; they are not actual e-signature or security tests. Generated image concepts still have already documented illustrative differences. Domain-level workflow/record/screen links remain receiving planning maps, not proof of complete atomic implementation.
+
+The corrected package is suitable for OpenKBS inspection/detailed planning. Actual project/provider/API/current grants, schema constraints, real signer/render/files, concurrency, accessibility, money/stock and deployment evidence remain outstanding as listed in remaining-inputs.csv. No claim all possible product or implementation errors have been eliminated.

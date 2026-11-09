@@ -1,0 +1,24 @@
+{
+  "edition": "0.28",
+  "required_common_fields": {
+    "id": "stable opaque ID; no sequential guesswork used as authorisation",
+    "workspace_id": "required for customer-owned row and every protected join; global identity/platform exception explicit",
+    "gym_id": "required for location-owned operation; optional only for genuinely company-wide object",
+    "version": "optimistic concurrency token; expected version on consequential mutations",
+    "effective_at": "business effective instant, timezone policy captured where scheduled",
+    "recorded_at": "system ingestion/audit instant, never replaces late business time",
+    "actor_reference": "real human or scoped service principal; not a fabricated owner identity",
+    "source_reference": "allowlisted record type+ID+scope+version; actual relationship constraint verified",
+    "operation_id": "retry identity scoped to owning command and payload hash",
+    "audience_or_field_bundle": "explicit purpose/record/field projection; not public by default"
+  },
+  "special_types": {
+    "money": "exact recorded native currency/minor-unit precision; amount+currency+issuer, no binary-float business calculation",
+    "quantity": "signed exact quantity with SKU/unit/location/source; not confused with money",
+    "time_interval": "start/end instants with applicable schedule timezone and interval semantics; overlap/clipping rules explicit",
+    "versioned_snapshot": "immutable issued/accepted source terms/data/brand hash and reference",
+    "protected_file": "private storage handle/hash/media/scan state and explicit contextual access links, never permanent public signed URL in a record",
+    "identity_reference": "provider subject/verified linkage only; factor/password secrets remain with supported identity provider"
+  },
+  "requiredness": "Drafts may omit conditional fields; each transition validates required current fields before committing. Missing tenant values produce setup-required, not silent placeholder default."
+}

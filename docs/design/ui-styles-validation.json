@@ -1,0 +1,7 @@
+{
+  "edition": "0.35",
+  "style_options": 6,
+  "theme_modes": 12,
+  "errors": [],
+  "scope": "Static catalogue, settings boundaries and selected effect tokens only; no preview/browser/assistive-technology/runtime tests"
+}

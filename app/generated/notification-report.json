@@ -1,0 +1,199 @@
+{
+ "generated_at": "2022-01-01T05:00:00.000Z",
+ "counts": {
+  "events": 91,
+  "domains": 18,
+  "events_with_candidate_screens": 91,
+  "external_channel_events": 0,
+  "events_declaring_channels_as_prose": 91
+ },
+ "mapping": {
+  "command_to_event_edge_exists": false,
+  "why": "transition.source_id is one document reference (OG-DATA-001) and event.source_id is one document reference (OG-NOT-001) for every row, so no join exists.",
+  "consequence": "The engine never auto-fires a notification. Callers enqueue an explicit event_id. Domain-adjacent candidates are listed below for wiring review, not used automatically.",
+  "domain_candidates": {
+   "USER": {
+    "events": [
+     "NOT-001",
+     "NOT-002",
+     "NOT-003"
+    ],
+    "transition_count": 11
+   },
+   "AUTH": {
+    "events": [
+     "NOT-004",
+     "NOT-005",
+     "NOT-006",
+     "NOT-007",
+     "NOT-008"
+    ],
+    "transition_count": 0
+   },
+   "MEM": {
+    "events": [
+     "NOT-009",
+     "NOT-010",
+     "NOT-011",
+     "NOT-012",
+     "NOT-013",
+     "NOT-014",
+     "NOT-015",
+     "NOT-016",
+     "NOT-017",
+     "NOT-018",
+     "NOT-019"
+    ],
+    "transition_count": 30
+   },
+   "CLASS": {
+    "events": [
+     "NOT-020",
+     "NOT-021",
+     "NOT-022",
+     "NOT-023",
+     "NOT-024",
+     "NOT-025",
+     "NOT-026",
+     "NOT-027",
+     "NOT-028",
+     "NOT-029"
+    ],
+    "transition_count": 23
+   },
+   "COACH": {
+    "events": [
+     "NOT-030",
+     "NOT-031",
+     "NOT-032",
+     "NOT-033",
+     "NOT-034",
+     "NOT-035"
+    ],
+    "transition_count": 7
+   },
+   "STAFF": {
+    "events": [
+     "NOT-036",
+     "NOT-037",
+     "NOT-038",
+     "NOT-039",
+     "NOT-040",
+     "NOT-041",
+     "NOT-042",
+     "NOT-043",
+     "NOT-044",
+     "NOT-045",
+     "NOT-046"
+    ],
+    "transition_count": 20
+   },
+   "TASK": {
+    "events": [
+     "NOT-047",
+     "NOT-048",
+     "NOT-049",
+     "NOT-050",
+     "NOT-051",
+     "NOT-052",
+     "NOT-053",
+     "NOT-054",
+     "NOT-055",
+     "NOT-056",
+     "NOT-057",
+     "NOT-058",
+     "NOT-059",
+     "NOT-060",
+     "NOT-061",
+     "NOT-062",
+     "NOT-063",
+     "NOT-064"
+    ],
+    "transition_count": 23
+   },
+   "POS": {
+    "events": [
+     "NOT-065",
+     "NOT-066",
+     "NOT-067",
+     "NOT-068",
+     "NOT-069"
+    ],
+    "transition_count": 16
+   },
+   "DOC": {
+    "events": [
+     "NOT-070",
+     "NOT-071",
+     "NOT-072",
+     "NOT-073",
+     "NOT-074"
+    ],
+    "transition_count": 10
+   },
+   "FEED": {
+    "events": [
+     "NOT-075",
+     "NOT-076",
+     "NOT-077",
+     "NOT-078",
+     "NOT-079"
+    ],
+    "transition_count": 12
+   },
+   "TRIAL": {
+    "events": [
+     "NOT-080",
+     "NOT-081"
+    ],
+    "transition_count": 0
+   },
+   "JUNIOR": {
+    "events": [
+     "NOT-082",
+     "NOT-083",
+     "NOT-084"
+    ],
+    "transition_count": 6
+   },
+   "IMPORT": {
+    "events": [
+     "NOT-085",
+     "NOT-086"
+    ],
+    "transition_count": 7
+   },
+   "LAND": {
+    "events": [
+     "NOT-087"
+    ],
+    "transition_count": 6
+   },
+   "DESIGN": {
+    "events": [
+     "NOT-088"
+    ],
+    "transition_count": 5
+   },
+   "FIN": {
+    "events": [
+     "NOT-089"
+    ],
+    "transition_count": 24
+   },
+   "AI": {
+    "events": [
+     "NOT-090"
+    ],
+    "transition_count": 8
+   },
+   "RELEASE": {
+    "events": [
+     "NOT-091"
+    ],
+    "transition_count": 0
+   }
+  }
+ },
+ "errors": []
+}

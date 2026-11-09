@@ -1,0 +1,18 @@
+{
+  "name": "orb-gym",
+  "version": "0.36.0",
+  "private": true,
+  "type": "module",
+  "description": "Orb Gym application, compiled from the OpenKBS specification",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "compile": "node tools/compile-spec/build-all.mjs",
+    "test": "node --test",
+    "gates": "cd .. && for f in scripts/validate_*.py; do python3 \"$f\" > /dev/null || { echo \"FAIL $f\"; exit 1; }; done && echo 'all gates pass'",
+    "check": "npm run compile && npm test && npm run gates",
+    "start": "node src/server.mjs",
+    "dev": "ORB_DEV=1 node src/server.mjs"
+  }
+}

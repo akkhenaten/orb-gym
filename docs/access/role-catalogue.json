@@ -1,0 +1,144 @@
+{
+  "edition": "0.25",
+  "source_ids": [
+    "OG-ACL-001",
+    "OG-ACL-002",
+    "OG-ACL-003"
+  ],
+  "roles": [
+    {
+      "role_id": "platform-admin",
+      "scope_kind": "platform",
+      "scope": "All workspaces and gyms through explicit audited platform context",
+      "responsibility": "Broad platform administration and inspection. Not assignable by a customer.",
+      "status": "founder-confirmed"
+    },
+    {
+      "role_id": "company-owner",
+      "scope_kind": "workspace",
+      "scope": "All current and subsequently created gyms owned by this company",
+      "responsibility": "Full company authority, including role/user grants; no platform-admin assignment.",
+      "status": "founder-confirmed"
+    },
+    {
+      "role_id": "senior-management",
+      "scope_kind": "selected-gyms-or-workspace",
+      "scope": "Several explicitly assigned gyms; company-wide if granted",
+      "responsibility": "Cross-gym management; module/action/field and approval rights are independently configurable.",
+      "status": "founder-confirmed"
+    },
+    {
+      "role_id": "local-gym-manager",
+      "scope_kind": "gym",
+      "scope": "One assigned gym per local assignment",
+      "responsibility": "Local gym management; further gyms require additional explicit assignments, not automatic senior rights.",
+      "status": "founder-confirmed"
+    },
+    {
+      "role_id": "supervisor",
+      "scope_kind": "gym",
+      "scope": "Assigned local operational scope",
+      "responsibility": "Delegated supervision; no automatic owner/senior grants.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "payroll-admin",
+      "scope_kind": "workspace-or-selected-gyms",
+      "scope": "Configured pay administration scope",
+      "responsibility": "Payslips and pay-related data as granted; no automatic disciplinary, health or customer-refund rights.",
+      "status": "specialist-template-proposal"
+    },
+    {
+      "role_id": "finance",
+      "scope_kind": "workspace-or-selected-gyms",
+      "scope": "Configured finance scope",
+      "responsibility": "Finance/ledger/report/reconciliation as granted; refund/approval/export are separate permissions.",
+      "status": "specialist-template-proposal"
+    },
+    {
+      "role_id": "hr",
+      "scope_kind": "workspace-or-selected-gyms",
+      "scope": "Configured employment scope",
+      "responsibility": "Private employment tools as granted; health/member finance not implied.",
+      "status": "specialist-template-proposal"
+    },
+    {
+      "role_id": "membership",
+      "scope_kind": "selected-gyms",
+      "scope": "Configured membership administration scope",
+      "responsibility": "Applications, plans and own assigned membership cases; health review and overrides separate.",
+      "status": "specialist-template-proposal"
+    },
+    {
+      "role_id": "reception",
+      "scope_kind": "gym",
+      "scope": "Assigned gym and necessary reception projections",
+      "responsibility": "Scan, member lookup and till as granted; no private health/HR exposure on shared screen.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "cleaner",
+      "scope_kind": "assigned-records",
+      "scope": "Own shifts and assigned cleaning job sheets",
+      "responsibility": "Record evidence and request completion; not verification or quote approval by implication.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "coach-employed",
+      "scope_kind": "assigned-clients-and-classes",
+      "scope": "Own employment and assigned PT clients/classes",
+      "responsibility": "Fuller coach tools as granted, rates/earnings/customer prices remain separate.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "coach-rental",
+      "scope_kind": "own-and-assigned-classes",
+      "scope": "Own rental arrangement/clients and authorised gym classes",
+      "responsibility": "Limited scope, not employed-coach CRM/HR; external collection default preserved.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "member",
+      "scope_kind": "self-and-entitled-gyms",
+      "scope": "Own private records and explicitly shared gym content",
+      "responsibility": "App actions require active entitlement/activity eligibility, not just role.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "pt-only",
+      "scope_kind": "self-and-appointment",
+      "scope": "Own appointments/forms/receipts and qualifying timed pass",
+      "responsibility": "Limited app rights; membership upgrade reuses identity.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "trial-guest",
+      "scope_kind": "self-and-trial-window",
+      "scope": "Own qualifying offer/visit/forms/pass",
+      "responsibility": "Trial setup/review gates apply; not a full membership.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "guardian",
+      "scope_kind": "verified-dependent-grants",
+      "scope": "Explicitly verified dependent and action-specific relationship",
+      "responsibility": "Payer/form signer/booker/collector rights are separate.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "vendor-manager",
+      "scope_kind": "assigned-organisation-jobs",
+      "scope": "Explicit shared jobs and permitted operative delegation",
+      "responsibility": "Submit organisation quote/evidence/invoice; cannot approve own commercial submission.",
+      "status": "existing-scope"
+    },
+    {
+      "role_id": "vendor-operative",
+      "scope_kind": "assigned-jobs",
+      "scope": "Own permitted visits, evidence and job updates",
+      "responsibility": "No whole supplier finance, gym directory or self-delegated access.",
+      "status": "existing-scope"
+    }
+  ],
+  "custom_roles": "Owners/platform admins may define company role templates; custom roles cannot create platform privilege, bypass mandatory business guards or remove attribution. Non-owner role templates are editable starting proposals, not automatically issued grants."
+}

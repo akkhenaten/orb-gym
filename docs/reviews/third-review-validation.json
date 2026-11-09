@@ -1,0 +1,61 @@
+{
+  "edition": "0.33",
+  "workflow_findings": 6,
+  "validation_blind_spots": 1,
+  "new_recovery_transitions": 16,
+  "standalone_checks": 11,
+  "controlled_mutation_probes": [
+    {
+      "case": "remove_suspended_grant_restoration",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Missing safe recovery path RestoreSuspendedServiceGrant"
+    },
+    {
+      "case": "restore_extends_old_window",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Unsafe service-right restoration"
+    },
+    {
+      "case": "full_receipt_mislabelled_partial",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Partial receipt includes full remaining quantity"
+    },
+    {
+      "case": "loss_written_as_received",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Missing safe recovery path ResolveTransferWithApprovedAdjustment"
+    },
+    {
+      "case": "accepted_bounce_path_missing",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Missing safe recovery path RecordPermanentFailureFromAccepted"
+    },
+    {
+      "case": "unknown_outcome_auto_retried",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Unsafe automatic retry authority"
+    },
+    {
+      "case": "uploader_allowed_to_verify",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Training record/upload authority incorrectly verifies credentials"
+    },
+    {
+      "case": "stale_attempt_can_overwrite_new_delivery",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Delivery failure lacks current attempt proof"
+    },
+    {
+      "case": "failed_tender_resets_despite_unknown_funds",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Unsafe failed-tender draft recovery"
+    },
+    {
+      "case": "applicant_withdrawal_erases_obligations",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Unsafe applicant withdrawal"
+    }
+  ],
+  "synthetic_recovery_propositions": 20,
+  "real_stock_pass_provider_training_or_api_tested": false
+}

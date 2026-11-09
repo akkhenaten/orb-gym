@@ -1,0 +1,12 @@
+{
+  "package_edition": "0.35",
+  "validator_contract_version": "0.25",
+  "roles": 19,
+  "logical_permissions": 232,
+  "template_matrix_rows": 232,
+  "source_clarifications": 4,
+  "planned_access_scenarios": 22,
+  "errors": [],
+  "runtime_enforcement_tested": false,
+  "live_grants_changed": false
+}

@@ -1,0 +1,3 @@
+# Annotated hierarchy references
+
+[Owner desktop](owner-desktop.svg), [item desktop](item-desktop.svg), [reception desktop](reception-desktop.svg) and [member mobile](member-mobile.svg) demonstrate the major layouts. These are portable annotated wireframes, not final visual designs, simulations or tested prototypes. Mobile artwork is shown on a wide annotation canvas; its content column demonstrates mobile hierarchy, not a full screenshot of a device. The master supplies error/loading/permission/responsive/motion behaviour the drawings cannot demonstrate. No generated concept logo substitutes the master.

@@ -1,0 +1,29 @@
+{
+  "edition": "0.33",
+  "source": "Founder request to search for undiscovered errors",
+  "workflow_ids": [
+    "WF-MEM-05",
+    "WF-POS-07",
+    "WF-CAL-03",
+    "WF-CAL-04",
+    "WF-STAFF-04"
+  ],
+  "contract_paths": [
+    "docs/data/recovery-path-contract.md",
+    "docs/data/transitions.json",
+    "docs/reviews/error-review-0.33.md",
+    "docs/reviews/third-review-acceptance.md"
+  ],
+  "acceptance_ids": [
+    "REV3-AC01",
+    "REV3-AC02",
+    "REV3-AC03",
+    "REV3-AC04",
+    "REV3-AC05",
+    "REV3-AC06",
+    "REV3-AC07",
+    "REV3-AC08",
+    "REV3-AC09",
+    "REV3-AC10"
+  ]
+}

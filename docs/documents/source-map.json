@@ -1,0 +1,65 @@
+{
+  "edition": "0.29",
+  "source_id": "OG-DOC-001",
+  "authority": "Founder accepted detailed document/form catalogue after0.28",
+  "related_sources": [
+    "OG-SRC-0125",
+    "OG-SRC-0126",
+    "OG-SRC-0127",
+    "OG-SRC-0128",
+    "OG-SRC-0129",
+    "OG-SRC-0130",
+    "OG-SRC-0131",
+    "OG-SRC-0132",
+    "OG-SRC-0133",
+    "OG-SRC-0134",
+    "OG-SRC-0171",
+    "OG-SRC-0192"
+  ],
+  "workflow_ids": [
+    "WF-DOC-01",
+    "WF-DOC-02",
+    "WF-DOC-03",
+    "WF-DOC-04",
+    "WF-MEM-02",
+    "WF-MEM-09"
+  ],
+  "specification_paths": [
+    "spec/documents.md",
+    "spec/onboarding-membership.md",
+    "spec/staff-hr-rota.md"
+  ],
+  "contract_paths": [
+    "docs/documents/document-contract.md",
+    "docs/documents/template-catalogue.json",
+    "docs/documents/field-catalogue.json",
+    "docs/documents/template-layouts.json",
+    "docs/documents/content-readiness.json"
+  ],
+  "acceptance_ids": [
+    "DOC-AC01",
+    "DOC-AC02",
+    "DOC-AC03",
+    "DOC-AC04",
+    "DOC-AC05",
+    "DOC-AC06",
+    "DOC-AC07",
+    "DOC-AC08",
+    "DOC-AC09",
+    "DOC-AC10",
+    "DOC-AC11",
+    "DOC-AC12",
+    "DOC-AC13",
+    "DOC-AC14",
+    "DOC-AC15",
+    "DOC-AC16",
+    "DOC-AC17",
+    "DOC-AC18",
+    "DOC-AC19",
+    "DOC-AC20",
+    "DOC-AC21",
+    "DOC-AC22",
+    "DOC-AC23",
+    "DOC-AC24"
+  ]
+}

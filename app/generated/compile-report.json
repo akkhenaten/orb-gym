@@ -1,0 +1,96 @@
+{
+ "generated_at": "2022-01-01T05:00:00.000Z",
+ "spec_dir": ".",
+ "counts": {
+  "entities": 78,
+  "tables": 78,
+  "columns_declared": 459,
+  "transitions": 233,
+  "derived_transitions": 2,
+  "commands": 235,
+  "ambiguous_commands": 0,
+  "permissions": 232,
+  "machines": 40,
+  "relationships": 61,
+  "orphan_entities": 11
+ },
+ "integrity": {
+  "state_field_without_machine": [
+   "ENT-Identity",
+   "ENT-HRRecord"
+  ],
+  "machine_without_state_field": [
+   "SM-WORKSPACE",
+   "SM-GYM",
+   "SM-ACCESS",
+   "SM-MEMBERSHIP",
+   "SM-SETUP",
+   "SM-PAYMENT",
+   "SM-REGISTER",
+   "SM-TIMESHEET",
+   "SM-TASK",
+   "SM-ASSET",
+   "SM-INVOICE",
+   "SM-DOCUMENT",
+   "SM-PUBLICATION",
+   "SM-BRAND",
+   "SM-IMPORT",
+   "SM-CASE",
+   "SM-DELIVERY",
+   "SM-EXPORT",
+   "SM-AI",
+   "SM-ACCOUNT",
+   "SM-COMMUNITY",
+   "SM-TEMPLATE"
+  ],
+  "machine_without_state_field_resolved_by": "compiler-managed status column with CHECK constraint",
+  "derived_state_overlays": [
+   {
+    "overlay_id": "DSM-CUSTOMER-CHARGE",
+    "entity_id": "ENT-CustomerCharge",
+    "states": [
+     "POSTED",
+     "VOID"
+    ],
+    "unreachable_states": [],
+    "owner_decision": null
+   },
+   {
+    "overlay_id": "DSM-CREDIT-NOTE",
+    "entity_id": "ENT-CreditNote",
+    "states": [
+     "DRAFT",
+     "ISSUED",
+     "VOID"
+    ],
+    "unreachable_states": [
+     "DRAFT"
+    ],
+    "owner_decision": "DRAFT unreachable: no source or derived transition reaches it."
+   }
+  ],
+  "orphan_entities": [
+   "ENT-BillingEntity",
+   "ENT-AreaResource",
+   "ENT-Invitation",
+   "ENT-StaffAvailability",
+   "ENT-HRRecord",
+   "ENT-TrainingRequirement",
+   "ENT-PaymentSetup",
+   "ENT-GymCostAllocation",
+   "ENT-CommunityEntry",
+   "ENT-AuditEvent",
+   "ENT-PolicyVersion"
+  ],
+  "conditionally_typed_relationships": []
+ },
+ "errors": [],
+ "warnings": [
+  "ENT-PlanVersion: field \"version\" collides with a managed column, kept once",
+  "ENT-TaskTemplate: field \"version\" collides with a managed column, kept once",
+  "ENT-QuoteVersion: field \"version\" collides with a managed column, kept once",
+  "ENT-GymCostAllocation: field \"version\" collides with a managed column, kept once",
+  "ENT-DocumentTemplate: field \"version\" collides with a managed column, kept once",
+  "ENT-MetricDefinition: field \"version\" collides with a managed column, kept once"
+ ]
+}

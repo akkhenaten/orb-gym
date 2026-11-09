@@ -1,0 +1,177 @@
+{
+  "scope": "Simplified state/quantity propositions with assumed source evidence flags; not real inventory/entry/notification/provider/qualification tests",
+  "restore_cases": [
+    {
+      "id": "valid_current_suspension",
+      "state": "SUSPENDED",
+      "eligible": true,
+      "resolved": true,
+      "unexpired": true,
+      "expected": "ACTIVE"
+    },
+    {
+      "id": "revoked_not_restored",
+      "state": "REVOKED",
+      "eligible": true,
+      "resolved": true,
+      "unexpired": true,
+      "expected": "DENY"
+    },
+    {
+      "id": "expired_not_restored",
+      "state": "EXPIRED",
+      "eligible": true,
+      "resolved": true,
+      "unexpired": false,
+      "expected": "DENY"
+    },
+    {
+      "id": "unresolved_restriction",
+      "state": "SUSPENDED",
+      "eligible": true,
+      "resolved": false,
+      "unexpired": true,
+      "expected": "DENY"
+    }
+  ],
+  "transfer_cases": [
+    {
+      "id": "full_receipt",
+      "source_initial": 20,
+      "dispatched": 4,
+      "received": 4,
+      "approved_loss": 0,
+      "returned_to_origin": 0,
+      "expected_source": 16,
+      "expected_destination": 4,
+      "expected_transit": 0,
+      "expected_state": "RECEIVED"
+    },
+    {
+      "id": "partial_actual_receipt",
+      "source_initial": 20,
+      "dispatched": 4,
+      "received": 2,
+      "approved_loss": 0,
+      "returned_to_origin": 0,
+      "expected_source": 16,
+      "expected_destination": 2,
+      "expected_transit": 2,
+      "expected_state": "PART_RECEIVED"
+    },
+    {
+      "id": "approved_loss_not_fake_receipt",
+      "source_initial": 20,
+      "dispatched": 4,
+      "received": 2,
+      "approved_loss": 2,
+      "returned_to_origin": 0,
+      "expected_source": 16,
+      "expected_destination": 2,
+      "expected_transit": 0,
+      "expected_state": "RESOLVED_WITH_ADJUSTMENT"
+    },
+    {
+      "id": "evidenced_return_not_loss",
+      "source_initial": 20,
+      "dispatched": 4,
+      "received": 2,
+      "approved_loss": 0,
+      "returned_to_origin": 2,
+      "expected_source": 18,
+      "expected_destination": 2,
+      "expected_transit": 0,
+      "expected_state": "RESOLVED_WITH_ADJUSTMENT"
+    }
+  ],
+  "delivery_cases": [
+    {
+      "id": "accepted_then_bounced",
+      "state": "ACCEPTED",
+      "same_attempt": true,
+      "definitive_failure": true,
+      "expected": "PERMANENT_FAILURE"
+    },
+    {
+      "id": "unknown_reconciled_failure",
+      "state": "UNKNOWN",
+      "same_attempt": true,
+      "definitive_failure": true,
+      "expected": "PERMANENT_FAILURE"
+    },
+    {
+      "id": "old_attempt_failure_after_new_delivery",
+      "state": "DELIVERED",
+      "same_attempt": false,
+      "definitive_failure": true,
+      "expected": "HISTORY_ONLY"
+    },
+    {
+      "id": "unknown_not_assumed_failed",
+      "state": "UNKNOWN",
+      "same_attempt": true,
+      "definitive_failure": false,
+      "expected": "AWAIT_EVIDENCE"
+    }
+  ],
+  "tender_cases": [
+    {
+      "id": "all_declined_no_funds",
+      "all_failed": true,
+      "funds": false,
+      "unknown": false,
+      "fulfilment": false,
+      "expected": "DRAFT"
+    },
+    {
+      "id": "partial_payment_not_reset",
+      "all_failed": false,
+      "funds": true,
+      "unknown": false,
+      "fulfilment": false,
+      "expected": "RECONCILIATION_REQUIRED"
+    },
+    {
+      "id": "timeout_not_decline",
+      "all_failed": false,
+      "funds": false,
+      "unknown": true,
+      "fulfilment": false,
+      "expected": "RECONCILIATION_REQUIRED"
+    },
+    {
+      "id": "failed_but_committed_fulfilment",
+      "all_failed": true,
+      "funds": false,
+      "unknown": false,
+      "fulfilment": true,
+      "expected": "RECONCILIATION_REQUIRED"
+    }
+  ],
+  "withdrawal_cases": [
+    {
+      "id": "draft_withdrawal",
+      "state": "DRAFT",
+      "actual_subject": true,
+      "expected": "WITHDRAWN"
+    },
+    {
+      "id": "awaiting_information_withdrawal",
+      "state": "ACTION_REQUIRED",
+      "actual_subject": true,
+      "expected": "WITHDRAWN"
+    },
+    {
+      "id": "under_review_withdrawal",
+      "state": "UNDER_REVIEW",
+      "actual_subject": true,
+      "expected": "WITHDRAWN"
+    },
+    {
+      "id": "approved_membership_not_application_withdrawal",
+      "state": "APPROVED",
+      "actual_subject": true,
+      "expected": "DENY_USE_SOURCE_LIFECYCLE"
+    }
+  ]
+}

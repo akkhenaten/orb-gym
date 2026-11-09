@@ -1,0 +1,56 @@
+{
+ "edition": "0.35",
+ "date": "2026-11-09",
+ "source_id": "UI-REQ-035",
+ "scope": "Founder supplied Neumorphic, Glassmorphism and Flat selectable full-app styles",
+ "added_preset": "neumorphic-06",
+ "expanded_presets": [
+  "glass-04",
+  "flat-02"
+ ],
+ "unchanged_business_workflow_ids": 149,
+ "settings_screen": "SCR-075",
+ "planned_acceptance_ids": [
+  "UI35-01",
+  "UI35-02",
+  "UI35-03",
+  "UI35-04",
+  "UI35-05",
+  "UI35-06",
+  "UI35-07",
+  "UI35-08",
+  "UI35-09",
+  "UI35-10"
+ ],
+ "documentation_validators": 13,
+ "mutation_probes": [
+  {
+   "case": "missing_neumorphic_option",
+   "result": "REJECTED_AS_EXPECTED"
+  },
+  {
+   "case": "missing_neumorphic_dark",
+   "result": "REJECTED_AS_EXPECTED"
+  },
+  {
+   "case": "no_solid_glass_fallback",
+   "result": "REJECTED_AS_EXPECTED"
+  },
+  {
+   "case": "style_publish_activates_logo",
+   "result": "REJECTED_AS_EXPECTED"
+  }
+ ],
+ "rendered_or_runtime_verification": false,
+ "next_owner": "OpenKBS: bind existing numbered delivery cards to settings, token/component variants, affected portal surfaces and actual acceptance tests; no duplicate business module",
+ "deferrals": [
+  {
+   "preset": "neumorphic-06",
+   "decision_date": "2026-11-09",
+   "decision": "not selectable; deferred pending a rendered reference",
+   "authority": "founder confirmation of five selectable presets",
+   "retained_assets": "full light/dark token definitions in theme-tokens.json and token-catalogue.json",
+   "enable_path": "set selectable:true in style-options.json and add the ten-mode assertion to validate_ui_styles.py"
+  }
+ ]
+}

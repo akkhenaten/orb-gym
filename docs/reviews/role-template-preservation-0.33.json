@@ -1,0 +1,216 @@
+{
+  "source": "Prior0.33 proposed role matrix, no real user grants",
+  "preserved_delegated_rules": [
+    {
+      "permission_id": "people.view_profile",
+      "role": "senior-management",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "people.view_profile",
+      "role": "local-gym-manager",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "people.view_profile",
+      "role": "hr",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "people.view_profile",
+      "role": "membership",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "people.view_profile",
+      "role": "reception",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "people.view_profile",
+      "role": "member",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "people.edit_profile",
+      "role": "member",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "hr.view_contract",
+      "role": "hr",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "hr.view_payslip",
+      "role": "payroll-admin",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.view",
+      "role": "senior-management",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.view",
+      "role": "local-gym-manager",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.view",
+      "role": "supervisor",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.view",
+      "role": "payroll-admin",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.view",
+      "role": "hr",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.view",
+      "role": "cleaner",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.view",
+      "role": "coach-employed",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.request_leave",
+      "role": "coach-employed",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.record_actual_time",
+      "role": "cleaner",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "rota.record_actual_time",
+      "role": "coach-employed",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "calendar.view_notifications",
+      "role": "member",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "branding.edit_own_preferences",
+      "role": "member",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "auth.edit_own_security",
+      "role": "member",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "auth.edit_own_security",
+      "role": "pt-only",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "auth.edit_own_security",
+      "role": "trial-guest",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "auth.view_sessions",
+      "role": "member",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "senior-management",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "local-gym-manager",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "supervisor",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "payroll-admin",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "finance",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "hr",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "membership",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "reception",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "cleaner",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "coach-employed",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "coach-rental",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "member",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "pt-only",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "trial-guest",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "guardian",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "vendor-manager",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    },
+    {
+      "permission_id": "notifications.edit_own_preferences",
+      "role": "vendor-operative",
+      "prior_proposed_scope": "PROPOSED_TEMPLATE_ALLOW_IN_EXPLICIT_SCOPE"
+    }
+  ],
+  "rule": "Adding own-service defaults does not reduce pre-existing delegated HR/pay/profile/rota authority; field/scope/deny and actual source guards still apply"
+}

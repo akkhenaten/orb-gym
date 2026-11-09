@@ -1,0 +1,475 @@
+{
+  "edition": "0.29",
+  "fields": [
+    {
+      "field_id": "company.name",
+      "type": "string",
+      "source": "Workspace.display_name",
+      "sensitivity": "public-brand",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "company.contact",
+      "type": "contact_block",
+      "source": "published Company Settings contact fields",
+      "sensitivity": "public-brand",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "company.logo",
+      "type": "approved_asset_reference",
+      "source": "published BrandVersion logo",
+      "sensitivity": "public-brand",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "gym.name",
+      "type": "string",
+      "source": "Gym approved display name",
+      "sensitivity": "public-brand",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "gym.address",
+      "type": "address",
+      "source": "Gym approved address",
+      "sensitivity": "public-brand",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "gym.contact",
+      "type": "contact_block",
+      "source": "Gym approved public contact",
+      "sensitivity": "public-brand",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "issuer.identity",
+      "type": "legal_entity_snapshot",
+      "source": "BillingEntity reviewed legal issuer",
+      "sensitivity": "finance",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "brand.version",
+      "type": "version_reference",
+      "source": "published applicable BrandVersion",
+      "sensitivity": "public-brand",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "person.name",
+      "type": "string",
+      "source": "CompanyPerson display/legal name as applicable",
+      "sensitivity": "private-person",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "person.contact",
+      "type": "contact_block",
+      "source": "CompanyPerson approved current contact",
+      "sensitivity": "private-person",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "person.reference",
+      "type": "opaque_reference",
+      "source": "workspace scoped CompanyPerson ID",
+      "sensitivity": "private-person",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "person.eligibility",
+      "type": "reviewed_eligibility_fields",
+      "source": "required junior/activity policy fields only",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "participant.reference",
+      "type": "opaque_reference",
+      "source": "actual beneficiary CompanyPerson ID",
+      "sensitivity": "private-person",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "actor.identity",
+      "type": "verified_actor_reference",
+      "source": "actual authenticated completing/signing person",
+      "sensitivity": "private-person",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "guardian.right",
+      "type": "verified_relationship_reference",
+      "source": "GuardianRelationship exact action grant/effective version",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "emergency.name",
+      "type": "string",
+      "source": "subject-provided emergency contact name",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "emergency.relationship",
+      "type": "string",
+      "source": "subject-provided contact relationship label",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "emergency.phone",
+      "type": "phone",
+      "source": "subject-provided emergency contact telephone",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "form.version",
+      "type": "version_reference",
+      "source": "applicable published FormVersion",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "form.answers",
+      "type": "approved_question_schema_response",
+      "source": "answers matching reviewed form schema, not generic AI questions",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "review.status",
+      "type": "review_outcome",
+      "source": "authorised source evidence-review command result",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "review.evidence",
+      "type": "protected_evidence_reference",
+      "source": "actual scoped supporting evidence/decision",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "policy.content",
+      "type": "reviewed_static_content_reference",
+      "source": "company-reviewed exact legal/safety/policy content version",
+      "sensitivity": "reviewed-content",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "policy.applicability",
+      "type": "applicability_rule_reference",
+      "source": "reviewed cohort/activity/effective-date rule",
+      "sensitivity": "reviewed-content",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "plan.snapshot",
+      "type": "accepted_plan_snapshot",
+      "source": "Membership accepted PlanVersion and price/rights/cancellation terms",
+      "sensitivity": "finance",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "membership.reference",
+      "type": "source_reference",
+      "source": "source Membership ID/version",
+      "sensitivity": "private-person",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "service.snapshot",
+      "type": "accepted_service_snapshot",
+      "source": "class/PT/trial source terms/occurrence/appointment",
+      "sensitivity": "private-person",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "coach.arrangement",
+      "type": "arrangement_snapshot",
+      "source": "effective CoachArrangement with rental/employed type",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "coach.rates",
+      "type": "approved_rate_snapshot",
+      "source": "recorded hourly rate/amount/currency and service scope",
+      "sensitivity": "finance",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "employment.terms",
+      "type": "reviewed_employment_fields",
+      "source": "source employer/role/locations/start/hours/remuneration and reviewed terms",
+      "sensitivity": "private-hr",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "staff.training",
+      "type": "requirement_and_evidence_reference",
+      "source": "actual TrainingRequirement/SOP version/credential evidence",
+      "sensitivity": "private-hr",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "staff.actual_hours",
+      "type": "reviewed_timesheet_snapshot",
+      "source": "approved Timesheet actual hours/breaks/version",
+      "sensitivity": "private-pay",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "staff.payslip",
+      "type": "protected_issued_file_reference",
+      "source": "verified imported/issued employee payslip, not generated statutory calculation",
+      "sensitivity": "private-pay",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "staff.case",
+      "type": "restricted_hr_case_snapshot",
+      "source": "permitted one-to-one/disciplinary source, actual participants",
+      "sensitivity": "private-hr",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "credential.evidence",
+      "type": "protected_credential_references",
+      "source": "person/service-specific qualification evidence with actual provenance and review, independent of employment label",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "supplier.identity",
+      "type": "supplier_identity_snapshot",
+      "source": "SupplierOrganisation reviewed identity/contact/issuer",
+      "sensitivity": "private-commercial",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "supplier.credentials",
+      "type": "protected_credential_references",
+      "source": "actual submitted credential files/validity/reviewer evidence",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "work.reference",
+      "type": "source_reference",
+      "source": "TaskOccurrence or CaseRecord ID/type/version and gym",
+      "sensitivity": "private-work",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "work.details",
+      "type": "source_work_snapshot",
+      "source": "permitted original task/asset/area/owner/due/details",
+      "sensitivity": "private-work",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "work.evidence",
+      "type": "protected_evidence_references",
+      "source": "actual task evidence/verification version",
+      "sensitivity": "private-work",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "quote.snapshot",
+      "type": "versioned_quote_snapshot",
+      "source": "QuoteVersion amount/currency/scope/validity/issuer",
+      "sensitivity": "private-commercial",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "invoice.snapshot",
+      "type": "versioned_invoice_snapshot",
+      "source": "actual source invoice lines/tax/status/issuer, not template-created debt",
+      "sensitivity": "finance",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "money.snapshot",
+      "type": "confirmed_transaction_snapshot",
+      "source": "actual sale/payment/credit/refund line/issuer/currency facts",
+      "sensitivity": "finance",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "receipt.snapshot",
+      "type": "immutable_receipt_reference",
+      "source": "actual issued receipt/sale snapshot, not current product price",
+      "sensitivity": "finance",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "report.snapshot",
+      "type": "scoped_metric_result_reference",
+      "source": "approved definition/filter/as_of/source result/completeness",
+      "sensitivity": "private-report",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "communication.purpose",
+      "type": "purpose_enum",
+      "source": "operational/security/approved outreach purpose",
+      "sensitivity": "private-communication",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "communication.link",
+      "type": "protected_source_link",
+      "source": "current guarded source destination, no permanent private URL",
+      "sensitivity": "private-communication",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "issue.reference",
+      "type": "opaque_issue_reference",
+      "source": "IssuedDocument/receipt/form source issue ID/version",
+      "sensitivity": "private-audit",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "issue.time",
+      "type": "timestamp_with_timezone",
+      "source": "actual issue time and applicable display timezone",
+      "sensitivity": "private-audit",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "signature.evidence",
+      "type": "supported_signature_evidence_reference",
+      "source": "actual signer/issue/hash/intent/time/provider evidence",
+      "sensitivity": "private-sensitive",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "acknowledgement.evidence",
+      "type": "actual_acknowledgement_reference",
+      "source": "actual actor/required version/intent/time, not read status",
+      "sensitivity": "private-audit",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    },
+    {
+      "field_id": "source.provenance",
+      "type": "import_or_upload_provenance",
+      "source": "original source/hash/import row/review, not forged new signature",
+      "sensitivity": "private-audit",
+      "authority": "Owning domain resolves source value under current record/field grants; template author cannot silently override confirmed source fact",
+      "validation": "Required-at-stage binding, correct workspace/source/version/type; missing/denied unresolved field blocks issue where required",
+      "editable": "Subject-input fields edited only by actual subject/authorised source command; protected finance/HR/signature fields not free text in preview"
+    }
+  ],
+  "interpolation": "Allowlisted typed bindings only; no arbitrary scripts, SQL, expressions, embedded instructions or cross-tenant joins",
+  "requiredness": "Each template names required payload fields, plus issued/signature evidence when that lifecycle stage applies; optional fields remain omitted rather than invented"
+}

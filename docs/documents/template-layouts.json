@@ -1,0 +1,780 @@
+{
+  "edition": "0.29",
+  "layouts": [
+    {
+      "layout_id": "LAY-DCT-001",
+      "template_type_id": "DCT-001",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "participant.reference",
+        "actor.identity",
+        "form.version",
+        "form.answers",
+        "policy.content",
+        "policy.applicability"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-002",
+      "template_type_id": "DCT-002",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "participant.reference",
+        "actor.identity",
+        "emergency.name",
+        "emergency.relationship",
+        "emergency.phone"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-003",
+      "template_type_id": "DCT-003",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "actor.identity",
+        "policy.content",
+        "policy.applicability"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-004",
+      "template_type_id": "DCT-004",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "participant.reference",
+        "plan.snapshot",
+        "policy.content",
+        "brand.version"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-005",
+      "template_type_id": "DCT-005",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "membership.reference",
+        "plan.snapshot",
+        "policy.content"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-006",
+      "template_type_id": "DCT-006",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "participant.reference",
+        "actor.identity",
+        "form.version",
+        "form.answers",
+        "policy.content",
+        "service.snapshot"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-007",
+      "template_type_id": "DCT-007",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "service.snapshot",
+        "coach.rates",
+        "policy.content",
+        "brand.version"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-008",
+      "template_type_id": "DCT-008",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "participant.reference",
+        "service.snapshot",
+        "policy.content",
+        "policy.applicability"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-009",
+      "template_type_id": "DCT-009",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "participant.reference",
+        "actor.identity",
+        "guardian.right",
+        "review.evidence",
+        "policy.content"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-010",
+      "template_type_id": "DCT-010",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "participant.reference",
+        "actor.identity",
+        "guardian.right",
+        "person.eligibility",
+        "service.snapshot",
+        "policy.content"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-011",
+      "template_type_id": "DCT-011",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "employment.terms",
+        "policy.content",
+        "brand.version"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-012",
+      "template_type_id": "DCT-012",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "person.contact",
+        "actor.identity",
+        "employment.terms"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-013",
+      "template_type_id": "DCT-013",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "actor.identity",
+        "emergency.name",
+        "emergency.relationship",
+        "emergency.phone"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-014",
+      "template_type_id": "DCT-014",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "actor.identity",
+        "staff.training",
+        "policy.content",
+        "policy.applicability"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-015",
+      "template_type_id": "DCT-015",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "staff.training",
+        "review.evidence",
+        "source.provenance"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-016",
+      "template_type_id": "DCT-016",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "staff.case",
+        "review.evidence"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-017",
+      "template_type_id": "DCT-017",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "staff.case",
+        "policy.content"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-018",
+      "template_type_id": "DCT-018",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "staff.actual_hours",
+        "issue.reference",
+        "issue.time"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-019",
+      "template_type_id": "DCT-019",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "staff.payslip",
+        "source.provenance"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-020",
+      "template_type_id": "DCT-020",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "coach.arrangement",
+        "policy.content",
+        "brand.version"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-021",
+      "template_type_id": "DCT-021",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "person.name",
+        "coach.arrangement",
+        "credential.evidence",
+        "source.provenance"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-022",
+      "template_type_id": "DCT-022",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "supplier.identity",
+        "supplier.credentials",
+        "policy.content",
+        "actor.identity"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-023",
+      "template_type_id": "DCT-023",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "supplier.identity",
+        "work.reference",
+        "quote.snapshot",
+        "source.provenance"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-024",
+      "template_type_id": "DCT-024",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "supplier.identity",
+        "work.reference",
+        "quote.snapshot",
+        "policy.content"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-025",
+      "template_type_id": "DCT-025",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "supplier.identity",
+        "work.reference",
+        "work.details",
+        "work.evidence"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-026",
+      "template_type_id": "DCT-026",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "actor.identity",
+        "work.reference",
+        "work.evidence",
+        "review.status"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-027",
+      "template_type_id": "DCT-027",
+      "presentation": "protected original viewer plus source metadata/review panel",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "protected original/evidence and provenance",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "supplier.identity",
+        "invoice.snapshot",
+        "work.reference",
+        "source.provenance"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-028",
+      "template_type_id": "DCT-028",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "invoice.snapshot",
+        "brand.version",
+        "issue.reference"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-029",
+      "template_type_id": "DCT-029",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "money.snapshot",
+        "receipt.snapshot",
+        "brand.version",
+        "issue.reference",
+        "issue.time"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-030",
+      "template_type_id": "DCT-030",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "money.snapshot",
+        "invoice.snapshot",
+        "issue.reference",
+        "issue.time"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-031",
+      "template_type_id": "DCT-031",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "report.snapshot",
+        "company.name",
+        "brand.version",
+        "issue.reference",
+        "issue.time"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-032",
+      "template_type_id": "DCT-032",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "issuer.identity",
+        "person.name",
+        "policy.content",
+        "brand.version",
+        "communication.purpose"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-033",
+      "template_type_id": "DCT-033",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "company.name",
+        "gym.name",
+        "communication.purpose",
+        "communication.link"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    },
+    {
+      "layout_id": "LAY-DCT-034",
+      "template_type_id": "DCT-034",
+      "presentation": "typed composed document or structured responsive form",
+      "blocks": [
+        "approved source/issuer and brand header",
+        "type title and applicable reference/version",
+        "source-bound participant/beneficiary and purpose",
+        "reviewed static content and typed input/source groups",
+        "required review/signature/acknowledgement area only for applicable mode",
+        "issue/provenance and controlled template footer"
+      ],
+      "required_binding_ids": [
+        "company.name",
+        "gym.name",
+        "policy.content",
+        "brand.version"
+      ],
+      "preview_rule": "Synthetic or current permitted source data; draft label and unresolved field warnings. Do not redraw/import signatures or treat unknown required values as complete.",
+      "output_rule": "Preserve original geometry/bytes for source uploads; composed output requires renderer validation; signed issue freezes exact generated content.",
+      "production_content_status": "Not supplied/approved by this layout. Company-reviewed blocks and actual source records required at applicable stage."
+    }
+  ],
+  "scope": "Editable declarative layouts, not complete rendered PDF/HTML bodies or executable application forms"
+}

@@ -1,0 +1,1485 @@
+{
+  "edition": "0.33",
+  "scope": "Logical records, no database/ORM selected",
+  "entities": [
+    {
+      "entity_id": "ENT-Identity",
+      "name": "Identity",
+      "owner_domain": "identity",
+      "scope": "global minimal identity",
+      "logical_fields": [
+        "provider_subject",
+        "account_status",
+        "verified_contact_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Unique identity-provider subject; no global HR/health/company payment records",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Workspace",
+      "name": "Workspace",
+      "owner_domain": "SPACE",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "owner_assignment_id",
+        "display_name",
+        "workspace_state",
+        "policy_version"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Owner creation and workspace creation retry-safe together",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CompanyPerson",
+      "name": "CompanyPerson",
+      "owner_domain": "USER",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "identity_id_optional",
+        "display_name",
+        "contact_reference",
+        "company_access_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Unique reviewed person linkage per company; dependent need not have a login",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Gym",
+      "name": "Gym",
+      "owner_domain": "SPACE",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "display_name",
+        "location",
+        "timezone",
+        "gym_state",
+        "billing_entity_id"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Each gym belongs to exactly one workspace; no brand-as-location assumption",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-BillingEntity",
+      "name": "BillingEntity",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "legal_name",
+        "currency_configuration",
+        "issuer_details"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Legal issuer is separate from decorative logo; immutable issued snapshot reference",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-AreaResource",
+      "name": "AreaResource",
+      "owner_domain": "SPACE",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "resource_type",
+        "availability_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Equipment/room/resource cannot be assigned across foreign workspace",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-RoleTemplate",
+      "name": "RoleTemplate",
+      "owner_domain": "USER",
+      "scope": "platform-or-workspace as explicitly authorised",
+      "logical_fields": [
+        "workspace_id_or_platform",
+        "template_version",
+        "rule_references"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Platform and company template namespaces cannot create each other",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-RoleAssignment",
+      "name": "RoleAssignment",
+      "owner_domain": "USER",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "role_template_id",
+        "scope",
+        "effective_dates"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Current scoped grant version; multiple roles do not union unrelated scopes",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-IndividualOverride",
+      "name": "IndividualOverride",
+      "owner_domain": "USER",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "permission_id",
+        "effect",
+        "scope",
+        "field_bundles"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Explicit scoped deny wins; unique versioned override identity",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Invitation",
+      "name": "Invitation",
+      "owner_domain": "USER",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "intended_journey",
+        "destination_reference",
+        "scope",
+        "expires_at",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Opaque invitation handle is not gym entry or membership grant",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-GuardianRelationship",
+      "name": "GuardianRelationship",
+      "owner_domain": "JUNIOR",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "guardian_person_id",
+        "dependent_person_id",
+        "verified_rights",
+        "effective_dates",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Pay/book/sign/collect/read/contact independent rights; no automatic kinship inference",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Application",
+      "name": "Application",
+      "owner_domain": "MEM",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "beneficiary_person_id",
+        "joining_route",
+        "checklist_version",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Separate signup/activation/review/payment; same-person conversion retains history",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-FormVersion",
+      "name": "FormVersion",
+      "owner_domain": "DOC",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "form_type",
+        "published_version",
+        "reviewed_content_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Published version retained; no clinical/legal content invented",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-FormRequirement",
+      "name": "FormRequirement",
+      "owner_domain": "MEM",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "form_version_id",
+        "applicability",
+        "required_action",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Material change needs cohort/effective-date and authorised applicability",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-FormResponse",
+      "name": "FormResponse",
+      "owner_domain": "DOC",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "requirement_id",
+        "respondent_person_id",
+        "protected_answers",
+        "signature_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Immutable submitted/signed evidence with correction/new version; not fitness conclusion",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-PlanVersion",
+      "name": "PlanVersion",
+      "owner_domain": "MEM",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "plan_id",
+        "price_terms",
+        "eligible_gyms",
+        "activation_policy",
+        "version"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Frozen accepted membership plan terms; future gyms governed explicitly",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Membership",
+      "name": "Membership",
+      "owner_domain": "MEM",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "beneficiary_person_id",
+        "plan_version_id",
+        "service_state",
+        "effective_dates"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Person/account/payment/entitlement independent; multiple plans not duplicate beneficiary",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-EntitlementGrant",
+      "name": "EntitlementGrant",
+      "owner_domain": "MEM",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "purpose",
+        "gym_scope",
+        "source_id",
+        "effective_dates",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Membership/PT/trial/guardian-derived rights scoped to source, expiry and activity",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CoachArrangement",
+      "name": "CoachArrangement",
+      "owner_domain": "COACH",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "coach_person_id",
+        "arrangement_type",
+        "gyms",
+        "terms_version",
+        "effective_dates"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Rental/employed scope effective-dated; no automatic employee wage for rental class",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-RateVersion",
+      "name": "RateVersion",
+      "owner_domain": "COACH",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "coach_id_optional",
+        "service_type",
+        "amount",
+        "currency",
+        "effective_dates"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Coach/gym/service override then gym default then company; missing rate unbookable",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-ClassDefinition",
+      "name": "ClassDefinition",
+      "owner_domain": "CLASS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "service_type",
+        "coach_arrangement_id",
+        "collection_mode"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Published service has configured price/inclusion/issuer/cancellation rules",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-ClassOccurrence",
+      "name": "ClassOccurrence",
+      "owner_domain": "CLASS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "class_definition_id",
+        "starts_at",
+        "ends_at",
+        "capacity",
+        "resource_ids",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Stable occurrence key across recurrence edits; historical occurrences preserved",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CourseBlock",
+      "name": "CourseBlock",
+      "owner_domain": "CLASS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "class_definition_id",
+        "occurrence_ids",
+        "enrolment_terms_version"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Exact accepted occurrence scope; no silent partial block purchase",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Booking",
+      "name": "Booking",
+      "owner_domain": "CLASS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "participant_person_id",
+        "occurrence_id_or_pt_id",
+        "accepted_terms",
+        "hold_reference",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Unique active participant/service slot; capacity reservation idempotent; actor may differ from participant",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-WaitlistOffer",
+      "name": "WaitlistOffer",
+      "owner_domain": "CLASS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "booking_request_id",
+        "person_id",
+        "occurrence_id",
+        "hold_id",
+        "expires_at",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Offer is not booking; one bounded capacity reservation per current offer",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-RegisterEntry",
+      "name": "RegisterEntry",
+      "owner_domain": "CLASS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "occurrence_or_pt_id",
+        "participant_person_id",
+        "outcome",
+        "review_evidence"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Unique participant/occurrence; absence reviewed, gym visit separate",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-PTAppointment",
+      "name": "PTAppointment",
+      "owner_domain": "COACH",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "coach_person_id",
+        "client_person_id",
+        "starts_at",
+        "ends_at",
+        "rate_snapshot",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "No prepaid packages; quote rate and internal earnings distinct; client invitation not pass",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Visit",
+      "name": "Visit",
+      "owner_domain": "ENTRY",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "person_id",
+        "entry_event_id",
+        "exit_event_id_optional",
+        "correction",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Explicit entry/exit, duplicate-safe; recorded occupancy not guaranteed headcount",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-ScanEvent",
+      "name": "ScanEvent",
+      "owner_domain": "ENTRY",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "purpose",
+        "token_reference",
+        "actor_id",
+        "event_time",
+        "outcome"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "QR payload/reference alone never grants lookup/entry authority",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-EmploymentAssignment",
+      "name": "EmploymentAssignment",
+      "owner_domain": "STAFF",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "gym_assignments",
+        "employment_status",
+        "contract_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Employment lifecycle separate from login and membership",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-StaffAvailability",
+      "name": "StaffAvailability",
+      "owner_domain": "STAFF",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "intervals",
+        "applicability",
+        "source_version"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Rota/PT/classes validate qualification, travel and overlaps under current rules",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Shift",
+      "name": "Shift",
+      "owner_domain": "STAFF",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "person_id_optional",
+        "starts_at",
+        "ends_at",
+        "rota_version",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Published assignment separate from cover request/acknowledgement/actual presence",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Timesheet",
+      "name": "Timesheet",
+      "owner_domain": "STAFF",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "shift_id",
+        "person_id",
+        "actual_intervals",
+        "breaks",
+        "review_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Planned versus actual/reviewed hours distinct; no automatic statutory payroll",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-HRRecord",
+      "name": "HRRecord",
+      "owner_domain": "STAFF",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "record_type",
+        "audience",
+        "document_reference",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Disciplinary/one-to-one/pay bundles isolated; self HR view not all private notes",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-TrainingRequirement",
+      "name": "TrainingRequirement",
+      "owner_domain": "STAFF",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "person_id",
+        "training_or_sop_version",
+        "applicability",
+        "due_at",
+        "state",
+        "renewal_of_requirement_id_optional",
+        "reviewer_assignment_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Version-specific acknowledgement/credential evidence; no blanket indefinite validity; expired accepted evidence is retained, renewal uses current applicable requirement/version and separately reviewed fresh evidence",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-TaskTemplate",
+      "name": "TaskTemplate",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "task_type",
+        "recurrence",
+        "required_evidence",
+        "version"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "One engine for cleaning/maintenance/admin; each recurrence creates stable separate occurrence",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-TaskOccurrence",
+      "name": "TaskOccurrence",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "task_type",
+        "parent_id_optional",
+        "template_version_id_optional",
+        "asset_id_optional",
+        "execution_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Groups/hierarchy/dependencies distinct; no cycles; occurrence not shared rolling checklist",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-TaskGroup",
+      "name": "TaskGroup",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "label",
+        "task_ids"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Organisational grouping is not parent completion or copied cost/evidence",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-TaskDependency",
+      "name": "TaskDependency",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "predecessor_id",
+        "successor_id",
+        "condition"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Acyclic within permitted workspace; unresolved required dependency blocks specified transition",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-TaskVerification",
+      "name": "TaskVerification",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "task_id",
+        "submission_id",
+        "reviewer_id",
+        "outcome",
+        "evidence_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Submitter completion is not management verification; review preserves previous outcomes",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-ActivityEntry",
+      "name": "ActivityEntry",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "source_type",
+        "source_id",
+        "actor_id",
+        "typed_payload",
+        "audience",
+        "attachment_links"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Typed feed is source of structured quote/decision references; tabs project same IDs",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-DecisionRequest",
+      "name": "DecisionRequest",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "source_type",
+        "source_id",
+        "source_version",
+        "requested_action",
+        "assignee",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Approval bound to current exact source/version/amount and independent authority",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Asset",
+      "name": "Asset",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "area_id",
+        "qr_reference",
+        "current_service_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Asset QR is authenticated lookup reference, availability not payment/job status",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-AssetStatusInterval",
+      "name": "AssetStatusInterval",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "asset_id",
+        "service_state",
+        "starts_at",
+        "ends_at_optional",
+        "reason"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Overlapping downtime unioned; restoration explicitly authorised and evidenced",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-SupplierOrganisation",
+      "name": "SupplierOrganisation",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "legal_contact",
+        "credentials",
+        "review_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Own organisation context, approved scope and credential validity required before assignment",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-SupplierAssignment",
+      "name": "SupplierAssignment",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "supplier_id",
+        "task_id",
+        "operative_person_id_optional",
+        "shared_audience",
+        "effective_dates"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Accept/decline/delegate/revoke current work; operative scope never whole vendor finance",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-QuoteVersion",
+      "name": "QuoteVersion",
+      "owner_domain": "TASK",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "supplier_id",
+        "task_id",
+        "amount",
+        "currency",
+        "valid_until",
+        "version",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "New quote/variation version invalidates pending decision on old terms; no self approval",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CommercialCommitment",
+      "name": "CommercialCommitment",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "quote_version_id",
+        "approved_amount",
+        "invoice_consumption",
+        "remaining_amount"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Commitment is not invoice/payment expense; consumed once by verified linked invoice lines",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CustomerCharge",
+      "name": "CustomerCharge",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "beneficiary_id",
+        "payer_id_optional",
+        "source_type",
+        "source_id",
+        "billing_entity_id",
+        "amount",
+        "currency"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "One source charge; POS collection references existing membership/PT debt",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-PaymentSetup",
+      "name": "PaymentSetup",
+      "owner_domain": "MEM",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "payer_id",
+        "billing_entity_id",
+        "provider_mandate_reference",
+        "setup_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Active mandate is not collection; provider supported transfer separately authorised",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-PaymentAttempt",
+      "name": "PaymentAttempt",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "operation_id",
+        "charge_ids",
+        "provider_reference",
+        "attempt_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Unknown outcome reconciles same provider operation, never blind second capture",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-MoneyMovement",
+      "name": "MoneyMovement",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "billing_entity_id",
+        "provider_event_id_optional",
+        "movement_type",
+        "amount",
+        "currency",
+        "effective_at"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Confirmed collection/refund/reversal/supplier payment distinct immutable facts; verified cash provenance",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-PaymentAllocation",
+      "name": "PaymentAllocation",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "movement_id",
+        "charge_or_invoice_id",
+        "signed_amount",
+        "currency",
+        "correction_reference"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Partial/duplicate/excess allocation guarded; signed correction retains history; no extra money fact",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CreditNote",
+      "name": "CreditNote",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "charge_or_invoice_id",
+        "issuer_id",
+        "amount",
+        "currency",
+        "reason"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Debt reduction separate from cash refund; source version and issuer retained",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-RefundRequest",
+      "name": "RefundRequest",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "original_payment_id",
+        "sale_or_charge_id",
+        "amount",
+        "reason",
+        "provider_operation",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Request/approval/submitted/unknown/confirmed states distinct; no duplicate refund on retry",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-SupplierInvoice",
+      "name": "SupplierInvoice",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "supplier_id",
+        "invoice_reference",
+        "linked_commitment",
+        "amount",
+        "currency",
+        "review_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Duplicate supplier reference check within issuer scope; verification independent of payment",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-GymCostAllocation",
+      "name": "GymCostAllocation",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "source_line_type",
+        "source_line_id",
+        "gym_id",
+        "allocated_amount",
+        "currency",
+        "version"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Shares sum to source line or visible unallocated remainder; parent/child/asset links not duplicate expense",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Product",
+      "name": "Product",
+      "owner_domain": "POS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "sku",
+        "barcode",
+        "unit_of_measure",
+        "price_version",
+        "stock_policy"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Shared SKU identity and gym-specific availability; barcode quantity20 means20 units not20 product records",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-Sale",
+      "name": "Sale",
+      "owner_domain": "POS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "billing_entity_id",
+        "customer_id_optional",
+        "operation_id",
+        "tender_references",
+        "state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Confirmed payment and sale/stock fulfilment reconciled under one operation identity",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-SaleLine",
+      "name": "SaleLine",
+      "owner_domain": "POS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "sale_id",
+        "product_id_optional",
+        "existing_charge_id_optional",
+        "quantity",
+        "price_snapshot"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Stocked item versus unstocked description/service debt; discounts/price overrides explicit",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-StockMovement",
+      "name": "StockMovement",
+      "owner_domain": "POS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "sku",
+        "quantity_signed",
+        "movement_type",
+        "source_operation_id"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "One effect per source operation/line; refund does not imply physical return",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-StockTransfer",
+      "name": "StockTransfer",
+      "owner_domain": "POS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "source_gym_id",
+        "destination_gym_id",
+        "sku",
+        "dispatched",
+        "received",
+        "state",
+        "adjusted_resolution_quantity",
+        "in_transit_quantity",
+        "resolution_evidence_references"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Dispatch and receipt separate; in-transit visible, no copied stock on send; RECEIVED means full actual physical receipt; approved discrepancy closure is RESOLVED_WITH_ADJUSTMENT with separate quantities",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-IssuedReceipt",
+      "name": "IssuedReceipt",
+      "owner_domain": "POS",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "sale_or_payment_id",
+        "issuer_snapshot",
+        "brand_snapshot",
+        "line_snapshot",
+        "issued_at"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Print/share/reprint are delivery effects, not new sale",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-DocumentTemplate",
+      "name": "DocumentTemplate",
+      "owner_domain": "DOC",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "template_id",
+        "version",
+        "content_reference",
+        "publication_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Documents composes templates and consumes brand; not second branding authority",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-IssuedDocument",
+      "name": "IssuedDocument",
+      "owner_domain": "DOC",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "template_version_id",
+        "person_or_source_id",
+        "data_snapshot",
+        "brand_snapshot",
+        "issue_state",
+        "required_signatory_roles",
+        "signature_evidence_references",
+        "signature_summary"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Frozen issued content; revisions create new issue, original signatures never rewritten; overall SIGNED only after all required actual signatories; signed evidence remains true when issue superseded",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-BrandVersion",
+      "name": "BrandVersion",
+      "owner_domain": "DESIGN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_override_id_optional",
+        "preset_id",
+        "tokens",
+        "logo_reference",
+        "white_label_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Explicit white-label activation, five styles/modes, protected footer and Orb naming",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-PublicProjection",
+      "name": "PublicProjection",
+      "owner_domain": "LAND",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id_or_company",
+        "source_versions",
+        "approved_fields",
+        "publication_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Approved public projection only; gym addition creates draft, no private field leak",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CommunityEntry",
+      "name": "CommunityEntry",
+      "owner_domain": "FEED",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id_optional",
+        "audience",
+        "author_person_id",
+        "content",
+        "moderation_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Public/member/internal/vendor audiences explicit; mention never grants access",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-CaseRecord",
+      "name": "CaseRecord",
+      "owner_domain": "FEED",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_id",
+        "reporter_id",
+        "case_type",
+        "assignee",
+        "resolution_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Query/feedback tracks typed activity/evidence/decisions and current owner",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-EvidenceFile",
+      "name": "EvidenceFile",
+      "owner_domain": "DOC",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "private_storage_reference",
+        "content_hash",
+        "media_type",
+        "scan_state",
+        "access_links"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Stored once with authorised contextual references; links cannot widen file audience",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-ImportBatch",
+      "name": "ImportBatch",
+      "owner_domain": "IMPORT",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "operator_id",
+        "source_hash",
+        "mapping_version",
+        "review_snapshot",
+        "commit_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Dry-run/review/commit exact snapshot; no implied mandate/signature/invitation transfer",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-NotificationEvent",
+      "name": "NotificationEvent",
+      "owner_domain": "CAL",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "source_type",
+        "source_id",
+        "source_revision",
+        "event_type",
+        "recipient_purpose"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "91-event catalogue source; delivery/read/ack/business outcome distinct",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-ChannelDelivery",
+      "name": "ChannelDelivery",
+      "owner_domain": "CAL",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "notification_id",
+        "recipient_id",
+        "channel",
+        "provider_reference",
+        "delivery_state",
+        "attempt_evidence_references",
+        "current_failure_classification",
+        "current_attempt_id"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Recheck rights/current source at attempt; retry delivery never retries business command; accepted/unknown can receive authenticated later failure without overwriting old observations",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-MetricDefinition",
+      "name": "MetricDefinition",
+      "owner_domain": "FIN",
+      "scope": "platform-or-workspace as explicitly authorised",
+      "logical_fields": [
+        "workspace_id_or_platform",
+        "metric_id",
+        "version",
+        "formula_contract",
+        "basis"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "62 metrics use source/date/scope/completeness and current rights",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-ReportSnapshot",
+      "name": "ReportSnapshot",
+      "owner_domain": "FIN",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "definition_version",
+        "filters",
+        "as_of",
+        "source_freshness",
+        "permitted_result",
+        "export_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Charts/export/AI share definition; no unavailable data invented as zero",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-AIProposal",
+      "name": "AIProposal",
+      "owner_domain": "AI",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "actor_id",
+        "source_references",
+        "proposed_command",
+        "required_authority",
+        "proposal_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Untrusted uploaded material not instructions; business command uses normal guards",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-AuditEvent",
+      "name": "AuditEvent",
+      "owner_domain": "USER",
+      "scope": "platform-or-workspace as explicitly authorised",
+      "logical_fields": [
+        "workspace_id_or_platform",
+        "actor_id",
+        "operation_id",
+        "target_reference",
+        "before_after",
+        "reason",
+        "time"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Attribution survives deactivation; sensitive content minimised and protected",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    },
+    {
+      "entity_id": "ENT-PolicyVersion",
+      "name": "PolicyVersion",
+      "owner_domain": "SPACE",
+      "scope": "workspace; gym scope where applicable",
+      "logical_fields": [
+        "workspace_id",
+        "gym_scope_optional",
+        "policy_type",
+        "reviewed_values",
+        "effective_dates",
+        "readiness_state"
+      ],
+      "common_fields": "stable ID, owning scope, version, created/updated effective and recorded times, actor/provenance/audience where applicable",
+      "requiredness": "Stable ID/owner/version required; fields named optional may be absent; remaining fields required when owning workflow reaches the applicable committed state, not all on draft creation. Exact types/keys validated by builder mapping.",
+      "invariant": "Missing commercial/safety/provider input blocks only affected action; no guessed threshold",
+      "source_id": "OG-DATA-001",
+      "status": "Logical record contract; no database schema implemented"
+    }
+  ]
+}

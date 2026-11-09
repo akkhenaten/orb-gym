@@ -1,0 +1,2463 @@
+{
+  "edition": "0.22",
+  "feature_count": 134,
+  "features": [
+    {
+      "feature_id": "FEAT-TASK-01",
+      "feature": "Common task creation and triage",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-01"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-01",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-02",
+      "feature": "Cleaning job-sheet template",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-02"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-02",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-03",
+      "feature": "Cleaning execution and proof",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-03"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-03",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-04",
+      "feature": "Cleaning verification and remedial follow-up",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-04"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-04",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-05",
+      "feature": "Maintenance fault and asset scan",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-05"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-05",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-06",
+      "feature": "Contractor assignment and visits",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-06",
+        "WF-TASK-20",
+        "WF-TASK-21"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-06",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-07",
+      "feature": "Quote and variation approval",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-07",
+        "WF-TASK-18"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-07",
+      "specification_paths": [
+        "spec/staff-hr-rota.md",
+        "spec/tasks-assets-contractors.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-08",
+      "feature": "Work completion and asset restoration",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-08"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-08",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-09",
+      "feature": "Administrative task journey",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-09"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-09",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-10",
+      "feature": "Parent and child task management",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-10"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-10",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-11",
+      "feature": "Grouping and joined job sheets",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-11"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-11",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-12",
+      "feature": "Dependencies and blocked work",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-12"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-12",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-13",
+      "feature": "Recurring schedule changes and overdue work",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-13",
+        "WF-TASK-19"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-13",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-14",
+      "feature": "Card feed, attachments and structured tabs",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-14"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-14",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-15",
+      "feature": "Invoice, cost allocation and payment",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-15"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-15",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-16",
+      "feature": "Reopen, cancel and retain task history",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-16"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-16",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TASK-17",
+      "feature": "Member equipment announcement",
+      "domain": "TASK",
+      "workflow_ids": [
+        "WF-TASK-17"
+      ],
+      "pipeline_document": "docs/workflows/task.md#wf-task-17",
+      "specification_paths": [
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-01",
+      "feature": "Staff creation and invitation",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-01"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-01",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-02",
+      "feature": "Staff profile and restricted records",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-02"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-02",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-03",
+      "feature": "Contract composition and signing",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-03"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-03",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-04",
+      "feature": "Training and qualifications",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-04"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-04",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-05",
+      "feature": "SOP and instruction acknowledgement",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-05"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-05",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-06",
+      "feature": "Payslip delivery and payroll handoff",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-06"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-06",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-07",
+      "feature": "Staff secure messages",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-07"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-07",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-08",
+      "feature": "Disciplinary record and follow-up",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-08"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-08",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-09",
+      "feature": "One-to-one and development actions",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-09"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-09",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-10",
+      "feature": "Availability, leave and sickness",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-10"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-10",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-11",
+      "feature": "Draft and publish rota",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-11",
+        "WF-STAFF-16"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-11",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md",
+        "spec/staff-hr-rota.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-12",
+      "feature": "Shift swaps and cover requests",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-12"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-12",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-13",
+      "feature": "Clocking, corrections and timesheets",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-13"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-13",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-14",
+      "feature": "Published team and current duty",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-14"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-14",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-STAFF-15",
+      "feature": "Staff suspension, leaving, archive and return",
+      "domain": "STAFF",
+      "workflow_ids": [
+        "WF-STAFF-15"
+      ],
+      "pipeline_document": "docs/workflows/staff.md#wf-staff-15",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/04-staff-hr-and-rotas.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-01",
+      "feature": "Create user in correct journey",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-01"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-01",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-02",
+      "feature": "Invitation, resend, expiry and revocation",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-02"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-02",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-03",
+      "feature": "First login and temporary credential replacement",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-03"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-03",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-04",
+      "feature": "Sign-in, sign-out and recovery",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-04"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-04",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-05",
+      "feature": "Profile, avatar and contact management",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-05",
+        "WF-USER-11"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-05",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/staff-hr-rota.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-06",
+      "feature": "Notification and appearance preferences",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-06"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-06",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-07",
+      "feature": "Gym assignments and role delegation",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-07"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-07",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-08",
+      "feature": "Account restrict, archive, reactivate and eligible delete",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-08"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-08",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-09",
+      "feature": "Explicit workspace and gym switching",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-09"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-09",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-USER-10",
+      "feature": "User search, exports and privileged support",
+      "domain": "USER",
+      "workflow_ids": [
+        "WF-USER-10"
+      ],
+      "pipeline_document": "docs/workflows/user.md#wf-user-10",
+      "specification_paths": [
+        "spec/onboarding-membership.md",
+        "spec/shell-settings-branding.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/02-onboarding-membership-retention.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-01",
+      "feature": "Platform landing and owner signup",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-01"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-01",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-02",
+      "feature": "New gym creates public-page draft",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-02"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-02",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-03",
+      "feature": "Gym details, facilities and socials",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-03"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-03",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-04",
+      "feature": "Brand guidelines and AI-assisted extraction",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-04"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-04",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-05",
+      "feature": "Page composition, section order and preview",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-05"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-05",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-06",
+      "feature": "Public membership prices and deals",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-06"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-06",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-07",
+      "feature": "Public timetable and class joining links",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-07"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-07",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-08",
+      "feature": "Staff and coach flip cards",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-08"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-08",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-09",
+      "feature": "Lead enquiry and member joining from site",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-09"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-09",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-LAND-10",
+      "feature": "Publish rollback, rename and archive",
+      "domain": "LAND",
+      "workflow_ids": [
+        "WF-LAND-10",
+        "WF-LAND-11"
+      ],
+      "pipeline_document": "docs/workflows/land.md#wf-land-10",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md",
+        "spec/documents.md",
+        "spec/onboarding-membership.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/03-classes-coaches-and-attendance.md",
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-SPACE-01",
+      "feature": "Owner self-service workspace creation",
+      "domain": "SPACE",
+      "workflow_ids": [
+        "WF-SPACE-01"
+      ],
+      "pipeline_document": "docs/workflows/space.md#wf-space-01",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-SPACE-02",
+      "feature": "Add gym and portfolio configuration",
+      "domain": "SPACE",
+      "workflow_ids": [
+        "WF-SPACE-02"
+      ],
+      "pipeline_document": "docs/workflows/space.md#wf-space-02",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-SPACE-03",
+      "feature": "Platform service console and support",
+      "domain": "SPACE",
+      "workflow_ids": [
+        "WF-SPACE-03"
+      ],
+      "pipeline_document": "docs/workflows/space.md#wf-space-03",
+      "specification_paths": [
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-SPACE-04",
+      "feature": "Ownership transfer, suspension and workspace closure",
+      "domain": "SPACE",
+      "workflow_ids": [
+        "WF-SPACE-04",
+        "WF-SPACE-05"
+      ],
+      "pipeline_document": "docs/workflows/space.md#wf-space-04",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/onboarding-membership.md",
+        "spec/pos-stock.md",
+        "spec/public-pages.md",
+        "spec/staff-hr-rota.md",
+        "spec/tasks-assets-contractors.md",
+        "spec/workspace-access.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-MEM-01",
+      "feature": "Joining routes and sales pipeline",
+      "domain": "MEM",
+      "workflow_ids": [
+        "WF-MEM-01"
+      ],
+      "pipeline_document": "docs/workflows/mem.md#wf-mem-01",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-MEM-02",
+      "feature": "PAR-Q, emergency contacts and agreements",
+      "domain": "MEM",
+      "workflow_ids": [
+        "WF-MEM-02",
+        "WF-MEM-09"
+      ],
+      "pipeline_document": "docs/workflows/mem.md#wf-mem-02",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/documents.md",
+        "spec/onboarding-membership.md",
+        "spec/reception-entry-exit.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-MEM-03",
+      "feature": "Plans, prices and single/all-gym entitlement",
+      "domain": "MEM",
+      "workflow_ids": [
+        "WF-MEM-03"
+      ],
+      "pipeline_document": "docs/workflows/mem.md#wf-mem-03",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-MEM-04",
+      "feature": "Payment setup, review and activation",
+      "domain": "MEM",
+      "workflow_ids": [
+        "WF-MEM-04",
+        "WF-MEM-08"
+      ],
+      "pipeline_document": "docs/workflows/mem.md#wf-mem-04",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/onboarding-membership.md",
+        "spec/reception-entry-exit.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-MEM-05",
+      "feature": "Renewal, freeze, cancellation and reinstatement",
+      "domain": "MEM",
+      "workflow_ids": [
+        "WF-MEM-05"
+      ],
+      "pipeline_document": "docs/workflows/mem.md#wf-mem-05",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-MEM-06",
+      "feature": "Member records, receipts and self-service",
+      "domain": "MEM",
+      "workflow_ids": [
+        "WF-MEM-06"
+      ],
+      "pipeline_document": "docs/workflows/mem.md#wf-mem-06",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-MEM-07",
+      "feature": "Retention indicators and reviewed outreach",
+      "domain": "MEM",
+      "workflow_ids": [
+        "WF-MEM-07"
+      ],
+      "pipeline_document": "docs/workflows/mem.md#wf-mem-07",
+      "specification_paths": [
+        "spec/onboarding-membership.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/02-onboarding-membership-retention.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CLASS-01",
+      "feature": "Class definition and publication",
+      "domain": "CLASS",
+      "workflow_ids": [
+        "WF-CLASS-01"
+      ],
+      "pipeline_document": "docs/workflows/class.md#wf-class-01",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/feed-feedback-cases.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CLASS-02",
+      "feature": "Single and last-minute booking",
+      "domain": "CLASS",
+      "workflow_ids": [
+        "WF-CLASS-02",
+        "WF-CLASS-08"
+      ],
+      "pipeline_document": "docs/workflows/class.md#wf-class-02",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/feed-feedback-cases.md",
+        "spec/onboarding-membership.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CLASS-03",
+      "feature": "Regular block or course enrolment",
+      "domain": "CLASS",
+      "workflow_ids": [
+        "WF-CLASS-03"
+      ],
+      "pipeline_document": "docs/workflows/class.md#wf-class-03",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/feed-feedback-cases.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CLASS-04",
+      "feature": "Waitlist and offered place",
+      "domain": "CLASS",
+      "workflow_ids": [
+        "WF-CLASS-04"
+      ],
+      "pipeline_document": "docs/workflows/class.md#wf-class-04",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/feed-feedback-cases.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CLASS-05",
+      "feature": "Cancel, reschedule and no-show rules",
+      "domain": "CLASS",
+      "workflow_ids": [
+        "WF-CLASS-05",
+        "WF-CLASS-07"
+      ],
+      "pipeline_document": "docs/workflows/class.md#wf-class-05",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md",
+        "spec/feed-feedback-cases.md",
+        "spec/finance-reports.md",
+        "spec/staff-hr-rota.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CLASS-06",
+      "feature": "Class register and feedback",
+      "domain": "CLASS",
+      "workflow_ids": [
+        "WF-CLASS-06"
+      ],
+      "pipeline_document": "docs/workflows/class.md#wf-class-06",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/feed-feedback-cases.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-COACH-01",
+      "feature": "Coach arrangement setup and credential review",
+      "domain": "COACH",
+      "workflow_ids": [
+        "WF-COACH-01"
+      ],
+      "pipeline_document": "docs/workflows/coach.md#wf-coach-01",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-COACH-02",
+      "feature": "Rental coach rent and resources",
+      "domain": "COACH",
+      "workflow_ids": [
+        "WF-COACH-02",
+        "WF-COACH-07"
+      ],
+      "pipeline_document": "docs/workflows/coach.md#wf-coach-02",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-COACH-03",
+      "feature": "Employed coach default/override PT rates",
+      "domain": "COACH",
+      "workflow_ids": [
+        "WF-COACH-03"
+      ],
+      "pipeline_document": "docs/workflows/coach.md#wf-coach-03",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-COACH-04",
+      "feature": "PT appointment, delivery and earnings allocation",
+      "domain": "COACH",
+      "workflow_ids": [
+        "WF-COACH-04"
+      ],
+      "pipeline_document": "docs/workflows/coach.md#wf-coach-04",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-COACH-05",
+      "feature": "Coach invite and PT-only pass",
+      "domain": "COACH",
+      "workflow_ids": [
+        "WF-COACH-05"
+      ],
+      "pipeline_document": "docs/workflows/coach.md#wf-coach-05",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-COACH-06",
+      "feature": "PT-only membership upgrade and coach change",
+      "domain": "COACH",
+      "workflow_ids": [
+        "WF-COACH-06"
+      ],
+      "pipeline_document": "docs/workflows/coach.md#wf-coach-06",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/staff-hr-rota.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-ENTRY-01",
+      "feature": "Scan or member lookup and ID card",
+      "domain": "ENTRY",
+      "workflow_ids": [
+        "WF-ENTRY-01"
+      ],
+      "pipeline_document": "docs/workflows/entry.md#wf-entry-01",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/onboarding-membership.md",
+        "spec/reception-entry-exit.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-ENTRY-02",
+      "feature": "Explicit entry and recorded gym visit",
+      "domain": "ENTRY",
+      "workflow_ids": [
+        "WF-ENTRY-02"
+      ],
+      "pipeline_document": "docs/workflows/entry.md#wf-entry-02",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/onboarding-membership.md",
+        "spec/reception-entry-exit.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-ENTRY-03",
+      "feature": "Exit, forgotten checkout and correction",
+      "domain": "ENTRY",
+      "workflow_ids": [
+        "WF-ENTRY-03"
+      ],
+      "pipeline_document": "docs/workflows/entry.md#wf-entry-03",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/onboarding-membership.md",
+        "spec/reception-entry-exit.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-ENTRY-04",
+      "feature": "Class/PT attendance at reception boundary",
+      "domain": "ENTRY",
+      "workflow_ids": [
+        "WF-ENTRY-04"
+      ],
+      "pipeline_document": "docs/workflows/entry.md#wf-entry-04",
+      "specification_paths": [
+        "spec/classes-courses-attendance.md",
+        "spec/onboarding-membership.md",
+        "spec/reception-entry-exit.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/01-workspaces-and-access.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-01",
+      "feature": "Product catalogue and barcode setup",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-01"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-01",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-02",
+      "feature": "Receive live stock and adjustments",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-02"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-02",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-03",
+      "feature": "Basket and confirmed tender sale",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-03",
+        "WF-POS-09"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-03",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-04",
+      "feature": "One-off description sale",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-04"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-04",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-05",
+      "feature": "Print, share and member-app receipt",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-05"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-05",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-06",
+      "feature": "Refund, void and return to stock",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-06"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-06",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-07",
+      "feature": "Stock transfer, count and low-stock review",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-07"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-07",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-POS-08",
+      "feature": "Till shift and financial reconciliation",
+      "domain": "POS",
+      "workflow_ids": [
+        "WF-POS-08"
+      ],
+      "pipeline_document": "docs/workflows/pos.md#wf-pos-08",
+      "specification_paths": [
+        "spec/finance-reports.md",
+        "spec/pos-stock.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/06-pos-and-inventory.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FEED-01",
+      "feature": "Post, media, links and audience",
+      "domain": "FEED",
+      "workflow_ids": [
+        "WF-FEED-01"
+      ],
+      "pipeline_document": "docs/workflows/feed.md#wf-feed-01",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FEED-02",
+      "feature": "Reactions, replies and mentions",
+      "domain": "FEED",
+      "workflow_ids": [
+        "WF-FEED-02"
+      ],
+      "pipeline_document": "docs/workflows/feed.md#wf-feed-02",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FEED-03",
+      "feature": "Polls, events, saves and location",
+      "domain": "FEED",
+      "workflow_ids": [
+        "WF-FEED-03"
+      ],
+      "pipeline_document": "docs/workflows/feed.md#wf-feed-03",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FEED-04",
+      "feature": "Moderation, report and post-to-case",
+      "domain": "FEED",
+      "workflow_ids": [
+        "WF-FEED-04"
+      ],
+      "pipeline_document": "docs/workflows/feed.md#wf-feed-04",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FEED-05",
+      "feature": "Member query and multi-format feedback",
+      "domain": "FEED",
+      "workflow_ids": [
+        "WF-FEED-05"
+      ],
+      "pipeline_document": "docs/workflows/feed.md#wf-feed-05",
+      "specification_paths": [
+        "spec/feed-feedback-cases.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/07-community-cases-and-feedback.md",
+        "docs/modules/05-task-engine-facilities-contractors.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DOC-01",
+      "feature": "Template composition and controlled variables",
+      "domain": "DOC",
+      "workflow_ids": [
+        "WF-DOC-01"
+      ],
+      "pipeline_document": "docs/workflows/doc.md#wf-doc-01",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DOC-02",
+      "feature": "Generate and issue source-owned document",
+      "domain": "DOC",
+      "workflow_ids": [
+        "WF-DOC-02"
+      ],
+      "pipeline_document": "docs/workflows/doc.md#wf-doc-02",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DOC-03",
+      "feature": "Signature, acknowledgement and revision",
+      "domain": "DOC",
+      "workflow_ids": [
+        "WF-DOC-03"
+      ],
+      "pipeline_document": "docs/workflows/doc.md#wf-doc-03",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DOC-04",
+      "feature": "Document access, archive and regeneration",
+      "domain": "DOC",
+      "workflow_ids": [
+        "WF-DOC-04"
+      ],
+      "pipeline_document": "docs/workflows/doc.md#wf-doc-04",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/04-staff-hr-and-rotas.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FIN-01",
+      "feature": "Financial source reconciliation",
+      "domain": "FIN",
+      "workflow_ids": [
+        "WF-FIN-01",
+        "WF-FIN-05"
+      ],
+      "pipeline_document": "docs/workflows/fin.md#wf-fin-01",
+      "specification_paths": [
+        "spec/coaching-pt.md",
+        "spec/finance-reports.md",
+        "spec/onboarding-membership.md",
+        "spec/pos-stock.md",
+        "spec/tasks-assets-contractors.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FIN-02",
+      "feature": "Portfolio and gym financial oversight",
+      "domain": "FIN",
+      "workflow_ids": [
+        "WF-FIN-02"
+      ],
+      "pipeline_document": "docs/workflows/fin.md#wf-fin-02",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FIN-03",
+      "feature": "Operational report and analytic review",
+      "domain": "FIN",
+      "workflow_ids": [
+        "WF-FIN-03"
+      ],
+      "pipeline_document": "docs/workflows/fin.md#wf-fin-03",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-FIN-04",
+      "feature": "Export, AI report and optional scheduled delivery",
+      "domain": "FIN",
+      "workflow_ids": [
+        "WF-FIN-04"
+      ],
+      "pipeline_document": "docs/workflows/fin.md#wf-fin-04",
+      "specification_paths": [
+        "spec/finance-reports.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/11-finance-reports-and-analytics.md",
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/03-classes-coaches-and-attendance.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CAL-01",
+      "feature": "Dashboard and cross-gym calendar drilldown",
+      "domain": "CAL",
+      "workflow_ids": [
+        "WF-CAL-01"
+      ],
+      "pipeline_document": "docs/workflows/cal.md#wf-cal-01",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CAL-02",
+      "feature": "Edit scheduled item and recurrence",
+      "domain": "CAL",
+      "workflow_ids": [
+        "WF-CAL-02"
+      ],
+      "pipeline_document": "docs/workflows/cal.md#wf-cal-02",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CAL-03",
+      "feature": "Notification routing and acknowledgement",
+      "domain": "CAL",
+      "workflow_ids": [
+        "WF-CAL-03"
+      ],
+      "pipeline_document": "docs/workflows/cal.md#wf-cal-03",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-CAL-04",
+      "feature": "Failed delivery and personal channel changes",
+      "domain": "CAL",
+      "workflow_ids": [
+        "WF-CAL-04"
+      ],
+      "pipeline_document": "docs/workflows/cal.md#wf-cal-04",
+      "specification_paths": [
+        "spec/calendar-notifications.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DESIGN-01",
+      "feature": "Select complete style and company brand",
+      "domain": "DESIGN",
+      "workflow_ids": [
+        "WF-DESIGN-01"
+      ],
+      "pipeline_document": "docs/workflows/design.md#wf-design-01",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DESIGN-02",
+      "feature": "Gym inheritance, overrides and brand rollback",
+      "domain": "DESIGN",
+      "workflow_ids": [
+        "WF-DESIGN-02"
+      ],
+      "pipeline_document": "docs/workflows/design.md#wf-design-02",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DESIGN-03",
+      "feature": "Personal mode and all-role responsive navigation",
+      "domain": "DESIGN",
+      "workflow_ids": [
+        "WF-DESIGN-03"
+      ],
+      "pipeline_document": "docs/workflows/design.md#wf-design-03",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-DESIGN-04",
+      "feature": "Theme component verification and publication",
+      "domain": "DESIGN",
+      "workflow_ids": [
+        "WF-DESIGN-04"
+      ],
+      "pipeline_document": "docs/workflows/design.md#wf-design-04",
+      "specification_paths": [
+        "spec/documents.md",
+        "spec/public-pages.md",
+        "spec/shell-settings-branding.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/08-design-branding-documents-pages.md",
+        "docs/modules/12-access-navigation-and-notifications.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-AI-01",
+      "feature": "Sourced owner analysis and reporting",
+      "domain": "AI",
+      "workflow_ids": [
+        "WF-AI-01"
+      ],
+      "pipeline_document": "docs/workflows/ai.md#wf-ai-01",
+      "specification_paths": [
+        "spec/ai-operations.md",
+        "spec/finance-reports.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/08-design-branding-documents-pages.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-AI-02",
+      "feature": "Authorised execution and approval handoff",
+      "domain": "AI",
+      "workflow_ids": [
+        "WF-AI-02"
+      ],
+      "pipeline_document": "docs/workflows/ai.md#wf-ai-02",
+      "specification_paths": [
+        "spec/ai-operations.md",
+        "spec/finance-reports.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/08-design-branding-documents-pages.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-AI-03",
+      "feature": "Background image/retention/operations suggestions",
+      "domain": "AI",
+      "workflow_ids": [
+        "WF-AI-03"
+      ],
+      "pipeline_document": "docs/workflows/ai.md#wf-ai-03",
+      "specification_paths": [
+        "spec/ai-operations.md",
+        "spec/finance-reports.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/09-navigation-calendar-ai.md",
+        "docs/modules/08-design-branding-documents-pages.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-RELEASE-01",
+      "feature": "Drafts, files and interruption recovery",
+      "domain": "RELEASE",
+      "workflow_ids": [
+        "WF-RELEASE-01"
+      ],
+      "pipeline_document": "docs/workflows/release.md#wf-release-01",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-RELEASE-02",
+      "feature": "Durable jobs, migrations and backup restore",
+      "domain": "RELEASE",
+      "workflow_ids": [
+        "WF-RELEASE-02"
+      ],
+      "pipeline_document": "docs/workflows/release.md#wf-release-02",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-RELEASE-03",
+      "feature": "Retention, export and eligible deletion",
+      "domain": "RELEASE",
+      "workflow_ids": [
+        "WF-RELEASE-03"
+      ],
+      "pipeline_document": "docs/workflows/release.md#wf-release-03",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-RELEASE-04",
+      "feature": "Delivery planning and release verification",
+      "domain": "RELEASE",
+      "workflow_ids": [
+        "WF-RELEASE-04"
+      ],
+      "pipeline_document": "docs/workflows/release.md#wf-release-04",
+      "specification_paths": [
+        "spec/recovery-release.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/10-data-integration-and-verification.md",
+        "docs/modules/01-workspaces-and-access.md"
+      ],
+      "coverage_status": "primary and applicable exception journeys described; unresolved policy/technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TRIAL-01",
+      "feature": "Trial offer setup and publication",
+      "domain": "TRIAL",
+      "workflow_ids": [
+        "WF-TRIAL-01"
+      ],
+      "pipeline_document": "docs/workflows/trial.md#wf-trial-01",
+      "specification_paths": [
+        "spec/trials-guests.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-001"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TRIAL-02",
+      "feature": "Guest application, review and pass issue",
+      "domain": "TRIAL",
+      "workflow_ids": [
+        "WF-TRIAL-02"
+      ],
+      "pipeline_document": "docs/workflows/trial.md#wf-trial-02",
+      "specification_paths": [
+        "spec/trials-guests.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-001"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TRIAL-03",
+      "feature": "Trial entry and activity attendance",
+      "domain": "TRIAL",
+      "workflow_ids": [
+        "WF-TRIAL-03"
+      ],
+      "pipeline_document": "docs/workflows/trial.md#wf-trial-03",
+      "specification_paths": [
+        "spec/trials-guests.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-001"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-TRIAL-04",
+      "feature": "Guest expiry, cancellation and membership upgrade",
+      "domain": "TRIAL",
+      "workflow_ids": [
+        "WF-TRIAL-04"
+      ],
+      "pipeline_document": "docs/workflows/trial.md#wf-trial-04",
+      "specification_paths": [
+        "spec/trials-guests.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/13-trials-and-guests.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-001"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-JUNIOR-01",
+      "feature": "Junior programme setup",
+      "domain": "JUNIOR",
+      "workflow_ids": [
+        "WF-JUNIOR-01"
+      ],
+      "pipeline_document": "docs/workflows/junior.md#wf-junior-01",
+      "specification_paths": [
+        "spec/juniors-guardians.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-002"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-JUNIOR-02",
+      "feature": "Guardian invitation and authority review",
+      "domain": "JUNIOR",
+      "workflow_ids": [
+        "WF-JUNIOR-02"
+      ],
+      "pipeline_document": "docs/workflows/junior.md#wf-junior-02",
+      "specification_paths": [
+        "spec/juniors-guardians.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-002"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-JUNIOR-03",
+      "feature": "Junior membership, forms and billing",
+      "domain": "JUNIOR",
+      "workflow_ids": [
+        "WF-JUNIOR-03"
+      ],
+      "pipeline_document": "docs/workflows/junior.md#wf-junior-03",
+      "specification_paths": [
+        "spec/juniors-guardians.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-002"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-JUNIOR-04",
+      "feature": "Dependent booking, pass and attendance",
+      "domain": "JUNIOR",
+      "workflow_ids": [
+        "WF-JUNIOR-04"
+      ],
+      "pipeline_document": "docs/workflows/junior.md#wf-junior-04",
+      "specification_paths": [
+        "spec/juniors-guardians.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-002"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-JUNIOR-05",
+      "feature": "Junior privacy, communications and safeguarding",
+      "domain": "JUNIOR",
+      "workflow_ids": [
+        "WF-JUNIOR-05"
+      ],
+      "pipeline_document": "docs/workflows/junior.md#wf-junior-05",
+      "specification_paths": [
+        "spec/juniors-guardians.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-002"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-JUNIOR-06",
+      "feature": "Age-band or guardian relationship transition",
+      "domain": "JUNIOR",
+      "workflow_ids": [
+        "WF-JUNIOR-06"
+      ],
+      "pipeline_document": "docs/workflows/junior.md#wf-junior-06",
+      "specification_paths": [
+        "spec/juniors-guardians.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/14-juniors-and-guardians.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-002"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-IMPORT-01",
+      "feature": "Authorised source and mapping setup",
+      "domain": "IMPORT",
+      "workflow_ids": [
+        "WF-IMPORT-01"
+      ],
+      "pipeline_document": "docs/workflows/import.md#wf-import-01",
+      "specification_paths": [
+        "spec/imports-reconciliation.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-003"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-IMPORT-02",
+      "feature": "Staging, validation and duplicate matching",
+      "domain": "IMPORT",
+      "workflow_ids": [
+        "WF-IMPORT-02"
+      ],
+      "pipeline_document": "docs/workflows/import.md#wf-import-02",
+      "specification_paths": [
+        "spec/imports-reconciliation.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-003"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-IMPORT-03",
+      "feature": "Preview approval and controlled commit",
+      "domain": "IMPORT",
+      "workflow_ids": [
+        "WF-IMPORT-03"
+      ],
+      "pipeline_document": "docs/workflows/import.md#wf-import-03",
+      "specification_paths": [
+        "spec/imports-reconciliation.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-003"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-IMPORT-04",
+      "feature": "Post-import invitations, balances and activation",
+      "domain": "IMPORT",
+      "workflow_ids": [
+        "WF-IMPORT-04"
+      ],
+      "pipeline_document": "docs/workflows/import.md#wf-import-04",
+      "specification_paths": [
+        "spec/imports-reconciliation.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-003"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-IMPORT-05",
+      "feature": "Import repair, compensation and audit",
+      "domain": "IMPORT",
+      "workflow_ids": [
+        "WF-IMPORT-05"
+      ],
+      "pipeline_document": "docs/workflows/import.md#wf-import-05",
+      "specification_paths": [
+        "spec/imports-reconciliation.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/15-import-and-reconciliation.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-003"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-AUTH-01",
+      "feature": "Privileged role policy and factor enrolment",
+      "domain": "AUTH",
+      "workflow_ids": [
+        "WF-AUTH-01"
+      ],
+      "pipeline_document": "docs/workflows/auth.md#wf-auth-01",
+      "specification_paths": [
+        "spec/privileged-auth-recovery.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-004"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-AUTH-02",
+      "feature": "Sign-in and sensitive-action step-up",
+      "domain": "AUTH",
+      "workflow_ids": [
+        "WF-AUTH-02"
+      ],
+      "pipeline_document": "docs/workflows/auth.md#wf-auth-02",
+      "specification_paths": [
+        "spec/privileged-auth-recovery.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-004"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-AUTH-03",
+      "feature": "Lost factor and sole-owner recovery",
+      "domain": "AUTH",
+      "workflow_ids": [
+        "WF-AUTH-03"
+      ],
+      "pipeline_document": "docs/workflows/auth.md#wf-auth-03",
+      "specification_paths": [
+        "spec/privileged-auth-recovery.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-004"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    },
+    {
+      "feature_id": "FEAT-AUTH-04",
+      "feature": "Role change, compromise and revocation",
+      "domain": "AUTH",
+      "workflow_ids": [
+        "WF-AUTH-04"
+      ],
+      "pipeline_document": "docs/workflows/auth.md#wf-auth-04",
+      "specification_paths": [
+        "spec/privileged-auth-recovery.md"
+      ],
+      "source_module_paths": [
+        "docs/modules/16-privileged-auth-and-recovery.md"
+      ],
+      "extension_source_ids": [
+        "OG-EXT-004"
+      ],
+      "coverage_status": "product journey specified; tenant activation, technical/card/evidence completion pending"
+    }
+  ]
+}

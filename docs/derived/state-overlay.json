@@ -1,0 +1,122 @@
+{
+  "edition": "0.35-derived",
+  "transitions": [
+    {
+      "transition_id": "DTR-001",
+      "overlay_id": "DSM-CUSTOMER-CHARGE",
+      "command": "VoidCustomerCharge",
+      "approval": {
+        "status": "approved",
+        "by": "founder",
+        "date": "2026-11-09",
+        "ref": "void-before-reference policy"
+      },
+      "from_state": "POSTED",
+      "to_state": "VOID",
+      "requires": [
+        "finance.reconcile"
+      ],
+      "reason_field": "void_reason",
+      "guards": [
+        {
+          "type": "no_referencing_rows",
+          "table": "payment_allocation",
+          "column": "charge_or_invoice_id",
+          "code": "CHARGE_HAS_ALLOCATION"
+        },
+        {
+          "type": "no_referencing_rows",
+          "table": "credit_note",
+          "column": "charge_or_invoice_id",
+          "code": "CHARGE_HAS_CREDIT"
+        }
+      ],
+      "effects": "Void an unallocated, uncredited charge; any charge with a payment allocation or credit note must be corrected by credit note instead"
+    },
+    {
+      "transition_id": "DTR-002",
+      "overlay_id": "DSM-CREDIT-NOTE",
+      "command": "VoidCreditNote",
+      "approval": {
+        "status": "approved",
+        "by": "founder",
+        "date": "2026-11-09",
+        "ref": "void-before-reference policy"
+      },
+      "from_state": "ISSUED",
+      "to_state": "VOID",
+      "requires": [
+        "finance.reconcile"
+      ],
+      "reason_field": "void_reason",
+      "guards": [],
+      "guard_gap": "No entity references a credit note (PaymentAllocation.charge_or_invoice_id targets charges/invoices), so no allocation guard is derivable; void requires a reason only.",
+      "effects": "Void an issued credit note with a recorded reason"
+    }
+  ],
+  "authority": "Derived overlay. Source spec files are not modified. Each state is justified by a verbatim metric quotation.",
+  "overlays": [
+    {
+      "overlay_id": "DSM-CUSTOMER-CHARGE",
+      "entity_id": "ENT-CustomerCharge",
+      "states": [
+        "POSTED",
+        "VOID"
+      ],
+      "initial_state": "POSTED",
+      "initial_rationale": "MET-FIN-01 dates charges by \"charge-posted time\"; a stored charge is a posted charge. No draft stage is named.",
+      "evidence": [
+        {
+          "metric_id": "MET-FIN-01",
+          "quote": "posted non-void customer charge amounts"
+        }
+      ],
+      "source": "derived",
+      "reachable_states": [
+        "POSTED",
+        "VOID"
+      ],
+      "unreachable_states": [],
+      "source_transitions": [],
+      "owner_decision": null,
+      "derived_transitions": [
+        "DTR-001"
+      ]
+    },
+    {
+      "overlay_id": "DSM-CREDIT-NOTE",
+      "entity_id": "ENT-CreditNote",
+      "states": [
+        "DRAFT",
+        "ISSUED",
+        "VOID"
+      ],
+      "initial_state": "ISSUED",
+      "initial_rationale": "No command drafts a credit note, so a stored credit note represents an issued one. DRAFT is kept in the vocabulary because MET-FIN-02 names it, and stays unreachable until a source transition exists.",
+      "evidence": [
+        {
+          "metric_id": "MET-FIN-02",
+          "quote": "valid credit-note amounts issued in period"
+        },
+        {
+          "metric_id": "MET-FIN-02",
+          "quote": "exclude void/draft credits"
+        }
+      ],
+      "source": "derived",
+      "reachable_states": [
+        "ISSUED",
+        "VOID"
+      ],
+      "unreachable_states": [
+        "DRAFT"
+      ],
+      "source_transitions": [],
+      "owner_decision": "DRAFT unreachable: no source or derived transition reaches it.",
+      "derived_transitions": [
+        "DTR-002"
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,658 @@
+{
+  "edition": "0.33",
+  "machines": [
+    {
+      "machine_id": "SM-WORKSPACE",
+      "entity_id": "ENT-Workspace",
+      "domain": "SPACE",
+      "dimension": "service lifecycle",
+      "states": [
+        "ONBOARDING",
+        "ACTIVE",
+        "SUSPENDED",
+        "CLOSURE_REVIEW",
+        "ARCHIVED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "ONBOARDING",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-GYM",
+      "entity_id": "ENT-Gym",
+      "domain": "SPACE",
+      "dimension": "site lifecycle",
+      "states": [
+        "DRAFT",
+        "ACTIVE",
+        "CLOSURE_REVIEW",
+        "ARCHIVED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-INVITE",
+      "entity_id": "ENT-Invitation",
+      "domain": "USER",
+      "dimension": "invitation token lifecycle",
+      "states": [
+        "ISSUED",
+        "ACCEPTED",
+        "EXPIRED",
+        "REVOKED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "ISSUED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-ACCESS",
+      "entity_id": "ENT-RoleAssignment",
+      "domain": "USER",
+      "dimension": "grant effectiveness",
+      "states": [
+        "PENDING",
+        "ACTIVE",
+        "REVOKED",
+        "EXPIRED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "PENDING",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-EMPLOYMENT",
+      "entity_id": "ENT-EmploymentAssignment",
+      "domain": "STAFF",
+      "dimension": "employment assignment lifecycle",
+      "states": [
+        "ONBOARDING",
+        "ACTIVE",
+        "LEAVER_REVIEW",
+        "ARCHIVED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "ONBOARDING",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-APPLICATION",
+      "entity_id": "ENT-Application",
+      "domain": "MEM",
+      "dimension": "joining review lifecycle",
+      "states": [
+        "DRAFT",
+        "SUBMITTED",
+        "ACTION_REQUIRED",
+        "UNDER_REVIEW",
+        "APPROVED",
+        "DECLINED",
+        "WITHDRAWN"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-MEMBERSHIP",
+      "entity_id": "ENT-Membership",
+      "domain": "MEM",
+      "dimension": "service lifecycle; separate from payment and entry",
+      "states": [
+        "PENDING_ACTIVATION",
+        "ACTIVE",
+        "FROZEN",
+        "CANCELLATION_PENDING",
+        "CANCELLED",
+        "EXPIRED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "PENDING_ACTIVATION",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-SETUP",
+      "entity_id": "ENT-PaymentSetup",
+      "domain": "MEM",
+      "dimension": "mandate/setup lifecycle, not collection",
+      "states": [
+        "PENDING",
+        "ACTIVE",
+        "FAILED",
+        "REVOKED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "PENDING",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-PAYMENT",
+      "entity_id": "ENT-PaymentAttempt",
+      "domain": "FIN",
+      "dimension": "attempt outcome; cash movements separate",
+      "states": [
+        "CREATED",
+        "SUBMITTED",
+        "UNKNOWN",
+        "CONFIRMED",
+        "FAILED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "CREATED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-REFUND",
+      "entity_id": "ENT-RefundRequest",
+      "domain": "FIN",
+      "dimension": "refund request and provider outcome",
+      "states": [
+        "REQUESTED",
+        "APPROVED",
+        "SUBMITTED",
+        "UNKNOWN",
+        "CONFIRMED",
+        "DECLINED",
+        "FAILED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "REQUESTED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-ENTITLEMENT",
+      "entity_id": "ENT-EntitlementGrant",
+      "domain": "MEM",
+      "dimension": "effective service grant",
+      "states": [
+        "PENDING",
+        "ACTIVE",
+        "SUSPENDED",
+        "EXPIRED",
+        "REVOKED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "PENDING",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-BOOKING",
+      "entity_id": "ENT-Booking",
+      "domain": "CLASS",
+      "dimension": "capacity reservation; attendance/payment separate",
+      "states": [
+        "REQUESTED",
+        "HELD",
+        "CONFIRMED",
+        "WAITLISTED",
+        "CANCELLED",
+        "EXPIRED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "REQUESTED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-OFFER",
+      "entity_id": "ENT-WaitlistOffer",
+      "domain": "CLASS",
+      "dimension": "expiring offer",
+      "states": [
+        "ISSUED",
+        "ACCEPTED",
+        "DECLINED",
+        "EXPIRED",
+        "REVOKED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "ISSUED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-CLASS",
+      "entity_id": "ENT-ClassOccurrence",
+      "domain": "CLASS",
+      "dimension": "occurrence availability; registers separate",
+      "states": [
+        "DRAFT",
+        "PUBLISHED",
+        "DISRUPTION_REVIEW",
+        "COMPLETED",
+        "CANCELLED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-REGISTER",
+      "entity_id": "ENT-RegisterEntry",
+      "domain": "CLASS",
+      "dimension": "attendance outcome",
+      "states": [
+        "EXPECTED",
+        "ATTENDED",
+        "REVIEWED_NO_SHOW",
+        "EXCUSED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "EXPECTED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-PT",
+      "entity_id": "ENT-PTAppointment",
+      "domain": "COACH",
+      "dimension": "appointment lifecycle",
+      "states": [
+        "REQUESTED",
+        "CONFIRMED",
+        "DISRUPTION_REVIEW",
+        "COMPLETED",
+        "CANCELLED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "REQUESTED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-VISIT",
+      "entity_id": "ENT-Visit",
+      "domain": "ENTRY",
+      "dimension": "physical visit record",
+      "states": [
+        "OPEN",
+        "CLOSED",
+        "ADMINISTRATIVELY_CLOSED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "OPEN",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-SHIFT",
+      "entity_id": "ENT-Shift",
+      "domain": "STAFF",
+      "dimension": "published planned assignment",
+      "states": [
+        "DRAFT",
+        "PUBLISHED",
+        "CHANGE_REVIEW",
+        "COMPLETED",
+        "CANCELLED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-TIMESHEET",
+      "entity_id": "ENT-Timesheet",
+      "domain": "STAFF",
+      "dimension": "actual-time review",
+      "states": [
+        "DRAFT",
+        "SUBMITTED",
+        "RETURNED",
+        "APPROVED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-TASK",
+      "entity_id": "ENT-TaskOccurrence",
+      "domain": "TASK",
+      "dimension": "work execution; assignment/verification separate",
+      "states": [
+        "DRAFT",
+        "OPEN",
+        "IN_PROGRESS",
+        "SUBMITTED",
+        "COMPLETED",
+        "CLOSED",
+        "CANCELLED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-DECISION",
+      "entity_id": "ENT-DecisionRequest",
+      "domain": "TASK",
+      "dimension": "version-bound human decision",
+      "states": [
+        "PENDING",
+        "APPROVED",
+        "DECLINED",
+        "SUPERSEDED",
+        "WITHDRAWN"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "PENDING",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-QUOTE",
+      "entity_id": "ENT-QuoteVersion",
+      "domain": "TASK",
+      "dimension": "supplier commercial proposal",
+      "states": [
+        "DRAFT",
+        "SUBMITTED",
+        "APPROVED",
+        "DECLINED",
+        "SUPERSEDED",
+        "EXPIRED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-ASSET",
+      "entity_id": "ENT-Asset",
+      "domain": "TASK",
+      "dimension": "operational service state",
+      "states": [
+        "AVAILABLE",
+        "RESTRICTED",
+        "UNAVAILABLE",
+        "RETIRED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "AVAILABLE",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-INVOICE",
+      "entity_id": "ENT-SupplierInvoice",
+      "domain": "FIN",
+      "dimension": "supplier review; settlement separate",
+      "states": [
+        "SUBMITTED",
+        "UNDER_REVIEW",
+        "RETURNED",
+        "VERIFIED",
+        "REJECTED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "SUBMITTED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-SALE",
+      "entity_id": "ENT-Sale",
+      "domain": "POS",
+      "dimension": "till fulfilment; tender separate",
+      "states": [
+        "DRAFT",
+        "TENDER_PENDING",
+        "RECONCILIATION_REQUIRED",
+        "COMPLETED",
+        "VOIDED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-TRANSFER",
+      "entity_id": "ENT-StockTransfer",
+      "domain": "POS",
+      "dimension": "physical stock transfer",
+      "states": [
+        "DRAFT",
+        "DISPATCHED",
+        "PART_RECEIVED",
+        "RECEIVED",
+        "EXCEPTION",
+        "RESOLVED_WITH_ADJUSTMENT",
+        "CANCELLED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-DOCUMENT",
+      "entity_id": "ENT-IssuedDocument",
+      "domain": "DOC",
+      "dimension": "issued document currentness/lifecycle; independent signature_summary and per-signatory evidence never erased by supersession",
+      "states": [
+        "ISSUED",
+        "AWAITING_SIGNATURE",
+        "SIGNED",
+        "DECLINED",
+        "WITHDRAWN",
+        "SUPERSEDED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "ISSUED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-FORM",
+      "entity_id": "ENT-FormRequirement",
+      "domain": "MEM",
+      "dimension": "applicable evidence review",
+      "states": [
+        "REQUIRED",
+        "SUBMITTED",
+        "ACCEPTED",
+        "RETURNED",
+        "WITHDRAWN"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "REQUIRED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-PUBLICATION",
+      "entity_id": "ENT-PublicProjection",
+      "domain": "LAND",
+      "dimension": "approved public projection",
+      "states": [
+        "DRAFT",
+        "READY",
+        "PUBLISHED",
+        "SYNC_FAILED",
+        "WITHDRAWN"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-BRAND",
+      "entity_id": "ENT-BrandVersion",
+      "domain": "DESIGN",
+      "dimension": "appearance version publication; white label separate",
+      "states": [
+        "DRAFT",
+        "VALIDATED",
+        "PUBLISHED",
+        "SUPERSEDED",
+        "FAILED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-IMPORT",
+      "entity_id": "ENT-ImportBatch",
+      "domain": "IMPORT",
+      "dimension": "controlled data ingestion",
+      "states": [
+        "STAGED",
+        "VALIDATED",
+        "REVIEWED",
+        "COMMITTING",
+        "COMMITTED",
+        "PARTIAL_FAILURE",
+        "DISCARDED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "STAGED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-RELATIONSHIP",
+      "entity_id": "ENT-GuardianRelationship",
+      "domain": "JUNIOR",
+      "dimension": "verified action-specific rights",
+      "states": [
+        "CLAIMED",
+        "UNDER_REVIEW",
+        "VERIFIED",
+        "DECLINED",
+        "REVOKED",
+        "TRANSITION_REVIEW"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "CLAIMED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-CASE",
+      "entity_id": "ENT-CaseRecord",
+      "domain": "FEED",
+      "dimension": "query or feedback resolution",
+      "states": [
+        "OPEN",
+        "ASSIGNED",
+        "WAITING_INFORMATION",
+        "RESOLVED",
+        "CLOSED",
+        "REOPENED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "OPEN",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-DELIVERY",
+      "entity_id": "ENT-ChannelDelivery",
+      "domain": "CAL",
+      "dimension": "notification channel result",
+      "states": [
+        "QUEUED",
+        "SUBMITTING",
+        "ACCEPTED",
+        "DELIVERED",
+        "UNKNOWN",
+        "TRANSIENT_FAILURE",
+        "PERMANENT_FAILURE",
+        "SUPPRESSED",
+        "CANCELLED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "QUEUED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-EXPORT",
+      "entity_id": "ENT-ReportSnapshot",
+      "domain": "FIN",
+      "dimension": "protected async result delivery",
+      "states": [
+        "REQUESTED",
+        "RUNNING",
+        "READY",
+        "FAILED",
+        "CANCELLED",
+        "EXPIRED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "REQUESTED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-AI",
+      "entity_id": "ENT-AIProposal",
+      "domain": "AI",
+      "dimension": "assistant proposal execution",
+      "states": [
+        "PROPOSED",
+        "AWAITING_DECISION",
+        "AUTHORISED",
+        "EXECUTING",
+        "SUCCEEDED",
+        "FAILED",
+        "WITHDRAWN"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "PROPOSED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-ACCOUNT",
+      "entity_id": "ENT-CompanyPerson",
+      "domain": "USER",
+      "dimension": "company person account-access state; global identity-provider state independent",
+      "states": [
+        "ACTIVE",
+        "RESTRICTED",
+        "RECOVERY_REVIEW",
+        "ARCHIVED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "ACTIVE",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-TRAINING",
+      "entity_id": "ENT-TrainingRequirement",
+      "domain": "STAFF",
+      "dimension": "assigned evidence or acknowledgement applicability",
+      "states": [
+        "REQUIRED",
+        "SUBMITTED",
+        "ACCEPTED",
+        "RETURNED",
+        "EXPIRED",
+        "WITHDRAWN"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "REQUIRED",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-COMMUNITY",
+      "entity_id": "ENT-CommunityEntry",
+      "domain": "FEED",
+      "dimension": "public/member/internal posting and moderation",
+      "states": [
+        "DRAFT",
+        "PUBLISHED",
+        "UNDER_REVIEW",
+        "HIDDEN",
+        "REMOVED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    },
+    {
+      "machine_id": "SM-TEMPLATE",
+      "entity_id": "ENT-DocumentTemplate",
+      "domain": "DOC",
+      "dimension": "template authoring and release; issued documents independent",
+      "states": [
+        "DRAFT",
+        "READY",
+        "PUBLISHED",
+        "RETIRED"
+      ],
+      "status": "normalised logical labels; existing accepted semantics govern actual provider/UI mapping",
+      "initial_state": "DRAFT",
+      "initialisation": "Created through authorised source command with its creation invariants; initial record state does not mean paid/approved/attended. Visit OPEN specifically requires actual accepted entry; issued documents/notifications require actual source issue/event."
+    }
+  ],
+  "label_status": "Normalised logical label proposal implementing settled behaviour; required provider/runtime mapping preserves meanings. Orthogonal state dimensions never collapse into one universal status."
+}

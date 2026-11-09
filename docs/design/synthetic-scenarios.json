@@ -1,0 +1,62 @@
+{
+  "status": "fictional linked design fixtures only; no real member/health/payment data",
+  "workspace": {
+    "id": "demo-workspace",
+    "name": "Example Fitness Group"
+  },
+  "gyms": [
+    {
+      "id": "demo-gym-a",
+      "name": "Example North Gym"
+    },
+    {
+      "id": "demo-gym-b",
+      "name": "Example South Gym"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "DEMO-01",
+      "role": "reception",
+      "gym": "demo-gym-a",
+      "person": "Fictional member with a deliberately long display name",
+      "case": "Duplicate entry event",
+      "expected": "Original event reference shown; no second visit"
+    },
+    {
+      "id": "DEMO-02",
+      "role": "vendor",
+      "gym": "demo-gym-a",
+      "task": "demo-task-1",
+      "case": "Asset repair quote revised after approval request",
+      "expected": "Old approval cannot authorise new quote; reviewer sees version difference"
+    },
+    {
+      "id": "DEMO-03",
+      "role": "member",
+      "gym": "demo-gym-b",
+      "case": "Last class place taken concurrently",
+      "expected": "No confirmed booking without capacity; clear full/waitlist outcome"
+    },
+    {
+      "id": "DEMO-04",
+      "role": "reception",
+      "gym": "demo-gym-a",
+      "case": "Payment succeeded but stock effect uncertain",
+      "expected": "Check original reference; no recapture"
+    },
+    {
+      "id": "DEMO-05",
+      "role": "guardian",
+      "gym": "demo-gym-a",
+      "case": "Dependent selected without collection grant",
+      "expected": "No collection permission implied by payer or guardian relation"
+    },
+    {
+      "id": "DEMO-06",
+      "role": "owner",
+      "case": "White-label publish conflict",
+      "expected": "Published version retained; compare current and draft; no silent overwrite"
+    }
+  ]
+}

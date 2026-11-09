@@ -1,0 +1,59 @@
+{
+  "edition": "0.34",
+  "workflow_or_default_findings": 4,
+  "validation_blind_spots": 1,
+  "standalone_checks": 12,
+  "controlled_mutation_probes": [
+    {
+      "case": "start_requires_general_edit_again",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Assigned work requires separate"
+    },
+    {
+      "case": "cleaner_start_grant_missing",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "cleaner cannot progress"
+    },
+    {
+      "case": "vendor_gains_verification",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "vendor-operative gained broad"
+    },
+    {
+      "case": "limited_report_demands_internal_create",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Wrong reporting route"
+    },
+    {
+      "case": "reporter_can_inject_assignee",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Reporter input allowlist"
+    },
+    {
+      "case": "pt_profile_self_service_missing",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Missing account self service pt-only"
+    },
+    {
+      "case": "cleaner_own_sop_unreachable",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Missing own employment service cleaner"
+    },
+    {
+      "case": "hr_delegated_scope_narrowed",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Delegated prior scope narrowed"
+    },
+    {
+      "case": "guardian_decline_without_book_right",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Missing actor authority DeclineOffer"
+    },
+    {
+      "case": "staff_withdraw_without_other_person_right",
+      "result": "REJECTED_AS_EXPECTED",
+      "expected_diagnostic": "Missing actor authority WithdrawBookingRequest"
+    }
+  ],
+  "application_tests_run": false
+}

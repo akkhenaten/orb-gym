@@ -1,0 +1,16 @@
+# Second error review — 0.32
+
+Reviewed current 0.31 specification, 7November2026. The previous review's corrections are retained. This second pass focuses on action authority and lifecycle boundaries rather than repeating file/link checks. Six correction groups:
+
+| ID | Severity | Further issue | Correction |
+|---|---|---|---|
+| REV2-01 | High |213 generic permission records required same active workspace, conflicting with retained-history reads, closure/recovery, reconciliation and late provider facts in archived/suspended contexts. | Separate owning tenant scope from per-action lifecycle eligibility. New operations remain gated; authorised retained read/resolution/service-evidence paths are explicit, not blanket reopening. |
+| REV2-02 | High | Several transitions still had a primary permission plus alternate routes, creating contradictory fallback/veto interpretations for health/non-health reviews, decisions, payment and service grants. | One canonical typed authorization object on all 217 transitions: all-of, verified source proof or context routes with deny-unmapped. Route transitions have no fallback permission string. |
+| REV2-03 | High | Payment setup permission was also used to submit collection. A book right could also be mistaken for dependent pay authority. | Manual collection gets explicit finance.collect_customer_payment; self-service/recurring checkout require exact accepted source/payer proof. family.pay_for_dependent maps the existing separate verified pay right, not family.book. Mandate setup stays separate. |
+| REV2-04 | High | PT booking was used to manage disruption/remedies and cancel confirmed service. | Separate coaching.manage_service_disruption and coaching.cancel_appointment; manager remedy requires applicable combination and financial refunds remain separate. Client cancellation remains own/verified-dependent or actually assigned source scope. |
+| REV2-05 | Medium | Validators checked legacy primary permission but could not validate actual route guards, proof requirements, unknown contexts or canonical exports. | Validate typed authorisation routes/IDs/proofs and exact JSON-to-CSV policy export; preserve previous public/signature/guardian/cancellation regressions. |
+| REV2-06 | Medium | The root-manifest exception used basename matching, so a nested app/repository-manifest.json could escape inventory coverage. | Exclude only the root manifest path; nested files are ordinary source and unlisted nested files are rejected. |
+
+These are specification/validation corrections, not observed defects in a deployed app. No new service/payment provider or commercial policy is selected. Existing separate guardian pay rights and source authority are made explicit; no profession/consent is inferred from a permission.
+
+Actual source/database/provider/API gates, current grants, signing/payer consent, archived read/recovery flows, concurrency and UI still require implementation evidence. Current source/feature/workflow IDs are preserved. Current validation and controlled negative probes are recorded in repository-validation.md and second-review-validation.json; a pass is not a claim all possible product/runtime errors are eliminated.

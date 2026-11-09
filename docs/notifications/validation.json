@@ -1,0 +1,10 @@
+{
+  "package_edition": "0.35",
+  "validator_contract_version": "0.26",
+  "notification_events": 91,
+  "event_domains": 18,
+  "planned_acceptance_cases": 24,
+  "errors": [],
+  "actual_provider_delivery_tested": false,
+  "live_messages_sent": false
+}

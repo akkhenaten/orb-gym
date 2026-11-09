@@ -1,0 +1,494 @@
+{
+  "edition": "0.28",
+  "relationships": [
+    {
+      "relationship_id": "REL-001",
+      "from_entity": "ENT-Workspace",
+      "to_entity": "ENT-Gym",
+      "cardinality": "one-to-many",
+      "rule": "gym belongs to one workspace; cannot move by editing a logo",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-002",
+      "from_entity": "ENT-Identity",
+      "to_entity": "ENT-CompanyPerson",
+      "cardinality": "one-to-many",
+      "rule": "optional login linkage; cross-company records never merge private facts",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-003",
+      "from_entity": "ENT-Workspace",
+      "to_entity": "ENT-CompanyPerson",
+      "cardinality": "one-to-many",
+      "rule": "person belongs to one company context",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-004",
+      "from_entity": "ENT-CompanyPerson",
+      "to_entity": "ENT-RoleAssignment",
+      "cardinality": "one-to-many",
+      "rule": "multiple scoped roles; evaluate action/scope together",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-005",
+      "from_entity": "ENT-RoleTemplate",
+      "to_entity": "ENT-RoleAssignment",
+      "cardinality": "one-to-many",
+      "rule": "assignment records reviewed version, future changes explicit",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-006",
+      "from_entity": "ENT-CompanyPerson",
+      "to_entity": "ENT-IndividualOverride",
+      "cardinality": "one-to-many",
+      "rule": "scoped allow/deny applied under current authority",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-007",
+      "from_entity": "ENT-CompanyPerson",
+      "to_entity": "ENT-GuardianRelationship",
+      "cardinality": "one-to-many",
+      "rule": "adult and dependent are two person references with independent rights",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-008",
+      "from_entity": "ENT-CompanyPerson",
+      "to_entity": "ENT-Application",
+      "cardinality": "one-to-many",
+      "rule": "joining routes reconcile same person, no automatic duplicate",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-009",
+      "from_entity": "ENT-FormVersion",
+      "to_entity": "ENT-FormRequirement",
+      "cardinality": "one-to-many",
+      "rule": "required applicable version, not all users on every publish",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-010",
+      "from_entity": "ENT-FormRequirement",
+      "to_entity": "ENT-FormResponse",
+      "cardinality": "one-to-many",
+      "rule": "submitted evidence immutable, reviewed replacement retains previous",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-011",
+      "from_entity": "ENT-PlanVersion",
+      "to_entity": "ENT-Membership",
+      "cardinality": "one-to-many",
+      "rule": "accepted terms frozen per membership",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-012",
+      "from_entity": "ENT-CompanyPerson",
+      "to_entity": "ENT-Membership",
+      "cardinality": "one-to-many",
+      "rule": "beneficiary distinct from payer/account",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-013",
+      "from_entity": "ENT-Membership",
+      "to_entity": "ENT-EntitlementGrant",
+      "cardinality": "one-to-many",
+      "rule": "effective rights separate from membership label/payment",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-014",
+      "from_entity": "ENT-CoachArrangement",
+      "to_entity": "ENT-ClassDefinition",
+      "cardinality": "one-to-many",
+      "rule": "permitted collection/rental/employment type at service publish",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-015",
+      "from_entity": "ENT-RateVersion",
+      "to_entity": "ENT-PTAppointment",
+      "cardinality": "one-to-many",
+      "rule": "sold rate snapshot, no retroactive repricing",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-016",
+      "from_entity": "ENT-ClassDefinition",
+      "to_entity": "ENT-ClassOccurrence",
+      "cardinality": "one-to-many",
+      "rule": "recurrence produces stable individual occurrences",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-017",
+      "from_entity": "ENT-CourseBlock",
+      "to_entity": "ENT-ClassOccurrence",
+      "cardinality": "many-to-many",
+      "rule": "explicit enrolment occurrence join, no implicit partial scope",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-018",
+      "from_entity": "ENT-ClassOccurrence",
+      "to_entity": "ENT-Booking",
+      "cardinality": "one-to-many",
+      "rule": "unique active participant/occurrence and one capacity effect",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-019",
+      "from_entity": "ENT-PTAppointment",
+      "to_entity": "ENT-Booking",
+      "cardinality": "one-to-many",
+      "rule": "appointment booking purpose; not a second capacity engine",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-020",
+      "from_entity": "ENT-Booking",
+      "to_entity": "ENT-WaitlistOffer",
+      "cardinality": "one-to-many",
+      "rule": "current expiring offer distinct from confirmed booking",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-021",
+      "from_entity": "ENT-ClassOccurrence",
+      "to_entity": "ENT-RegisterEntry",
+      "cardinality": "one-to-many",
+      "rule": "participant register unique; corrections audited",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-022",
+      "from_entity": "ENT-CompanyPerson",
+      "to_entity": "ENT-Visit",
+      "cardinality": "one-to-many",
+      "rule": "gym visit independent of class/PT register",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-023",
+      "from_entity": "ENT-ScanEvent",
+      "to_entity": "ENT-Visit",
+      "cardinality": "many-to-one",
+      "rule": "duplicate scans reference same intended visit, not extra visits",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-024",
+      "from_entity": "ENT-CompanyPerson",
+      "to_entity": "ENT-EmploymentAssignment",
+      "cardinality": "one-to-many",
+      "rule": "employment does not define account or membership status",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-025",
+      "from_entity": "ENT-EmploymentAssignment",
+      "to_entity": "ENT-Shift",
+      "cardinality": "one-to-many",
+      "rule": "published assignment, availability and qualification guards",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-026",
+      "from_entity": "ENT-Shift",
+      "to_entity": "ENT-Timesheet",
+      "cardinality": "one-to-many",
+      "rule": "actual/review versions separate from plan",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-027",
+      "from_entity": "ENT-TaskTemplate",
+      "to_entity": "ENT-TaskOccurrence",
+      "cardinality": "one-to-many",
+      "rule": "one distinct occurrence per recurrence key",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-028",
+      "from_entity": "ENT-TaskOccurrence",
+      "to_entity": "ENT-TaskOccurrence",
+      "cardinality": "one-to-many",
+      "rule": "parent/children, no cycles; required unfinished children block closure",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-029",
+      "from_entity": "ENT-TaskGroup",
+      "to_entity": "ENT-TaskOccurrence",
+      "cardinality": "many-to-many",
+      "rule": "grouping not ownership/status/cost duplication",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-030",
+      "from_entity": "ENT-TaskOccurrence",
+      "to_entity": "ENT-TaskDependency",
+      "cardinality": "one-to-many",
+      "rule": "predecessor/successor links, acyclic",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-031",
+      "from_entity": "ENT-TaskOccurrence",
+      "to_entity": "ENT-TaskVerification",
+      "cardinality": "one-to-many",
+      "rule": "review exact submitted evidence version",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-032",
+      "from_entity": "ENT-TaskOccurrence",
+      "to_entity": "ENT-ActivityEntry",
+      "cardinality": "one-to-many",
+      "rule": "typed feed and tabs point to same source records",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-033",
+      "from_entity": "ENT-Asset",
+      "to_entity": "ENT-TaskOccurrence",
+      "cardinality": "one-to-many",
+      "rule": "job close/payment never implicitly restores asset",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-034",
+      "from_entity": "ENT-Asset",
+      "to_entity": "ENT-AssetStatusInterval",
+      "cardinality": "one-to-many",
+      "rule": "status interval history authoritative for downtime",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-035",
+      "from_entity": "ENT-SupplierOrganisation",
+      "to_entity": "ENT-SupplierAssignment",
+      "cardinality": "one-to-many",
+      "rule": "current delegated operatives and audience checked",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-036",
+      "from_entity": "ENT-TaskOccurrence",
+      "to_entity": "ENT-SupplierAssignment",
+      "cardinality": "one-to-many",
+      "rule": "assignment accept/decline and visits explicit",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-037",
+      "from_entity": "ENT-SupplierOrganisation",
+      "to_entity": "ENT-QuoteVersion",
+      "cardinality": "one-to-many",
+      "rule": "supplier cannot approve own quote",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-038",
+      "from_entity": "ENT-QuoteVersion",
+      "to_entity": "ENT-DecisionRequest",
+      "cardinality": "one-to-many",
+      "rule": "approval tied to exact source/version",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-039",
+      "from_entity": "ENT-QuoteVersion",
+      "to_entity": "ENT-CommercialCommitment",
+      "cardinality": "one-to-one-when-approved",
+      "rule": "accepted amount, no pending quote cost inflation",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-040",
+      "from_entity": "ENT-CommercialCommitment",
+      "to_entity": "ENT-SupplierInvoice",
+      "cardinality": "one-to-many",
+      "rule": "line-level consumption avoids quote+invoice duplication",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-041",
+      "from_entity": "ENT-CustomerCharge",
+      "to_entity": "ENT-PaymentAllocation",
+      "cardinality": "one-to-many",
+      "rule": "partial allocation and signed corrections",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-042",
+      "from_entity": "ENT-MoneyMovement",
+      "to_entity": "ENT-PaymentAllocation",
+      "cardinality": "one-to-many",
+      "rule": "allocation shares not new cash",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-043",
+      "from_entity": "ENT-PaymentAttempt",
+      "to_entity": "ENT-MoneyMovement",
+      "cardinality": "one-to-many",
+      "rule": "confirmed principal/refund/reversal separate evidenced movements",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-044",
+      "from_entity": "ENT-CustomerCharge",
+      "to_entity": "ENT-CreditNote",
+      "cardinality": "one-to-many",
+      "rule": "credit changes debt, not automatic cash refund",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-045",
+      "from_entity": "ENT-MoneyMovement",
+      "to_entity": "ENT-RefundRequest",
+      "cardinality": "one-to-many",
+      "rule": "request references original incoming payment",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-046",
+      "from_entity": "ENT-SupplierInvoice",
+      "to_entity": "ENT-PaymentAllocation",
+      "cardinality": "one-to-many",
+      "rule": "supplier settlement distinct from invoice verification",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-047",
+      "from_entity": "ENT-Sale",
+      "to_entity": "ENT-SaleLine",
+      "cardinality": "one-to-many",
+      "rule": "frozen quantity/price and charge/product type",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-048",
+      "from_entity": "ENT-SaleLine",
+      "to_entity": "ENT-CustomerCharge",
+      "cardinality": "many-to-one-when-existing-service-debt",
+      "rule": "reference existing service charge rather than new sale revenue",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-049",
+      "from_entity": "ENT-SaleLine",
+      "to_entity": "ENT-StockMovement",
+      "cardinality": "one-to-many",
+      "rule": "source transaction/line effect identity, returns separate",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-050",
+      "from_entity": "ENT-Product",
+      "to_entity": "ENT-StockMovement",
+      "cardinality": "one-to-many",
+      "rule": "per-SKU/location signed ledger",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-051",
+      "from_entity": "ENT-StockTransfer",
+      "to_entity": "ENT-StockMovement",
+      "cardinality": "one-to-many",
+      "rule": "dispatch/receipt/in-transit explicit",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-052",
+      "from_entity": "ENT-Sale",
+      "to_entity": "ENT-IssuedReceipt",
+      "cardinality": "one-to-many",
+      "rule": "issued original/correction snapshot; reprints do not add issue/sale",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-053",
+      "from_entity": "ENT-DocumentTemplate",
+      "to_entity": "ENT-IssuedDocument",
+      "cardinality": "one-to-many",
+      "rule": "published source template and frozen issued facts",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-054",
+      "from_entity": "ENT-BrandVersion",
+      "to_entity": "ENT-IssuedDocument",
+      "cardinality": "one-to-many",
+      "rule": "issued brand snapshot not live template re-render",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-055",
+      "from_entity": "ENT-BrandVersion",
+      "to_entity": "ENT-PublicProjection",
+      "cardinality": "one-to-many",
+      "rule": "approved published version/inheritance",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-056",
+      "from_entity": "ENT-CaseRecord",
+      "to_entity": "ENT-ActivityEntry",
+      "cardinality": "one-to-many",
+      "rule": "same typed activity vocabulary and audience, own case lifecycle",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-057",
+      "from_entity": "ENT-EvidenceFile",
+      "to_entity": "ENT-ActivityEntry",
+      "cardinality": "many-to-many",
+      "rule": "reuse private file never broadens original access",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-058",
+      "from_entity": "ENT-ImportBatch",
+      "to_entity": "ENT-CompanyPerson",
+      "cardinality": "one-to-many-when-committed",
+      "rule": "source row mapping/provenance, no automatic activation",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-059",
+      "from_entity": "ENT-NotificationEvent",
+      "to_entity": "ENT-ChannelDelivery",
+      "cardinality": "one-to-many",
+      "rule": "recipient/channel attempts distinct from source command",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-060",
+      "from_entity": "ENT-MetricDefinition",
+      "to_entity": "ENT-ReportSnapshot",
+      "cardinality": "one-to-many",
+      "rule": "definition/filter/as_of and current delivery rights",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    },
+    {
+      "relationship_id": "REL-061",
+      "from_entity": "ENT-AIProposal",
+      "to_entity": "ENT-DecisionRequest",
+      "cardinality": "one-to-many-when-required",
+      "rule": "normal existing business gate, no AI self-approval",
+      "scope_rule": "Both endpoints share workspace and permitted gym context unless link is explicit platform/global identity bridge; check server-side; no cascade deletion of financial/signed/audit evidence"
+    }
+  ],
+  "join_note": "Many-to-many relationships require explicit versioned/authorised association records in the chosen schema. Polymorphic source references validate allowlisted type and matching scope."
+}

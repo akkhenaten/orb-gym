@@ -1,0 +1,52 @@
+{
+  "edition": "0.27",
+  "source_id": "OG-MET-001",
+  "authority": "Founder accepted proposed precise dashboard/report metric definitions after0.26",
+  "related_sources": [
+    "OG-REV-001",
+    "OG-REV-002"
+  ],
+  "specification_paths": [
+    "spec/finance-reports.md"
+  ],
+  "workflow_ids": [
+    "WF-FIN-01",
+    "WF-FIN-02",
+    "WF-FIN-03",
+    "WF-FIN-04",
+    "WF-FIN-05"
+  ],
+  "contract_paths": [
+    "docs/reporting/metric-contract.md",
+    "docs/reporting/metric-catalogue.json",
+    "docs/reporting/report-catalogue.json",
+    "docs/reporting/policy-settings.json",
+    "docs/reporting/worked-examples.md"
+  ],
+  "acceptance_ids": [
+    "MET-AC01",
+    "MET-AC02",
+    "MET-AC03",
+    "MET-AC04",
+    "MET-AC05",
+    "MET-AC06",
+    "MET-AC07",
+    "MET-AC08",
+    "MET-AC09",
+    "MET-AC10",
+    "MET-AC11",
+    "MET-AC12",
+    "MET-AC13",
+    "MET-AC14",
+    "MET-AC15",
+    "MET-AC16",
+    "MET-AC17",
+    "MET-AC18",
+    "MET-AC19",
+    "MET-AC20",
+    "MET-AC21",
+    "MET-AC22",
+    "MET-AC23",
+    "MET-AC24"
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "edition": "0.25",
+  "clarifications": [
+    {
+      "source_id": "OG-ACL-001",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/staff-hr-rota.md",
+        "spec/privileged-auth-recovery.md"
+      ],
+      "workflow_ids": [
+        "WF-USER-07",
+        "WF-USER-09",
+        "WF-USER-10",
+        "WF-SPACE-03",
+        "WF-AUTH-04"
+      ],
+      "contract_paths": [
+        "docs/access/access-model.md",
+        "docs/access/policy-contract.json",
+        "docs/access/permission-catalogue.json"
+      ],
+      "acceptance_ids": [
+        "ACL-AC01",
+        "ACL-AC02",
+        "ACL-AC03",
+        "ACL-AC04",
+        "ACL-AC05",
+        "ACL-AC06",
+        "ACL-AC07",
+        "ACL-AC08",
+        "ACL-AC09",
+        "ACL-AC10",
+        "ACL-AC11",
+        "ACL-AC12",
+        "ACL-AC13",
+        "ACL-AC14",
+        "ACL-AC15",
+        "ACL-AC16",
+        "ACL-AC17",
+        "ACL-AC18",
+        "ACL-AC19",
+        "ACL-AC20",
+        "ACL-AC21",
+        "ACL-AC22"
+      ]
+    },
+    {
+      "source_id": "OG-ACL-002",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/staff-hr-rota.md",
+        "spec/privileged-auth-recovery.md"
+      ],
+      "workflow_ids": [
+        "WF-USER-07",
+        "WF-USER-09",
+        "WF-USER-10",
+        "WF-SPACE-03",
+        "WF-AUTH-04"
+      ],
+      "contract_paths": [
+        "docs/access/access-model.md",
+        "docs/access/policy-contract.json",
+        "docs/access/permission-catalogue.json"
+      ],
+      "acceptance_ids": [
+        "ACL-AC01",
+        "ACL-AC02",
+        "ACL-AC03",
+        "ACL-AC04",
+        "ACL-AC05",
+        "ACL-AC06",
+        "ACL-AC07",
+        "ACL-AC08",
+        "ACL-AC09",
+        "ACL-AC10",
+        "ACL-AC11",
+        "ACL-AC12",
+        "ACL-AC13",
+        "ACL-AC14",
+        "ACL-AC15",
+        "ACL-AC16",
+        "ACL-AC17",
+        "ACL-AC18",
+        "ACL-AC19",
+        "ACL-AC20",
+        "ACL-AC21",
+        "ACL-AC22"
+      ]
+    },
+    {
+      "source_id": "OG-ACL-003",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/staff-hr-rota.md",
+        "spec/privileged-auth-recovery.md"
+      ],
+      "workflow_ids": [
+        "WF-USER-07",
+        "WF-USER-09",
+        "WF-USER-10",
+        "WF-SPACE-03",
+        "WF-AUTH-04"
+      ],
+      "contract_paths": [
+        "docs/access/access-model.md",
+        "docs/access/policy-contract.json",
+        "docs/access/permission-catalogue.json"
+      ],
+      "acceptance_ids": [
+        "ACL-AC01",
+        "ACL-AC02",
+        "ACL-AC03",
+        "ACL-AC04",
+        "ACL-AC05",
+        "ACL-AC06",
+        "ACL-AC07",
+        "ACL-AC08",
+        "ACL-AC09",
+        "ACL-AC10",
+        "ACL-AC11",
+        "ACL-AC12",
+        "ACL-AC13",
+        "ACL-AC14",
+        "ACL-AC15",
+        "ACL-AC16",
+        "ACL-AC17",
+        "ACL-AC18",
+        "ACL-AC19",
+        "ACL-AC20",
+        "ACL-AC21",
+        "ACL-AC22"
+      ]
+    },
+    {
+      "source_id": "OG-ACL-004",
+      "specification_paths": [
+        "spec/workspace-access.md",
+        "spec/staff-hr-rota.md",
+        "spec/privileged-auth-recovery.md"
+      ],
+      "workflow_ids": [
+        "WF-USER-07",
+        "WF-USER-09",
+        "WF-USER-10",
+        "WF-SPACE-03",
+        "WF-AUTH-04"
+      ],
+      "contract_paths": [
+        "docs/access/access-model.md",
+        "docs/access/policy-contract.json",
+        "docs/access/permission-catalogue.json"
+      ],
+      "acceptance_ids": [
+        "ACL-AC01",
+        "ACL-AC02",
+        "ACL-AC03",
+        "ACL-AC04",
+        "ACL-AC05",
+        "ACL-AC06",
+        "ACL-AC07",
+        "ACL-AC08",
+        "ACL-AC09",
+        "ACL-AC10",
+        "ACL-AC11",
+        "ACL-AC12",
+        "ACL-AC13",
+        "ACL-AC14",
+        "ACL-AC15",
+        "ACL-AC16",
+        "ACL-AC17",
+        "ACL-AC18",
+        "ACL-AC19",
+        "ACL-AC20",
+        "ACL-AC21",
+        "ACL-AC22"
+      ]
+    }
+  ]
+}

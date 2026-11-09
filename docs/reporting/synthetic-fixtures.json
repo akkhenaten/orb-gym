@@ -1,0 +1,218 @@
+{
+  "status": "Fictional same-currency/same-display-basis arithmetic examples only; no real customer or account data",
+  "currency": "GBP",
+  "period": "Illustrative single closed reporting period; dates are omitted deliberately, all listed movements qualify for the example period",
+  "charges": [
+    {
+      "id": "C1",
+      "amount": "100.00",
+      "gym_allocations": {
+        "A": "100.00"
+      }
+    },
+    {
+      "id": "C2",
+      "amount": "60.00",
+      "gym_allocations": {
+        "B": "60.00"
+      }
+    },
+    {
+      "id": "C3",
+      "amount": "50.00",
+      "gym_allocations": {
+        "A": "30.00",
+        "B": "20.00"
+      }
+    }
+  ],
+  "credits": [
+    {
+      "id": "CR1",
+      "charge": "C1",
+      "amount": "20.00",
+      "gym_allocations": {
+        "A": "20.00"
+      }
+    }
+  ],
+  "opening_debts": [
+    {
+      "id": "O1",
+      "amount": "40.00",
+      "provenance": "reviewed opening debt, not new charge or incoming cash"
+    }
+  ],
+  "payments": [
+    {
+      "id": "P1",
+      "amount": "100.00"
+    },
+    {
+      "id": "P2",
+      "amount": "60.00"
+    },
+    {
+      "id": "P3",
+      "amount": "30.00"
+    },
+    {
+      "id": "P4",
+      "amount": "10.00"
+    }
+  ],
+  "refunds": [
+    {
+      "id": "RF1",
+      "payment": "P1",
+      "amount": "20.00"
+    }
+  ],
+  "reversals": [
+    {
+      "id": "RV1",
+      "payment": "P2",
+      "amount": "60.00"
+    }
+  ],
+  "allocation_events": [
+    {
+      "payment": "P1",
+      "charge": "C1",
+      "signed_amount": "100.00"
+    },
+    {
+      "payment": "P1",
+      "charge": "C1",
+      "signed_amount": "-20.00"
+    },
+    {
+      "payment": "P2",
+      "charge": "C2",
+      "signed_amount": "60.00"
+    },
+    {
+      "payment": "P2",
+      "charge": "C2",
+      "signed_amount": "-60.00"
+    },
+    {
+      "payment": "P3",
+      "charge": "C3",
+      "signed_amount": "30.00"
+    }
+  ],
+  "provider_callback_payment_ids": [
+    "P1",
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "coach_internal_allocation": {
+    "underlying_charge": "C3",
+    "amount": "10.00",
+    "counts_as_customer_collection": false
+  },
+  "supplier": {
+    "quote_approved": "300.00",
+    "verified_invoice": "180.00",
+    "invoice_consumes_quote": "180.00",
+    "supplier_payment": "60.00",
+    "invoice_gym_allocations": {
+      "A": "108.00",
+      "B": "72.00"
+    }
+  },
+  "people": [
+    {
+      "id": "PERS1",
+      "active": true,
+      "home_gym": "A",
+      "entitled_gyms": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "PERS2",
+      "active": true,
+      "home_gym": "B",
+      "entitled_gyms": [
+        "B"
+      ]
+    },
+    {
+      "id": "PERS3",
+      "active": true,
+      "home_gym": "A",
+      "entitled_gyms": [
+        "A",
+        "B"
+      ],
+      "active_membership_count": 2
+    },
+    {
+      "id": "PERS4",
+      "active": false,
+      "kind": "frozen"
+    },
+    {
+      "id": "PERS5",
+      "active": false,
+      "kind": "pt-only"
+    },
+    {
+      "id": "PERS6",
+      "active": false,
+      "kind": "guardian-only"
+    }
+  ],
+  "class": {
+    "capacity": 10,
+    "confirmed_bookings": 8,
+    "attended": 5,
+    "reviewed_no_show": 1,
+    "unresolved": 2
+  },
+  "stock": {
+    "sku": "DEMO-BAR",
+    "opening": 0,
+    "received": 20,
+    "sold": 3,
+    "physically_returned_sellable": 1,
+    "refund_only_units": 1,
+    "transfer_dispatched": 4,
+    "destination_received": 2
+  },
+  "expected": {
+    "posted_charges": "210.00",
+    "posted_credits": "20.00",
+    "net_charge_activity": "190.00",
+    "confirmed_collections": "200.00",
+    "refunds": "20.00",
+    "reversals": "60.00",
+    "net_collections": "120.00",
+    "retained_allocations": "110.00",
+    "outstanding_customer_balance": "120.00",
+    "unapplied_customer_funds": "10.00",
+    "gym_net_charge_A": "110.00",
+    "gym_net_charge_B": "80.00",
+    "supplier_open_commitment": "120.00",
+    "supplier_outstanding_invoice": "120.00",
+    "company_active_beneficiaries": 3,
+    "home_gym_A": 2,
+    "home_gym_B": 1,
+    "entitled_gym_A": 2,
+    "entitled_gym_B": 3,
+    "class_booking_percent": "80.00",
+    "reviewed_attendance_percent": "83.33",
+    "register_coverage_percent": "75.00",
+    "stock_source_sellable": 14,
+    "stock_destination_sellable": 2,
+    "stock_in_transit": 2,
+    "stock_network_sellable": 16,
+    "profit": "unavailable: required basis/cost coverage missing",
+    "stock_value": "unavailable: approved valuation basis missing"
+  }
+}

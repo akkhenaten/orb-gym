@@ -1,0 +1,19 @@
+{
+  "source_blocks": 242,
+  "review_requirements": 11,
+  "source_map_entries": 253,
+  "feature_specification_briefs": 20,
+  "customer_journeys": 4,
+  "planned_acceptance_scenarios": 90,
+  "local_links_checked": 988,
+  "original_logo_verified": "20b47e4822ba7f240ea1a655fa404b7772e3544372d05dccb1a46a40d3157e41",
+  "errors": [],
+  "defined_feature_workflows": 149,
+  "workflow_domains": 21,
+  "feature_register_entries": 134,
+  "extension_source_units": 5,
+  "required_setup_contracts": 11,
+  "application_tests_run": false,
+  "actual_board_cards_created": false,
+  "package_edition": "0.35"
+}

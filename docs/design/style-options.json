@@ -1,0 +1,76 @@
+{
+ "edition": "0.35",
+ "source": "Owner confirmed five selectable presets on 9 November 2026. Neumorphic06 is deferred, not selectable, pending a rendered reference. Glass04 and Flat02 retain IDs with expanded rules.",
+ "default_preset_id": "basic-01",
+ "settings_screen_id": "SCR-075",
+ "settings_location": "Company Settings \u2192 Style & Branding \u2192 UI direction",
+ "presets": [
+  {
+   "preset_id": "basic-01",
+   "label": "Orb Gym Basic / Bento 01",
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "selectable": true
+  },
+  {
+   "preset_id": "flat-02",
+   "label": "Flat Studio 02",
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "selectable": true
+  },
+  {
+   "preset_id": "editorial-03",
+   "label": "Minimal Editorial 03",
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "selectable": true
+  },
+  {
+   "preset_id": "glass-04",
+   "label": "Soft Glass / Glassmorphism 04",
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "selectable": true
+  },
+  {
+   "preset_id": "console-05",
+   "label": "Performance Console 05",
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "selectable": true
+  },
+  {
+   "preset_id": "neumorphic-06",
+   "label": "Neumorphic 06",
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "selectable": false,
+   "status": "deferred",
+   "deferral_reason": "No rendered application or visual reference exists; the founder confirmed five selectable presets on 9 November 2026. Retained with full token definitions so it can be enabled without reconstruction once a reference exists."
+  }
+ ],
+ "selection_contract": "docs/design/appearance-settings-contract.json",
+ "rules": "docs/design/ui-direction-settings.md",
+ "canonical_values": "docs/design/theme-tokens.json",
+ "visual_evidence": "Existing five dashboard images remain historical reference-only; no Neumorphic visual/rendered application has been produced in this change.",
+ "selectable_preset_ids": [
+  "basic-01",
+  "flat-02",
+  "editorial-03",
+  "glass-04",
+  "console-05"
+ ]
+}

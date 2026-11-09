@@ -1,0 +1,34 @@
+{
+  "edition": "0.31",
+  "source": "Founder request: review for errors; corrections preserve prior public/auth/signature/permission/capacity/quote/Basic-source intent",
+  "workflow_ids": [
+    "WF-LAND-01",
+    "WF-LAND-03",
+    "WF-LAND-08",
+    "WF-USER-04",
+    "WF-DOC-03",
+    "WF-CLASS-02",
+    "WF-CLASS-04",
+    "WF-CLASS-05",
+    "WF-TASK-08"
+  ],
+  "reference_note": "WF list names affected scopes; use existing source workflow catalogues and actual transitions for atomic planning",
+  "contract_paths": [
+    "docs/reviews/error-review-0.31.md",
+    "docs/reviews/error-review-acceptance.md",
+    "docs/data/canonical-operations.json",
+    "docs/baselines/source-integrity.json"
+  ],
+  "acceptance_ids": [
+    "ERR-AC01",
+    "ERR-AC02",
+    "ERR-AC03",
+    "ERR-AC04",
+    "ERR-AC05",
+    "ERR-AC06",
+    "ERR-AC07",
+    "ERR-AC08",
+    "ERR-AC09",
+    "ERR-AC10"
+  ]
+}

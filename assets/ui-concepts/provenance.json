@@ -1,0 +1,37 @@
+[
+  {
+    "path": "01-basic-bento.png",
+    "original_filename": "Orb Gym bento dashboard.png",
+    "preset": "Orb Gym Basic 01",
+    "status": "historical AI-generated visual reference only; not approved production data or exact UI",
+    "sha256": "571a4936d304755675a7c5166aa667ff9bac492019a8d1287767ccda7c22da60"
+  },
+  {
+    "path": "02-flat-studio.png",
+    "original_filename": "Orb Gym multi-gym dashboard.png",
+    "preset": "Flat Studio 02",
+    "status": "historical AI-generated visual reference only; not approved production data or exact UI",
+    "sha256": "138a4225c1dbe95db33c5e50d3d5a3931fe11243a51da93279cb4160205a4f8f"
+  },
+  {
+    "path": "03-minimal-editorial.png",
+    "original_filename": "Orb Gym Editorial Management Dashboard.png",
+    "preset": "Minimal Editorial 03",
+    "status": "historical AI-generated visual reference only; not approved production data or exact UI",
+    "sha256": "940d064f4e4c86abcb6aba2bed03e319607eb6e16df8e3898e3bb5bb3a7409a6"
+  },
+  {
+    "path": "04-soft-glass.png",
+    "original_filename": "Orb Gym soft glass dashboard.png",
+    "preset": "Soft Glass 04",
+    "status": "historical AI-generated visual reference only; not approved production data or exact UI",
+    "sha256": "dfe65fc7f2663e55465d1a6b815897647d0b018a614c4c500f2fb481525f5115"
+  },
+  {
+    "path": "05-performance-console.png",
+    "original_filename": "Orb Gym Performance Console.png",
+    "preset": "Performance Console 05",
+    "status": "historical AI-generated visual reference only; not approved production data or exact UI",
+    "sha256": "84975661eec818ab9401b874deb582e4b71238e90b0cf996add636529c3c901b"
+  }
+]

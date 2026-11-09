@@ -1,0 +1,13 @@
+# Current Source Extensions — Repository 0.22
+
+Source: founder instruction on 7 November 2026, “lest fill the gaps”, following the 0.21 gap review. The requested work completes the missing product design. These entries preserve new requirements separately from the 242 historical OG-SRC blocks and eleven OG-REV units. Original source bytes/history are retained.
+
+| Extension | Product design now specified | Configuration / evidence boundary |
+|---|---|---|
+| OG-EXT-001 | Optional company-enabled trial/guest offering, limited joining/forms/review/payment/access/pass/attendance/expiry and same-identity upgrade. | Trial availability is disabled until its offer, eligibility, forms, reviewer and access window are configured. No default free visit, age or price promised. |
+| OG-EXT-002 | Optional company-enabled junior/guardian relationship, dependent membership/booking/payment/pass permissions, restricted communications and lifecycle transitions. | Junior offerings remain disabled until age/activity, reviewed forms, authority review, safeguarding/privacy and collection/communication settings are configured. No statutory age or legal relationship is inferred. |
+| OG-EXT-003 | Staff/admin import workspace with authorised source mapping, staging/dry-run, validation/matching/quarantine, review/commit, controlled invitations and reconciliation/compensating repair. | Import capability does not grant access to a source provider or transfer a mandate, password, signature or payment. Actual formats/adapters/data and authorisation are inputs. |
+| OG-EXT-004 | Provider-supported stronger privileged authentication, enrolment, step-up, recovery and revocation/session lifecycle. | Owner/platform-admin privileged access requires configured MFA/recovery proof before production use; supported factors/provider behaviour must be inspected and tested. No real account is changed by these files. |
+| OG-EXT-005 | DEC-GR-01–07 product routing/guard defaults, explicit company-policy settings, setup-readiness gating and many-to-many feature/workflow/card trace. | Exact business values and reviewed content are supplied by company setup. Actual implementation, first release and production configuration remain distinct. |
+
+Status: **PRODUCT_CAPABILITY_SPECIFIED_FROM_CURRENT_REQUEST**. This is authorisation to complete the documentation, not evidence that every tenant has activated the optional capability, that every recommended default was individually signed off, or that a build/deployment was authorised. The builder must present the concrete plan/defaults for review and cannot silently substitute values. Current rule detail is in decisions/operational-decisions.md, setup-and-readiness.md and the four receiving feature specifications.
