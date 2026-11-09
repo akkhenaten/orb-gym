@@ -643,8 +643,8 @@
     },
     {
       "path": "docs/delivery/card-index.md",
-      "size_bytes": 875,
-      "sha256": "01099804f1fe942fc3ed3bf4d3ec0beb5ad68d7478980c30549fdf93be18c600"
+      "size_bytes": 36051,
+      "sha256": "5d35803cf3059c1bf6539247f7e25aea26481252299201582158eb7d4ba453b9"
     },
     {
       "path": "docs/delivery/card-template.md",
@@ -1480,6 +1480,11 @@
       "path": "history/source-requirement-register-v0.17-original.md",
       "size_bytes": 103359,
       "sha256": "e2de6816b919fd5ffc5822e6b16c9f08db909528f05226a870e6dcf2923e16f6"
+    },
+    {
+      "path": "openkbs.json",
+      "size_bytes": 83,
+      "sha256": "eae5c2f0b4687b78f6f37117ccd3f3e0ef43bbfa4b32b471dfd3b190a842d96c"
     },
     {
       "path": "prompts/01-store-and-audit.md",
